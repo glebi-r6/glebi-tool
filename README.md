@@ -3,7 +3,7 @@
 <img src="https://img.shields.io/github/languages/top/glebi-r6/glebi-tool?style=flat-square" </a>
 <img src="https://img.shields.io/github/last-commit/glebi-r6/glebi-tool?style=flat-square" </a>
 <img src="https://img.shields.io/github/license/glebi-r6/glebi-tool?style=flat-square" </a>
-<img src="https://img.shields.io/github/downloads/glebi-r6/glebi-tool/total?color=%23daff00&label=1.4.6 Downloads&style=flat-square" </a>
+<img src="https://img.shields.io/github/downloads/glebi-r6/glebi-tool/total?color=%23daff00&label=2.0 Downloads&style=flat-square" </a>
   
 </p>
 <p align="center">
