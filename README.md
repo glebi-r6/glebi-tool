@@ -11,3 +11,11 @@
 <a href="https://github.com/Rdimo/Hazard-Nuker/blob/master/Changelog.md">Changelogs</a> |
 <a href="https://cheataway.com">Discord</a>
 </p>
+
+---
+
+**NOTE:** glebi-tool is not finished! You can expect bugs, crashes, and non-working functions. Please make an issue if you find a bug!
+ㅤ
+#### Hazard Nuker was made by
+Love ❌
+Code ✅
