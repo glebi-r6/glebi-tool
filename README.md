@@ -58,7 +58,7 @@ Extract the ZIP and Realese glebi tool 2.0
 
 🌟 **Enjoyed glebi-tool?** Consider dropping a star :)
 
-<a href="https://cheataway.com" target="_blank"><img src="https://discord.com/api/guilds/790607156843905074/widget.json" alt="Cheataway"/></a>
+<a href="https://cheataway.com" target="_blank"><img src="https://discord.com/api/guilds/790607156843905074/widget.png?style=banner2" alt="Cheataway"/></a>
 
 **glebi-tool was created by glebi.**
 
