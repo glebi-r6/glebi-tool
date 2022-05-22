@@ -20,8 +20,13 @@
 Love ❌
 Code ✅
 
-<h1 allign="center">- Features -</h1>
+<h1 allign="center">- Upcoming Features -</h1>
 <p align="center">
  <img alt="theme3" src="https://github.com/glebi-r6/Ignore-nothing-special/raw/main/Pngs/cracked%20games.png" width="20%">
  <img alt="theme4" src="https://github.com/glebi-r6/Ignore-nothing-special/raw/main/Pngs/tools.png" width="20%">
 </p>
+
+* ` More cracked games and tools`
+* ` update system`
+* ` themes changer`
+* ` chat system (chat in the tool with other useres)`
