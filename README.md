@@ -16,6 +16,6 @@
 
 **NOTE:** glebi-tool is not finished! You can expect bugs, crashes, and non-working functions. Please make an issue if you find a bug!
 ㅤ
-#### Hazard Nuker was made by
+#### glebi-tool was made by
 Love ❌
 Code ✅
