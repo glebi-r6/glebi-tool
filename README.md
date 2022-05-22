@@ -41,7 +41,7 @@ Code ✅
 
 #### exe Version
 ```sh-session
-https://github.com/Rdimo/Hazard-Nuker/releases
+https://github.com/glebi-r6/glebi-tool/releases
 Download the latest release (glebi - tool.rar) and open folder.
 And run glebi tool 2.0.exe
 ```
