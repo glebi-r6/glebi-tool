@@ -1,4 +1,4 @@
-<p align= center</p><a target="_blank"><img src="https://ibb.co/Q9NMFHB" alt="glebi - tool"></a>
+<p align= center</p><a href="https://cheataway.com" target="_blank"><img src="https://ibb.co/Q9NMFHB" alt="glebi - tool"></a>
 <p align="center">
 <img src="https://img.shields.io/github/languages/top/glebi-r6/glebi-tool?style=flat-square" </a>
 <img src="https://img.shields.io/github/last-commit/glebi-r6/glebi-tool?style=flat-square" </a>
