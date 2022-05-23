@@ -44,7 +44,7 @@ Code ✅
 ```sh-session
 https://github.com/glebi-r6/glebi-tool/releases
 Download the latest release (glebi - tool.rar) and open folder.
-And run glebi tool 2.0.exe
+And run glebi tool 2.1.exe
 ```
 
 #### Source Code Version
@@ -52,7 +52,7 @@ And run glebi tool 2.0.exe
 Click the green "Code" button.
 Click "Download ZIP"
 
-Extract the ZIP and Realese glebi tool 2.0
+Extract the ZIP and Realese glebi tool 2.1
 ```
 
 ---
