@@ -50,6 +50,7 @@ namespace glebi_tool_2te_design
             public static Color color4 = Color.FromArgb(95, 77, 221);
             public static Color color5 = Color.FromArgb(255, 0, 0);
             public static Color color6 = Color.FromArgb(24, 161, 251);
+            public static Color color7 = Color.FromArgb(227, 36, 43);
         }
 
         //Methods
@@ -123,14 +124,14 @@ namespace glebi_tool_2te_design
 
         private void btnYouTube_Click(object sender, EventArgs e)
         {
-            ActivateButton(sender, RGBColors.color3);
+            ActivateButton(sender, RGBColors.color7);
             OpenChildForm(new Forms.FormYouTube());
         }
 
         private void btnDiscrod_Click(object sender, EventArgs e)
         {
-            ActivateButton(sender, RGBColors.color4);
-            OpenChildForm(new Forms.FormDiscord());
+            ActivateButton(sender, RGBColors.color3);
+            OpenChildForm(new ValorantAimbotUI.Form1());
         }
 
         private void btnWebsite_Click(object sender, EventArgs e)
