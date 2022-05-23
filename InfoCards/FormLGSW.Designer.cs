@@ -31,11 +31,11 @@ namespace glebi_tool_2te_design_test.InfoCards
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormLGSW));
             this.panelTitleBar = new System.Windows.Forms.Panel();
-            this.btnOK = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.iconButton18 = new FontAwesome.Sharp.IconButton();
             this.label1 = new System.Windows.Forms.Label();
+            this.btnOK = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panelTitleBar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -53,6 +53,47 @@ namespace glebi_tool_2te_design_test.InfoCards
             this.panelTitleBar.Size = new System.Drawing.Size(456, 169);
             this.panelTitleBar.TabIndex = 3;
             this.panelTitleBar.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panelTitleBar_MouseDown);
+            // 
+            // linkLabel1
+            // 
+            this.linkLabel1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.linkLabel1.AutoSize = true;
+            this.linkLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkLabel1.LinkColor = System.Drawing.Color.LawnGreen;
+            this.linkLabel1.Location = new System.Drawing.Point(93, 77);
+            this.linkLabel1.Name = "linkLabel1";
+            this.linkLabel1.Size = new System.Drawing.Size(120, 17);
+            this.linkLabel1.TabIndex = 108;
+            this.linkLabel1.TabStop = true;
+            this.linkLabel1.Text = "DLCs and Update\r\n";
+            this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
+            // 
+            // iconButton18
+            // 
+            this.iconButton18.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.iconButton18.FlatAppearance.BorderSize = 0;
+            this.iconButton18.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconButton18.IconChar = FontAwesome.Sharp.IconChar.Download;
+            this.iconButton18.IconColor = System.Drawing.Color.LawnGreen;
+            this.iconButton18.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconButton18.IconSize = 18;
+            this.iconButton18.Location = new System.Drawing.Point(207, 77);
+            this.iconButton18.Name = "iconButton18";
+            this.iconButton18.Size = new System.Drawing.Size(26, 23);
+            this.iconButton18.TabIndex = 107;
+            this.iconButton18.UseVisualStyleBackColor = true;
+            // 
+            // label1
+            // 
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Red;
+            this.label1.Location = new System.Drawing.Point(93, 60);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(281, 34);
+            this.label1.TabIndex = 106;
+            this.label1.Text = "If you Installed the game than download the\r\nDLCs and Update       the game";
             // 
             // btnOK
             // 
@@ -83,46 +124,6 @@ namespace glebi_tool_2te_design_test.InfoCards
             this.pictureBox1.Size = new System.Drawing.Size(75, 75);
             this.pictureBox1.TabIndex = 99;
             this.pictureBox1.TabStop = false;
-            // 
-            // linkLabel1
-            // 
-            this.linkLabel1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.linkLabel1.AutoSize = true;
-            this.linkLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.linkLabel1.LinkColor = System.Drawing.Color.LawnGreen;
-            this.linkLabel1.Location = new System.Drawing.Point(93, 77);
-            this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(120, 17);
-            this.linkLabel1.TabIndex = 108;
-            this.linkLabel1.TabStop = true;
-            this.linkLabel1.Text = "DLCs and Update\r\n";
-            // 
-            // iconButton18
-            // 
-            this.iconButton18.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.iconButton18.FlatAppearance.BorderSize = 0;
-            this.iconButton18.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton18.IconChar = FontAwesome.Sharp.IconChar.Download;
-            this.iconButton18.IconColor = System.Drawing.Color.LawnGreen;
-            this.iconButton18.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton18.IconSize = 18;
-            this.iconButton18.Location = new System.Drawing.Point(207, 77);
-            this.iconButton18.Name = "iconButton18";
-            this.iconButton18.Size = new System.Drawing.Size(26, 23);
-            this.iconButton18.TabIndex = 107;
-            this.iconButton18.UseVisualStyleBackColor = true;
-            // 
-            // label1
-            // 
-            this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Red;
-            this.label1.Location = new System.Drawing.Point(93, 60);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(281, 34);
-            this.label1.TabIndex = 106;
-            this.label1.Text = "If you Installed the game than download the\r\nDLCs and Update       the game";
             // 
             // FormLGSW
             // 
