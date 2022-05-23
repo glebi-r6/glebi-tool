@@ -25,10 +25,10 @@ namespace glebi_tool_2_0.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("")]
-        public string Autostart {
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool Autostart {
             get {
-                return ((string)(this["Autostart"]));
+                return ((bool)(this["Autostart"]));
             }
             set {
                 this["Autostart"] = value;
