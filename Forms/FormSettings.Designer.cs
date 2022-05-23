@@ -44,11 +44,11 @@ namespace glebi_tool_2te_design.Forms
             this.button3 = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.AutoStart = new glebi_tool_2te_design_test.Controls.Toggle_switch();
             this.iconPictureBox1 = new FontAwesome.Sharp.IconPictureBox();
             this.lblWelcome = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.linkLabel2 = new System.Windows.Forms.LinkLabel();
+            this.AutoStart = new glebi_tool_2te_design_test.Controls.Toggle_switch();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -227,22 +227,7 @@ namespace glebi_tool_2te_design.Forms
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(66, 15);
             this.label4.TabIndex = 15;
-            this.label4.Text = "version 2.0";
-            // 
-            // AutoStart
-            // 
-            this.AutoStart.AutoSize = true;
-            this.AutoStart.Location = new System.Drawing.Point(16, 216);
-            this.AutoStart.MinimumSize = new System.Drawing.Size(59, 30);
-            this.AutoStart.Name = "AutoStart";
-            this.AutoStart.OffBackColor = System.Drawing.Color.Gray;
-            this.AutoStart.OffToggleColor = System.Drawing.Color.Gainsboro;
-            this.AutoStart.OnBackColor = System.Drawing.Color.Red;
-            this.AutoStart.OnToggleColor = System.Drawing.Color.WhiteSmoke;
-            this.AutoStart.Size = new System.Drawing.Size(59, 30);
-            this.AutoStart.TabIndex = 16;
-            this.AutoStart.UseVisualStyleBackColor = true;
-            this.AutoStart.CheckedChanged += new System.EventHandler(this.AutoStart_CheckedChanged);
+            this.label4.Text = "version 2.1";
             // 
             // iconPictureBox1
             // 
@@ -295,6 +280,21 @@ namespace glebi_tool_2te_design.Forms
             this.linkLabel2.TabStop = true;
             this.linkLabel2.Text = "Discord server";
             this.linkLabel2.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel2_LinkClicked);
+            // 
+            // AutoStart
+            // 
+            this.AutoStart.AutoSize = true;
+            this.AutoStart.Location = new System.Drawing.Point(16, 216);
+            this.AutoStart.MinimumSize = new System.Drawing.Size(59, 30);
+            this.AutoStart.Name = "AutoStart";
+            this.AutoStart.OffBackColor = System.Drawing.Color.Gray;
+            this.AutoStart.OffToggleColor = System.Drawing.Color.Gainsboro;
+            this.AutoStart.OnBackColor = System.Drawing.Color.Red;
+            this.AutoStart.OnToggleColor = System.Drawing.Color.WhiteSmoke;
+            this.AutoStart.Size = new System.Drawing.Size(59, 30);
+            this.AutoStart.TabIndex = 16;
+            this.AutoStart.UseVisualStyleBackColor = true;
+            this.AutoStart.CheckedChanged += new System.EventHandler(this.AutoStart_CheckedChanged);
             // 
             // FormSettings
             // 

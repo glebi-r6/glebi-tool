@@ -53,7 +53,6 @@ namespace glebi_tool_2te_design.Forms
                     rk.SetValue("glebi_tool", Application.ExecutablePath);
                 else
                     rk.DeleteValue("glebi_tool", false);
-
             }
         }
 
