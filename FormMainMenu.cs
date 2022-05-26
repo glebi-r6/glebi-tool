@@ -131,7 +131,7 @@ namespace glebi_tool_2te_design
         private void btnDiscrod_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color3);
-            OpenChildForm(new ValorantAimbotUI.Form1());
+            OpenChildForm(new Forms.FormDiscord());
         }
 
         private void btnWebsite_Click(object sender, EventArgs e)
@@ -148,7 +148,7 @@ namespace glebi_tool_2te_design
 
         private void btnExit_Click(object sender, EventArgs e)
         {
-            ActivateButton(sender, RGBColors.color1);
+            Environment.Exit(0);
             Application.Exit();
         }
 

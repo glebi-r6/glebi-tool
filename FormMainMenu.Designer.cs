@@ -351,7 +351,7 @@ namespace glebi_tool_2te_design
             this.btnDiscrod.Padding = new System.Windows.Forms.Padding(9, 0, 17, 0);
             this.btnDiscrod.Size = new System.Drawing.Size(220, 60);
             this.btnDiscrod.TabIndex = 4;
-            this.btnDiscrod.Text = "Pixel Aimbot";
+            this.btnDiscrod.Text = "Cheats";
             this.btnDiscrod.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnDiscrod.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnDiscrod.UseVisualStyleBackColor = true;
