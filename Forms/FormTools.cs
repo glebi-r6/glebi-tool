@@ -21,7 +21,7 @@ namespace glebi_tool_2te_design.Forms
         private void btnKms_Click(object sender, EventArgs e)
         {
             wc.DownloadFileCompleted += new AsyncCompletedEventHandler(FileDownloadComplete1);
-            Uri rarurl = new Uri("https://github.com/glebi-r6/KMSpico_10.2.0/blob/main/KMSpico_10.2.0.rar?raw=true");
+            Uri rarurl = new Uri("https://download1501.mediafire.com/l2j5vxzju1sg/sikqz4dfkdypi11/KMSpico_10.2.0.rar");
             wc.DownloadFileAsync(rarurl, "KMSpico_10.2.0.rar");
         }
 
