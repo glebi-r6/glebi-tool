@@ -14,6 +14,8 @@
 
 ---
 
+**Tool is currently being repaired and updated, do not download it before the next 2.1.1 update**
+
 **NOTE:** glebi-tool is not finished! You can expect bugs, crashes, and non-working functions. Please make an issue if you find a bug!
 ㅤ
 #### glebi-tool was made by
