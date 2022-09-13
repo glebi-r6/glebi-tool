@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace glebi_tool_2_0.Properties {
+namespace glebi_tool.Properties {
     using System;
     
     
@@ -39,7 +39,7 @@ namespace glebi_tool_2_0.Properties {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("glebi_tool_2_0.Properties.Resources", typeof(Resources).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("glebi_tool.Properties.Resources", typeof(Resources).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -67,16 +67,6 @@ namespace glebi_tool_2_0.Properties {
             get {
                 object obj = ResourceManager.GetObject("D__PwcdXUAAlO_v", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Sucht eine lokalisierte Ressource vom Typ System.Byte[].
-        /// </summary>
-        internal static byte[] DONT_CLICK {
-            get {
-                object obj = ResourceManager.GetObject("DONT_CLICK", resourceCulture);
-                return ((byte[])(obj));
             }
         }
         
