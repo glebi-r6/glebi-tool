@@ -13,6 +13,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.IO;
 using System.Diagnostics;
+using glebi_tool_2te_design.Forms;
 
 namespace glebi_tool_2te_design
 {
@@ -112,12 +113,16 @@ namespace glebi_tool_2te_design
 
         private void btnCrackedGames_Click(object sender, EventArgs e)
         {
+            System.IO.Directory.CreateDirectory("C:\\Users\\" + Environment.UserName.ToString() + "\\Downloads\\Glebi-Tool\\Games");
+
             ActivateButton(sender, RGBColors.color1);
             OpenChildForm(new Forms.FormCrackedGames());
         }
 
         private void btnTools_Click(object sender, EventArgs e)
         {
+            System.IO.Directory.CreateDirectory("C:\\Users\\" + Environment.UserName.ToString() + "\\Downloads\\Glebi-Tool\\Tools");
+
             ActivateButton(sender, RGBColors.color2);
             OpenChildForm(new Forms.FormTools());
         }
@@ -223,14 +228,14 @@ namespace glebi_tool_2te_design
 
         private void btnTroll_Click(object sender, EventArgs e)
         {
-            panelDesktop.BackgroundImage = glebi_tool_2_0.Properties.Resources.D__PwcdXUAAlO_v;
+            panelDesktop.BackgroundImage = glebi_tool.Properties.Resources.D__PwcdXUAAlO_v;
 
             playaudio();
         }
 
         private void playaudio()
         {
-            SoundPlayer audio = new SoundPlayer(glebi_tool_2_0.Properties.Resources.sussong);
+            SoundPlayer audio = new SoundPlayer(glebi_tool.Properties.Resources.sussong);
             audio.Play();
         }
     }
