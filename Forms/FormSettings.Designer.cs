@@ -48,6 +48,8 @@ namespace glebi_tool_2te_design.Forms
             this.lblWelcome = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.linkLabel2 = new System.Windows.Forms.LinkLabel();
+            this.label6 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             this.AutoStart = new glebi_tool_2te_design_test.Controls.Toggle_switch();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -166,7 +168,7 @@ namespace glebi_tool_2te_design.Forms
             // btnUpdate
             // 
             this.btnUpdate.BackColor = System.Drawing.Color.Red;
-            this.btnUpdate.Cursor = System.Windows.Forms.Cursors.No;
+            this.btnUpdate.Cursor = System.Windows.Forms.Cursors.Help;
             this.btnUpdate.FlatAppearance.BorderSize = 0;
             this.btnUpdate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnUpdate.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -189,11 +191,12 @@ namespace glebi_tool_2te_design.Forms
             this.label2.Size = new System.Drawing.Size(82, 22);
             this.label2.TabIndex = 11;
             this.label2.Text = "Autostart";
+            this.label2.Visible = false;
             // 
             // button3
             // 
             this.button3.BackColor = System.Drawing.Color.Red;
-            this.button3.Cursor = System.Windows.Forms.Cursors.No;
+            this.button3.Cursor = System.Windows.Forms.Cursors.Help;
             this.button3.FlatAppearance.BorderSize = 0;
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -204,6 +207,7 @@ namespace glebi_tool_2te_design.Forms
             this.button3.TabIndex = 13;
             this.button3.Text = "View Changes";
             this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // label3
             // 
@@ -223,11 +227,11 @@ namespace glebi_tool_2te_design.Forms
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.label4.Location = new System.Drawing.Point(758, 31);
+            this.label4.Location = new System.Drawing.Point(751, 31);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(66, 15);
+            this.label4.Size = new System.Drawing.Size(76, 15);
             this.label4.TabIndex = 15;
-            this.label4.Text = "version 2.1";
+            this.label4.Text = "version 2.1.1";
             // 
             // iconPictureBox1
             // 
@@ -237,25 +241,25 @@ namespace glebi_tool_2te_design.Forms
             this.iconPictureBox1.IconChar = FontAwesome.Sharp.IconChar.Bug;
             this.iconPictureBox1.IconColor = System.Drawing.Color.Red;
             this.iconPictureBox1.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconPictureBox1.IconSize = 48;
-            this.iconPictureBox1.Location = new System.Drawing.Point(380, 72);
+            this.iconPictureBox1.IconSize = 46;
+            this.iconPictureBox1.Location = new System.Drawing.Point(461, 73);
             this.iconPictureBox1.Name = "iconPictureBox1";
-            this.iconPictureBox1.Size = new System.Drawing.Size(57, 48);
+            this.iconPictureBox1.Size = new System.Drawing.Size(47, 46);
             this.iconPictureBox1.TabIndex = 17;
             this.iconPictureBox1.TabStop = false;
             // 
             // lblWelcome
             // 
             this.lblWelcome.AutoSize = true;
-            this.lblWelcome.Cursor = System.Windows.Forms.Cursors.No;
+            this.lblWelcome.Cursor = System.Windows.Forms.Cursors.Default;
             this.lblWelcome.Font = new System.Drawing.Font("Microsoft Tai Le", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblWelcome.ForeColor = System.Drawing.Color.Red;
             this.lblWelcome.Location = new System.Drawing.Point(238, 51);
             this.lblWelcome.Name = "lblWelcome";
-            this.lblWelcome.Size = new System.Drawing.Size(276, 90);
+            this.lblWelcome.Size = new System.Drawing.Size(305, 90);
             this.lblWelcome.TabIndex = 18;
-            this.lblWelcome.Text = "Update System still under development \r\nand full of bugs\r\n\r\n\r\nJoin Discord server" +
-    "    for next Updates\r\n";
+            this.lblWelcome.Text = "Update system still under development \r\nand not tested yet\r\nShould work if 2.1.2 " +
+    "comes out\r\n\r\nJoin Discord server    for Update notification";
             // 
             // label5
             // 
@@ -267,10 +271,12 @@ namespace glebi_tool_2te_design.Forms
             this.label5.Size = new System.Drawing.Size(206, 36);
             this.label5.TabIndex = 19;
             this.label5.Text = "Autostart under development\r\nworking really bad";
+            this.label5.Visible = false;
             // 
             // linkLabel2
             // 
             this.linkLabel2.AutoSize = true;
+            this.linkLabel2.Cursor = System.Windows.Forms.Cursors.Help;
             this.linkLabel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.linkLabel2.LinkColor = System.Drawing.Color.Red;
             this.linkLabel2.Location = new System.Drawing.Point(269, 122);
@@ -280,6 +286,34 @@ namespace glebi_tool_2te_design.Forms
             this.linkLabel2.TabStop = true;
             this.linkLabel2.Text = "Discord server";
             this.linkLabel2.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel2_LinkClicked);
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.Red;
+            this.label6.Location = new System.Drawing.Point(12, 268);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(75, 22);
+            this.label6.TabIndex = 21;
+            this.label6.Text = "Themes";
+            this.label6.Visible = false;
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.Red;
+            this.button1.Cursor = System.Windows.Forms.Cursors.No;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.button1.Location = new System.Drawing.Point(16, 305);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(216, 41);
+            this.button1.TabIndex = 22;
+            this.button1.Text = "Smaragd";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Visible = false;
             // 
             // AutoStart
             // 
@@ -294,6 +328,7 @@ namespace glebi_tool_2te_design.Forms
             this.AutoStart.Size = new System.Drawing.Size(59, 30);
             this.AutoStart.TabIndex = 16;
             this.AutoStart.UseVisualStyleBackColor = true;
+            this.AutoStart.Visible = false;
             this.AutoStart.CheckedChanged += new System.EventHandler(this.AutoStart_CheckedChanged);
             // 
             // FormSettings
@@ -302,6 +337,8 @@ namespace glebi_tool_2te_design.Forms
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
             this.ClientSize = new System.Drawing.Size(839, 458);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.label6);
             this.Controls.Add(this.linkLabel2);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.iconPictureBox1);
@@ -354,5 +391,7 @@ namespace glebi_tool_2te_design.Forms
         private System.Windows.Forms.Label lblWelcome;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.LinkLabel linkLabel2;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Button button1;
     }
 }

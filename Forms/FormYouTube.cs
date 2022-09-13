@@ -19,8 +19,8 @@ namespace glebi_tool_2te_design.Forms
         private void FormYouTube_Load(object sender, EventArgs e)
         {
             this.webVideo.Document.BackColor = Color.Black;
-
             this.webVideo.Document.ForeColor = Color.Red;
+            this.Size = new Size(800, 800);
         }
 
         private void btnPlay_Click(object sender, EventArgs e)

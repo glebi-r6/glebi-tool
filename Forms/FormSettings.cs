@@ -10,7 +10,8 @@ using System.IO;
 using Microsoft.Win32;
 using System.Linq;
 using System.Threading.Tasks;
-using glebi_tool_2_0.Properties;
+using glebi_tool.Properties;
+using System.Net;
 
 namespace glebi_tool_2te_design.Forms
 {
@@ -49,6 +50,7 @@ namespace glebi_tool_2te_design.Forms
                 RegistryKey rk = Registry.CurrentUser.OpenSubKey
                     ("SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Run", true);
 
+               
                 if (AutoStart.Checked)
                     rk.SetValue("glebi_tool", Application.ExecutablePath);
                 else
@@ -58,10 +60,12 @@ namespace glebi_tool_2te_design.Forms
 
         private void btnUpdate_Click(object sender, EventArgs e)
         {
+            System.IO.Directory.CreateDirectory("C:\\Users\\" + Environment.UserName.ToString() + "\\AppData\\Roaming\\glebi - tool");
+
             string path = Application.StartupPath;
             string filename = Path.GetFileName(Application.ExecutablePath);
             string pid = Process.GetCurrentProcess().Id.ToString();
-            Process.Start("C:\\Users\\glebi\\OneDrive\\Desktop\\glebi_tool visual studio\\Updater\bin\\Debug\\netcoreapp3.1\\Updater.exe", "\"" + path + "\"" + " " + "\"" + filename + "\"" + " " + "\"" + pid + "\"");
+            Process.Start("C:\\Program Files\\Glebi-tool\\Updater.exe", "\"" + path + "\"" + " " + "\"" + filename + "\"" + " " + "\"" + pid + "\"");
         }
 
         private void FormSettings_Load(object sender, EventArgs e)
@@ -72,6 +76,12 @@ namespace glebi_tool_2te_design.Forms
         private void linkLabel2_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             System.Diagnostics.Process.Start("https://discord.gg/xqpRDHtznw");
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            var formPopup = new glebi_tool.InfoCards.FormChanges();
+            formPopup.Show(this);
         }
     }
 }

@@ -64,7 +64,7 @@ namespace glebi_tool_2te_design.Forms
             this.txtLink.Name = "txtLink";
             this.txtLink.Size = new System.Drawing.Size(265, 20);
             this.txtLink.TabIndex = 1;
-            this.txtLink.Text = "https://www.youtube.com/watch?v=YcExkIZM-Bo";
+            this.txtLink.Text = "https://www.youtube.com/watch?v=aA_vxKHmPWM";
             this.txtLink.Visible = false;
             // 
             // webVideo

@@ -37,34 +37,26 @@ namespace glebi_tool_2te_design.Forms
             this.llblDiscordsupport = new System.Windows.Forms.LinkLabel();
             this.label3 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.iconButton1 = new FontAwesome.Sharp.IconButton();
+            this.label23 = new System.Windows.Forms.Label();
             this.label21 = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
+            this.iconButton18 = new FontAwesome.Sharp.IconButton();
+            this.iconButton17 = new FontAwesome.Sharp.IconButton();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.label16 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
-            this.label17 = new System.Windows.Forms.Label();
-            this.label18 = new System.Windows.Forms.Label();
-            this.label19 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
             this.label22 = new System.Windows.Forms.Label();
+            this.iconPictureBox10 = new FontAwesome.Sharp.IconPictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.panel3 = new System.Windows.Forms.Panel();
             this.iconButton4 = new FontAwesome.Sharp.IconButton();
             this.btnLSWTSS = new FontAwesome.Sharp.IconButton();
             this.iconPictureBox9 = new FontAwesome.Sharp.IconPictureBox();
             this.iconButton13 = new FontAwesome.Sharp.IconButton();
+            this.label16 = new System.Windows.Forms.Label();
             this.pictureBox14 = new System.Windows.Forms.PictureBox();
             this.iconPictureBox8 = new FontAwesome.Sharp.IconPictureBox();
             this.iconButton12 = new FontAwesome.Sharp.IconButton();
+            this.label12 = new System.Windows.Forms.Label();
             this.pictureBox10 = new System.Windows.Forms.PictureBox();
             this.btnGDash = new FontAwesome.Sharp.IconButton();
             this.iconPictureBox7 = new FontAwesome.Sharp.IconPictureBox();
@@ -80,31 +72,43 @@ namespace glebi_tool_2te_design.Forms
             this.iconButton2 = new FontAwesome.Sharp.IconButton();
             this.iconButton19 = new FontAwesome.Sharp.IconButton();
             this.iconButton7 = new FontAwesome.Sharp.IconButton();
+            this.label17 = new System.Windows.Forms.Label();
             this.pictureBox15 = new System.Windows.Forms.PictureBox();
+            this.label18 = new System.Windows.Forms.Label();
             this.pictureBox16 = new System.Windows.Forms.PictureBox();
+            this.label19 = new System.Windows.Forms.Label();
             this.pictureBox17 = new System.Windows.Forms.PictureBox();
+            this.label13 = new System.Windows.Forms.Label();
             this.pictureBox11 = new System.Windows.Forms.PictureBox();
             this.iconButton10 = new FontAwesome.Sharp.IconButton();
+            this.label14 = new System.Windows.Forms.Label();
             this.pictureBox12 = new System.Windows.Forms.PictureBox();
+            this.label15 = new System.Windows.Forms.Label();
             this.pictureBox13 = new System.Windows.Forms.PictureBox();
+            this.label8 = new System.Windows.Forms.Label();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.btnHitman3 = new FontAwesome.Sharp.IconButton();
+            this.label9 = new System.Windows.Forms.Label();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.iconButton6 = new FontAwesome.Sharp.IconButton();
+            this.label10 = new System.Windows.Forms.Label();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
+            this.label11 = new System.Windows.Forms.Label();
             this.pictureBox9 = new System.Windows.Forms.PictureBox();
             this.btnGoW = new FontAwesome.Sharp.IconButton();
+            this.label7 = new System.Windows.Forms.Label();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.label6 = new System.Windows.Forms.Label();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.label5 = new System.Windows.Forms.Label();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.label4 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.btnDBH = new FontAwesome.Sharp.IconButton();
-            this.iconPictureBox10 = new FontAwesome.Sharp.IconPictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.iconButton18 = new FontAwesome.Sharp.IconButton();
-            this.iconButton17 = new FontAwesome.Sharp.IconButton();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox10)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).BeginInit();
@@ -131,8 +135,6 @@ namespace glebi_tool_2te_design.Forms
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox10)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -211,6 +213,8 @@ namespace glebi_tool_2te_design.Forms
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.iconButton1);
+            this.panel1.Controls.Add(this.label23);
             this.panel1.Controls.Add(this.label21);
             this.panel1.Controls.Add(this.label20);
             this.panel1.Controls.Add(this.iconButton18);
@@ -220,16 +224,45 @@ namespace glebi_tool_2te_design.Forms
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel1.ForeColor = System.Drawing.Color.Red;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(914, 102);
             this.panel1.TabIndex = 15;
             // 
+            // iconButton1
+            // 
+            this.iconButton1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.iconButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconButton1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
+            this.iconButton1.IconChar = FontAwesome.Sharp.IconChar.FolderOpen;
+            this.iconButton1.IconColor = System.Drawing.Color.Orange;
+            this.iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconButton1.IconSize = 40;
+            this.iconButton1.Location = new System.Drawing.Point(812, 58);
+            this.iconButton1.Name = "iconButton1";
+            this.iconButton1.Size = new System.Drawing.Size(50, 38);
+            this.iconButton1.TabIndex = 133;
+            this.iconButton1.UseVisualStyleBackColor = true;
+            this.iconButton1.Click += new System.EventHandler(this.iconButton1_Click);
+            // 
+            // label23
+            // 
+            this.label23.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label23.AutoSize = true;
+            this.label23.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label23.ForeColor = System.Drawing.Color.Red;
+            this.label23.Location = new System.Drawing.Point(776, 18);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(127, 34);
+            this.label23.TabIndex = 132;
+            this.label23.Text = "Open Download \r\n       Folder";
+            // 
             // label21
             // 
             this.label21.AutoSize = true;
             this.label21.ForeColor = System.Drawing.Color.LawnGreen;
-            this.label21.Location = new System.Drawing.Point(634, 20);
+            this.label21.Location = new System.Drawing.Point(606, 20);
             this.label21.Name = "label21";
             this.label21.Size = new System.Drawing.Size(57, 13);
             this.label21.TabIndex = 97;
@@ -239,11 +272,39 @@ namespace glebi_tool_2te_design.Forms
             // 
             this.label20.AutoSize = true;
             this.label20.ForeColor = System.Drawing.Color.Aqua;
-            this.label20.Location = new System.Drawing.Point(634, 64);
+            this.label20.Location = new System.Drawing.Point(606, 64);
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(97, 13);
             this.label20.TabIndex = 96;
             this.label20.Text = "Mulitplayer or Koop";
+            // 
+            // iconButton18
+            // 
+            this.iconButton18.FlatAppearance.BorderSize = 0;
+            this.iconButton18.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconButton18.IconChar = FontAwesome.Sharp.IconChar.Download;
+            this.iconButton18.IconColor = System.Drawing.Color.Cyan;
+            this.iconButton18.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconButton18.IconSize = 20;
+            this.iconButton18.Location = new System.Drawing.Point(572, 55);
+            this.iconButton18.Name = "iconButton18";
+            this.iconButton18.Size = new System.Drawing.Size(38, 29);
+            this.iconButton18.TabIndex = 95;
+            this.iconButton18.UseVisualStyleBackColor = true;
+            // 
+            // iconButton17
+            // 
+            this.iconButton17.FlatAppearance.BorderSize = 0;
+            this.iconButton17.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconButton17.IconChar = FontAwesome.Sharp.IconChar.Download;
+            this.iconButton17.IconColor = System.Drawing.Color.LawnGreen;
+            this.iconButton17.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconButton17.IconSize = 20;
+            this.iconButton17.Location = new System.Drawing.Point(572, 12);
+            this.iconButton17.Name = "iconButton17";
+            this.iconButton17.Size = new System.Drawing.Size(38, 29);
+            this.iconButton17.TabIndex = 94;
+            this.iconButton17.UseVisualStyleBackColor = true;
             // 
             // panel2
             // 
@@ -257,6 +318,43 @@ namespace glebi_tool_2te_design.Forms
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(914, 100);
             this.panel2.TabIndex = 16;
+            // 
+            // label22
+            // 
+            this.label22.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.label22.AutoSize = true;
+            this.label22.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label22.ForeColor = System.Drawing.Color.Red;
+            this.label22.Location = new System.Drawing.Point(738, 33);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(140, 22);
+            this.label22.TabIndex = 131;
+            this.label22.Text = "OFME torrents";
+            // 
+            // iconPictureBox10
+            // 
+            this.iconPictureBox10.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.iconPictureBox10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
+            this.iconPictureBox10.ForeColor = System.Drawing.Color.Red;
+            this.iconPictureBox10.IconChar = FontAwesome.Sharp.IconChar.InfoCircle;
+            this.iconPictureBox10.IconColor = System.Drawing.Color.Red;
+            this.iconPictureBox10.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconPictureBox10.Location = new System.Drawing.Point(878, 31);
+            this.iconPictureBox10.Name = "iconPictureBox10";
+            this.iconPictureBox10.Size = new System.Drawing.Size(32, 32);
+            this.iconPictureBox10.TabIndex = 130;
+            this.iconPictureBox10.TabStop = false;
+            this.iconPictureBox10.Click += new System.EventHandler(this.iconPictureBox10_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(881, 69);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(33, 31);
+            this.pictureBox1.TabIndex = 12;
+            this.pictureBox1.TabStop = false;
             // 
             // panel3
             // 
@@ -324,180 +422,6 @@ namespace glebi_tool_2te_design.Forms
             this.panel3.Size = new System.Drawing.Size(914, 322);
             this.panel3.TabIndex = 17;
             // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.ForeColor = System.Drawing.Color.Red;
-            this.label16.Location = new System.Drawing.Point(708, 430);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(63, 13);
-            this.label16.TabIndex = 136;
-            this.label16.Text = "Garry\'s Mod";
-            this.label16.Visible = false;
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.ForeColor = System.Drawing.Color.Red;
-            this.label12.Location = new System.Drawing.Point(505, 430);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(65, 13);
-            this.label12.TabIndex = 132;
-            this.label12.Text = "Tannenberg";
-            this.label12.Visible = false;
-            // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.ForeColor = System.Drawing.Color.Red;
-            this.label17.Location = new System.Drawing.Point(709, 305);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(100, 13);
-            this.label17.TabIndex = 113;
-            this.label17.Text = "Minecraft (Bedrock)";
-            // 
-            // label18
-            // 
-            this.label18.AutoSize = true;
-            this.label18.ForeColor = System.Drawing.Color.Red;
-            this.label18.Location = new System.Drawing.Point(709, 180);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(110, 13);
-            this.label18.TabIndex = 110;
-            this.label18.Text = "Stick Fight The Game";
-            // 
-            // label19
-            // 
-            this.label19.AutoSize = true;
-            this.label19.ForeColor = System.Drawing.Color.Red;
-            this.label19.Location = new System.Drawing.Point(709, 39);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(106, 26);
-            this.label19.TabIndex = 107;
-            this.label19.Text = "Lego Star Wras\r\nThe Skywalker Saga\r\n";
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.ForeColor = System.Drawing.Color.Red;
-            this.label13.Location = new System.Drawing.Point(505, 305);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(76, 13);
-            this.label13.TabIndex = 101;
-            this.label13.Text = "Getting Over It";
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.ForeColor = System.Drawing.Color.Red;
-            this.label14.Location = new System.Drawing.Point(505, 180);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(41, 13);
-            this.label14.TabIndex = 98;
-            this.label14.Text = "Verdun";
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.ForeColor = System.Drawing.Color.Red;
-            this.label15.Location = new System.Drawing.Point(505, 49);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(80, 13);
-            this.label15.TabIndex = 95;
-            this.label15.Text = "Geometry Dash";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.ForeColor = System.Drawing.Color.Red;
-            this.label8.Location = new System.Drawing.Point(301, 430);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(105, 13);
-            this.label8.TabIndex = 92;
-            this.label8.Text = "Hitman 3 (Unlock all)";
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.ForeColor = System.Drawing.Color.Red;
-            this.label9.Location = new System.Drawing.Point(301, 305);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(123, 13);
-            this.label9.TabIndex = 89;
-            this.label9.Text = "60 Seconds Reatomized";
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.ForeColor = System.Drawing.Color.Red;
-            this.label10.Location = new System.Drawing.Point(301, 180);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(58, 13);
-            this.label10.TabIndex = 86;
-            this.label10.Text = "The Forest";
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.ForeColor = System.Drawing.Color.Red;
-            this.label11.Location = new System.Drawing.Point(301, 49);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(62, 13);
-            this.label11.TabIndex = 83;
-            this.label11.Text = "God of War";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.ForeColor = System.Drawing.Color.Red;
-            this.label7.Location = new System.Drawing.Point(97, 430);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(55, 13);
-            this.label7.TabIndex = 80;
-            this.label7.Text = "Teardown";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.ForeColor = System.Drawing.Color.Red;
-            this.label6.Location = new System.Drawing.Point(97, 305);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(59, 13);
-            this.label6.TabIndex = 77;
-            this.label6.Text = "Volcanoids";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.ForeColor = System.Drawing.Color.Red;
-            this.label5.Location = new System.Drawing.Point(97, 180);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(70, 13);
-            this.label5.TabIndex = 74;
-            this.label5.Text = "Ready or Not";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.ForeColor = System.Drawing.Color.Red;
-            this.label4.Location = new System.Drawing.Point(97, 49);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(117, 13);
-            this.label4.TabIndex = 71;
-            this.label4.Text = "Detroit Become Human";
-            // 
-            // label22
-            // 
-            this.label22.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.label22.AutoSize = true;
-            this.label22.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label22.ForeColor = System.Drawing.Color.Red;
-            this.label22.Location = new System.Drawing.Point(738, 33);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(140, 22);
-            this.label22.TabIndex = 131;
-            this.label22.Text = "OFME torrents";
-            // 
             // iconButton4
             // 
             this.iconButton4.FlatAppearance.BorderSize = 0;
@@ -558,6 +482,17 @@ namespace glebi_tool_2te_design.Forms
             this.iconButton13.UseVisualStyleBackColor = true;
             this.iconButton13.Visible = false;
             // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.ForeColor = System.Drawing.Color.Red;
+            this.label16.Location = new System.Drawing.Point(708, 430);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(63, 13);
+            this.label16.TabIndex = 136;
+            this.label16.Text = "Garry\'s Mod";
+            this.label16.Visible = false;
+            // 
             // pictureBox14
             // 
             this.pictureBox14.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox14.Image")));
@@ -575,7 +510,7 @@ namespace glebi_tool_2te_design.Forms
             this.iconPictureBox8.IconChar = FontAwesome.Sharp.IconChar.InfoCircle;
             this.iconPictureBox8.IconColor = System.Drawing.Color.Red;
             this.iconPictureBox8.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconPictureBox8.Location = new System.Drawing.Point(467, 480);
+            this.iconPictureBox8.Location = new System.Drawing.Point(708, 480);
             this.iconPictureBox8.Name = "iconPictureBox8";
             this.iconPictureBox8.Size = new System.Drawing.Size(32, 32);
             this.iconPictureBox8.TabIndex = 134;
@@ -588,7 +523,7 @@ namespace glebi_tool_2te_design.Forms
             this.iconButton12.FlatAppearance.BorderSize = 0;
             this.iconButton12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.iconButton12.IconChar = FontAwesome.Sharp.IconChar.Download;
-            this.iconButton12.IconColor = System.Drawing.Color.Cyan;
+            this.iconButton12.IconColor = System.Drawing.Color.LawnGreen;
             this.iconButton12.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconButton12.IconSize = 20;
             this.iconButton12.Location = new System.Drawing.Point(423, 480);
@@ -596,7 +531,17 @@ namespace glebi_tool_2te_design.Forms
             this.iconButton12.Size = new System.Drawing.Size(38, 29);
             this.iconButton12.TabIndex = 133;
             this.iconButton12.UseVisualStyleBackColor = true;
-            this.iconButton12.Visible = false;
+            this.iconButton12.Click += new System.EventHandler(this.iconButton12_Click);
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.ForeColor = System.Drawing.Color.Red;
+            this.label12.Location = new System.Drawing.Point(505, 430);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(31, 13);
+            this.label12.TabIndex = 132;
+            this.label12.Text = "Stray";
             // 
             // pictureBox10
             // 
@@ -606,7 +551,6 @@ namespace glebi_tool_2te_design.Forms
             this.pictureBox10.Size = new System.Drawing.Size(75, 75);
             this.pictureBox10.TabIndex = 131;
             this.pictureBox10.TabStop = false;
-            this.pictureBox10.Visible = false;
             // 
             // btnGDash
             // 
@@ -705,6 +649,7 @@ namespace glebi_tool_2te_design.Forms
             this.iconPictureBox2.Size = new System.Drawing.Size(32, 32);
             this.iconPictureBox2.TabIndex = 124;
             this.iconPictureBox2.TabStop = false;
+            this.iconPictureBox2.Visible = false;
             this.iconPictureBox2.Click += new System.EventHandler(this.iconPictureBox2_Click);
             // 
             // iconPictureBox1
@@ -719,6 +664,7 @@ namespace glebi_tool_2te_design.Forms
             this.iconPictureBox1.Size = new System.Drawing.Size(32, 32);
             this.iconPictureBox1.TabIndex = 123;
             this.iconPictureBox1.TabStop = false;
+            this.iconPictureBox1.Visible = false;
             this.iconPictureBox1.Click += new System.EventHandler(this.iconPictureBox1_Click);
             // 
             // btnMinecraft
@@ -811,6 +757,16 @@ namespace glebi_tool_2te_design.Forms
             this.iconButton7.UseVisualStyleBackColor = true;
             this.iconButton7.Click += new System.EventHandler(this.iconButton7_Click);
             // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.ForeColor = System.Drawing.Color.Red;
+            this.label17.Location = new System.Drawing.Point(709, 305);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(100, 13);
+            this.label17.TabIndex = 113;
+            this.label17.Text = "Minecraft (Bedrock)";
+            // 
             // pictureBox15
             // 
             this.pictureBox15.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox15.Image")));
@@ -819,6 +775,16 @@ namespace glebi_tool_2te_design.Forms
             this.pictureBox15.Size = new System.Drawing.Size(75, 75);
             this.pictureBox15.TabIndex = 112;
             this.pictureBox15.TabStop = false;
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.ForeColor = System.Drawing.Color.Red;
+            this.label18.Location = new System.Drawing.Point(709, 180);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(110, 13);
+            this.label18.TabIndex = 110;
+            this.label18.Text = "Stick Fight The Game";
             // 
             // pictureBox16
             // 
@@ -829,6 +795,16 @@ namespace glebi_tool_2te_design.Forms
             this.pictureBox16.TabIndex = 109;
             this.pictureBox16.TabStop = false;
             // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.ForeColor = System.Drawing.Color.Red;
+            this.label19.Location = new System.Drawing.Point(709, 39);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(106, 26);
+            this.label19.TabIndex = 107;
+            this.label19.Text = "Lego Star Wras\r\nThe Skywalker Saga\r\n";
+            // 
             // pictureBox17
             // 
             this.pictureBox17.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox17.Image")));
@@ -837,6 +813,16 @@ namespace glebi_tool_2te_design.Forms
             this.pictureBox17.Size = new System.Drawing.Size(75, 75);
             this.pictureBox17.TabIndex = 106;
             this.pictureBox17.TabStop = false;
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.ForeColor = System.Drawing.Color.Red;
+            this.label13.Location = new System.Drawing.Point(505, 305);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(76, 13);
+            this.label13.TabIndex = 101;
+            this.label13.Text = "Getting Over It";
             // 
             // pictureBox11
             // 
@@ -862,6 +848,16 @@ namespace glebi_tool_2te_design.Forms
             this.iconButton10.UseVisualStyleBackColor = true;
             this.iconButton10.Click += new System.EventHandler(this.iconButton10_Click);
             // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.ForeColor = System.Drawing.Color.Red;
+            this.label14.Location = new System.Drawing.Point(505, 180);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(41, 13);
+            this.label14.TabIndex = 98;
+            this.label14.Text = "Verdun";
+            // 
             // pictureBox12
             // 
             this.pictureBox12.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox12.Image")));
@@ -871,6 +867,16 @@ namespace glebi_tool_2te_design.Forms
             this.pictureBox12.TabIndex = 97;
             this.pictureBox12.TabStop = false;
             // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.ForeColor = System.Drawing.Color.Red;
+            this.label15.Location = new System.Drawing.Point(505, 49);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(80, 13);
+            this.label15.TabIndex = 95;
+            this.label15.Text = "Geometry Dash";
+            // 
             // pictureBox13
             // 
             this.pictureBox13.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox13.Image")));
@@ -879,6 +885,16 @@ namespace glebi_tool_2te_design.Forms
             this.pictureBox13.Size = new System.Drawing.Size(75, 75);
             this.pictureBox13.TabIndex = 94;
             this.pictureBox13.TabStop = false;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.ForeColor = System.Drawing.Color.Red;
+            this.label8.Location = new System.Drawing.Point(301, 430);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(105, 13);
+            this.label8.TabIndex = 92;
+            this.label8.Text = "Hitman 3 (Unlock all)";
             // 
             // pictureBox6
             // 
@@ -904,6 +920,16 @@ namespace glebi_tool_2te_design.Forms
             this.btnHitman3.UseVisualStyleBackColor = true;
             this.btnHitman3.Click += new System.EventHandler(this.btnHitman3_Click);
             // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.ForeColor = System.Drawing.Color.Red;
+            this.label9.Location = new System.Drawing.Point(301, 305);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(123, 13);
+            this.label9.TabIndex = 89;
+            this.label9.Text = "60 Seconds Reatomized";
+            // 
             // pictureBox7
             // 
             this.pictureBox7.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox7.Image")));
@@ -928,6 +954,16 @@ namespace glebi_tool_2te_design.Forms
             this.iconButton6.UseVisualStyleBackColor = true;
             this.iconButton6.Click += new System.EventHandler(this.iconButton6_Click);
             // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.ForeColor = System.Drawing.Color.Red;
+            this.label10.Location = new System.Drawing.Point(301, 180);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(58, 13);
+            this.label10.TabIndex = 86;
+            this.label10.Text = "The Forest";
+            // 
             // pictureBox8
             // 
             this.pictureBox8.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox8.Image")));
@@ -936,6 +972,16 @@ namespace glebi_tool_2te_design.Forms
             this.pictureBox8.Size = new System.Drawing.Size(75, 75);
             this.pictureBox8.TabIndex = 85;
             this.pictureBox8.TabStop = false;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.ForeColor = System.Drawing.Color.Red;
+            this.label11.Location = new System.Drawing.Point(301, 49);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(62, 13);
+            this.label11.TabIndex = 83;
+            this.label11.Text = "God of War";
             // 
             // pictureBox9
             // 
@@ -961,6 +1007,16 @@ namespace glebi_tool_2te_design.Forms
             this.btnGoW.UseVisualStyleBackColor = true;
             this.btnGoW.Click += new System.EventHandler(this.btnGoW_Click);
             // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.ForeColor = System.Drawing.Color.Red;
+            this.label7.Location = new System.Drawing.Point(97, 430);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(55, 13);
+            this.label7.TabIndex = 80;
+            this.label7.Text = "Teardown";
+            // 
             // pictureBox5
             // 
             this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
@@ -969,6 +1025,16 @@ namespace glebi_tool_2te_design.Forms
             this.pictureBox5.Size = new System.Drawing.Size(75, 75);
             this.pictureBox5.TabIndex = 79;
             this.pictureBox5.TabStop = false;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.ForeColor = System.Drawing.Color.Red;
+            this.label6.Location = new System.Drawing.Point(97, 305);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(59, 13);
+            this.label6.TabIndex = 77;
+            this.label6.Text = "Volcanoids";
             // 
             // pictureBox4
             // 
@@ -979,6 +1045,16 @@ namespace glebi_tool_2te_design.Forms
             this.pictureBox4.TabIndex = 76;
             this.pictureBox4.TabStop = false;
             // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.ForeColor = System.Drawing.Color.Red;
+            this.label5.Location = new System.Drawing.Point(97, 180);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(70, 13);
+            this.label5.TabIndex = 74;
+            this.label5.Text = "Ready or Not";
+            // 
             // pictureBox3
             // 
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
@@ -987,6 +1063,16 @@ namespace glebi_tool_2te_design.Forms
             this.pictureBox3.Size = new System.Drawing.Size(75, 75);
             this.pictureBox3.TabIndex = 73;
             this.pictureBox3.TabStop = false;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.ForeColor = System.Drawing.Color.Red;
+            this.label4.Location = new System.Drawing.Point(97, 49);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(117, 13);
+            this.label4.TabIndex = 71;
+            this.label4.Text = "Detroit Become Human";
             // 
             // pictureBox2
             // 
@@ -1012,59 +1098,6 @@ namespace glebi_tool_2te_design.Forms
             this.btnDBH.UseVisualStyleBackColor = true;
             this.btnDBH.Click += new System.EventHandler(this.btnDBH_Click);
             // 
-            // iconPictureBox10
-            // 
-            this.iconPictureBox10.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.iconPictureBox10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
-            this.iconPictureBox10.ForeColor = System.Drawing.Color.Red;
-            this.iconPictureBox10.IconChar = FontAwesome.Sharp.IconChar.InfoCircle;
-            this.iconPictureBox10.IconColor = System.Drawing.Color.Red;
-            this.iconPictureBox10.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconPictureBox10.Location = new System.Drawing.Point(878, 31);
-            this.iconPictureBox10.Name = "iconPictureBox10";
-            this.iconPictureBox10.Size = new System.Drawing.Size(32, 32);
-            this.iconPictureBox10.TabIndex = 130;
-            this.iconPictureBox10.TabStop = false;
-            this.iconPictureBox10.Click += new System.EventHandler(this.iconPictureBox10_Click);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(881, 69);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(33, 31);
-            this.pictureBox1.TabIndex = 12;
-            this.pictureBox1.TabStop = false;
-            // 
-            // iconButton18
-            // 
-            this.iconButton18.FlatAppearance.BorderSize = 0;
-            this.iconButton18.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton18.IconChar = FontAwesome.Sharp.IconChar.Download;
-            this.iconButton18.IconColor = System.Drawing.Color.Cyan;
-            this.iconButton18.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton18.IconSize = 20;
-            this.iconButton18.Location = new System.Drawing.Point(600, 55);
-            this.iconButton18.Name = "iconButton18";
-            this.iconButton18.Size = new System.Drawing.Size(38, 29);
-            this.iconButton18.TabIndex = 95;
-            this.iconButton18.UseVisualStyleBackColor = true;
-            // 
-            // iconButton17
-            // 
-            this.iconButton17.FlatAppearance.BorderSize = 0;
-            this.iconButton17.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton17.IconChar = FontAwesome.Sharp.IconChar.Download;
-            this.iconButton17.IconColor = System.Drawing.Color.LawnGreen;
-            this.iconButton17.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton17.IconSize = 20;
-            this.iconButton17.Location = new System.Drawing.Point(600, 12);
-            this.iconButton17.Name = "iconButton17";
-            this.iconButton17.Size = new System.Drawing.Size(38, 29);
-            this.iconButton17.TabIndex = 94;
-            this.iconButton17.UseVisualStyleBackColor = true;
-            // 
             // FormCrackedGames
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1080,6 +1113,8 @@ namespace glebi_tool_2te_design.Forms
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox10)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox9)).EndInit();
@@ -1107,8 +1142,6 @@ namespace glebi_tool_2te_design.Forms
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox10)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1176,7 +1209,6 @@ namespace glebi_tool_2te_design.Forms
         private FontAwesome.Sharp.IconPictureBox iconPictureBox2;
         private FontAwesome.Sharp.IconPictureBox iconPictureBox1;
         private FontAwesome.Sharp.IconButton btnGDash;
-        private FontAwesome.Sharp.IconPictureBox iconPictureBox8;
         private FontAwesome.Sharp.IconButton iconButton12;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.PictureBox pictureBox10;
@@ -1188,5 +1220,8 @@ namespace glebi_tool_2te_design.Forms
         private FontAwesome.Sharp.IconButton btnLSWTSS;
         private System.Windows.Forms.Label label22;
         private FontAwesome.Sharp.IconPictureBox iconPictureBox10;
+        private FontAwesome.Sharp.IconPictureBox iconPictureBox8;
+        private FontAwesome.Sharp.IconButton iconButton1;
+        private System.Windows.Forms.Label label23;
     }
 }

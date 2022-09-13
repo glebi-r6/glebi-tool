@@ -6,6 +6,8 @@ using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
 using System.Net;
+using System.IO;
+using System.Diagnostics;
 
 namespace glebi_tool_2te_design.Forms
 {
@@ -20,93 +22,168 @@ namespace glebi_tool_2te_design.Forms
         //KMS
         private void btnKms_Click(object sender, EventArgs e)
         {
-            wc.DownloadFileCompleted += new AsyncCompletedEventHandler(FileDownloadComplete1);
-            Uri rarurl = new Uri("https://download1501.mediafire.com/l2j5vxzju1sg/sikqz4dfkdypi11/KMSpico_10.2.0.rar");
-            wc.DownloadFileAsync(rarurl, "KMSpico_10.2.0.rar");
-        }
+            if (System.IO.File.Exists(@"C:\\Users\\" + Environment.UserName + "\\Downloads\\Glebi-Tool\\Tools\\KMSpico.10.2.0.zip"))
+            {
+                MessageBox.Show("Already Downlaoded");
+            }
+            else
+            {
+                {
+                    using (var wc = new WebClient())
 
-        private void FileDownloadComplete1(object sender, AsyncCompletedEventArgs e)
-        {
-            MessageBox.Show("Download Completed");
-            wc.DownloadFileCompleted -= new AsyncCompletedEventHandler(FileDownloadComplete1);
-        }
+                        wc.DownloadFile("https://github.com/davld122/Nothing-Special/releases/download/v6/KMSpico.10.2.0.zip", "KMSpico.10.2.0.zip");
+                }
 
+                // Get the full path of the download and the destination folder.
+                string fromPath = Path.Combine(Application.StartupPath, "KMSpico.10.2.0.zip");
+                string toPath = Path.Combine(@"C:\\Users\\" + Environment.UserName + "\\Downloads\\Glebi-Tool\\Tools", "KMSpico.10.2.0.zip");
+
+                // Move the file.
+                File.Move(fromPath, toPath);
+
+                MessageBox.Show("Download Completed");
+            }
+
+        }
 
         //Office
         private void btnOffice_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("This could take a while now");
-            wc.DownloadFileCompleted += new AsyncCompletedEventHandler(FileDownloadComplete2);
-            Uri imgurl = new Uri("https://officecdn.microsoft.com/db/492350f6-3a01-4f97-b9c0-c7c6ddf67d60/media/en-us/ProPlus2021Retail.img");
-            wc.DownloadFileAsync(imgurl, "ProPlus2021Retail.img");
-        }
+            if (System.IO.File.Exists(@"C:\\Users\\" + Environment.UserName + "\\Downloads\\Glebi-Tool\\Tools\\ProPlus2021Retail.img"))
+            {
+                MessageBox.Show("Already Downlaoded");
+            }
+            else
+            {
+                MessageBox.Show("This could take a while now (4 GB)");
 
-        private void FileDownloadComplete2(object sender, AsyncCompletedEventArgs e)
-        {
-            MessageBox.Show("Download Completed");
-            wc.DownloadFileCompleted -= new AsyncCompletedEventHandler(FileDownloadComplete2);
-        }
+                {
+                    using (var wc = new WebClient())
 
+                        wc.DownloadFile("https://officecdn.microsoft.com/db/492350f6-3a01-4f97-b9c0-c7c6ddf67d60/media/en-us/ProPlus2021Retail.img", "ProPlus2021Retail.img");
+                }
+
+                // Get the full path of the download and the destination folder.
+                string fromPath = Path.Combine(Application.StartupPath, "ProPlus2021Retail.img");
+                string toPath = Path.Combine(@"C:\\Users\\" + Environment.UserName + "\\Downloads\\Glebi-Tool\\Tools", "ProPlus2021Retail.img");
+
+                // Move the file.
+                File.Move(fromPath, toPath);
+
+                MessageBox.Show("Download Completed");
+            }
+        }
 
         //Spotify
         private void btnSpotify_Click(object sender, EventArgs e)
         {
-            wc.DownloadFileCompleted += new AsyncCompletedEventHandler(FileDownloadComplete3);
-            Uri baturl = new Uri("https://download1647.mediafire.com/9m8ownngwgag/8qe7tem69mfqkae/BlockTheSpot.bat");
-            wc.DownloadFileAsync(baturl, "BlockTheSpot.bat");
-        }
+            if (System.IO.File.Exists(@"C:\\Users\\" + Environment.UserName + "\\Downloads\\Glebi-Tool\\Tools\\Spotify_-_ADblocker.bat"))
+            {
+                MessageBox.Show("Already Downlaoded");
+            }
+            else
+            {
+                {
+                    using (var wc = new WebClient())
 
-        private void FileDownloadComplete3(object sender, AsyncCompletedEventArgs e)
-        {
-            MessageBox.Show("Download Completed");
-            wc.DownloadFileCompleted -= new AsyncCompletedEventHandler(FileDownloadComplete3);
-        }
+                        wc.DownloadFile("https://cdn.discordapp.com/attachments/1016408369185169488/1016626665025175552/Spotify_-_ADblocker.bat", "Spotify_-_ADblocker.bat");
+                }
 
+                // Get the full path of the download and the destination folder.
+                string fromPath = Path.Combine(Application.StartupPath, "Spotify_-_ADblocker.bat");
+                string toPath = Path.Combine(@"C:\\Users\\" + Environment.UserName + "\\Downloads\\Glebi-Tool\\Tools", "Spotify_-_ADblocker.bat");
+
+                // Move the file.
+                File.Move(fromPath, toPath);
+
+                MessageBox.Show("Download Completed");
+            }
+
+        }
 
         //Wallpaper Egine
         private void btWallpaper_Click(object sender, EventArgs e)
         {
-            wc.DownloadFileCompleted += new AsyncCompletedEventHandler(FileDownloadComplete4);
-            Uri rarurl = new Uri("https://download1478.mediafire.com/bbwemcienxgg/zfb3b71ahf3ai8b/Wallpaper.Engine.v2.0.98.rar");
-            wc.DownloadFileAsync(rarurl, "Wallpaper.Engine.v2.0.98.rar");
-        }
+            if (System.IO.File.Exists(@"C:\\Users\\" + Environment.UserName + "\\Downloads\\Glebi-Tool\\Tools\\Wallpaper.Engine.v2.1.32.zip"))
+            {
+                MessageBox.Show("Already Downlaoded");
+            }
+            else
+            {
+                MessageBox.Show("This could take a while now");
 
-        private void FileDownloadComplete4(object sender, AsyncCompletedEventArgs e)
-        {
-            MessageBox.Show("Download Completed");
-            wc.DownloadFileCompleted -= new AsyncCompletedEventHandler(FileDownloadComplete4);
-        }
+                {
+                    using (var wc = new WebClient())
 
+                        wc.DownloadFile("https://github.com/davld122/Nothing-Special/releases/download/v4/Wallpaper.Engine.v2.1.32.zip", "Wallpaper.Engine.v2.1.32.zip");
+                }
+
+                // Get the full path of the download and the destination folder.
+                string fromPath = Path.Combine(Application.StartupPath, "Wallpaper.Engine.v2.1.32.zip");
+                string toPath = Path.Combine(@"C:\\Users\\" + Environment.UserName + "\\Downloads\\Glebi-Tool\\Tools", "Wallpaper.Engine.v2.1.32.zip");
+
+                // Move the file.
+                File.Move(fromPath, toPath);
+
+                MessageBox.Show("Download Completed");
+            }
+
+        }
 
         //Premiere Pro
         private void btnPremiere_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("This could take a while now");
-            wc.DownloadFileCompleted += new AsyncCompletedEventHandler(FileDownloadComplete5);
-            Uri rarurl = new Uri("https://download948.mediafire.com/teihzr3i40fg/3dfvzk4jnfh8o3x/Adobe+Premiere+Pro+2022+Crack+v22.1.2.1+%5BLatest%5D.rar");
-            wc.DownloadFileAsync(rarurl, "Adobe Premiere Pro 2022 Crack v22.1.2.1 [Latest].rar");
-        }
+            if (System.IO.File.Exists(@"C:\\Users\\" + Environment.UserName + "\\Downloads\\Glebi-Tool\\Tools\\Adobe Premiere Pro 2022 Crack v22.1.2.1.zip"))
+            {
+                MessageBox.Show("Already Downlaoded");
+            }
+            else
+            {
+                MessageBox.Show("This could take a while now");
 
-        private void FileDownloadComplete5(object sender, AsyncCompletedEventArgs e)
-        {
-            MessageBox.Show("Download Completed");
-            wc.DownloadFileCompleted -= new AsyncCompletedEventHandler(FileDownloadComplete5);
-        }
+                {
+                    using (var wc = new WebClient())
 
+                        wc.DownloadFile("https://drive.google.com/u/1/uc?id=1sDuTj6eLTq1hcVBqi7z2e7E3SEB1TQ8H&export=download&confirm=t&uuid=568e1cbe-a49e-4cb5-a23b-bfa63f182327", "Adobe Premiere Pro 2022 Crack v22.1.2.1.zip");
+                }
+
+                // Get the full path of the download and the destination folder.
+                string fromPath = Path.Combine(Application.StartupPath, "Adobe Premiere Pro 2022 Crack v22.1.2.1.zip");
+                string toPath = Path.Combine(@"C:\\Users\\" + Environment.UserName + "\\Downloads\\Glebi-Tool\\Tools", "Adobe Premiere Pro 2022 Crack v22.1.2.1.zip");
+
+                // Move the file.
+                File.Move(fromPath, toPath);
+
+                MessageBox.Show("Download Completed");
+            }
+        }
 
         //Photoshop
         private void btnPhotoshop_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("This could take a while now");
-            wc.DownloadFileCompleted += new AsyncCompletedEventHandler(FileDownloadComplete6);
-            Uri rarurl = new Uri("https://download1326.mediafire.com/koetke1cjvkg/4zvlura4zii7yiv/Adobe+Photoshop+2022+Crack+v23.1.1.202.rar");
-            wc.DownloadFileAsync(rarurl, "Adobe Photoshop 2022 Crack v23.1.1.202.rar");
-        }
+            if (System.IO.File.Exists(@"C:\\Users\\" + Environment.UserName + "\\Downloads\\Glebi-Tool\\Tools\\Adobe_Photoshop_2022_23.1.1.202.zip"))
+            {
+                MessageBox.Show("Already Downlaoded");
+            }
+            else
+            {
+                MessageBox.Show("This could take a while now");
 
-        private void FileDownloadComplete6(object sender, AsyncCompletedEventArgs e)
-        {
-            MessageBox.Show("Download Completed");
-            wc.DownloadFileCompleted -= new AsyncCompletedEventHandler(FileDownloadComplete6);
+                {
+                    using (var wc = new WebClient())
+
+                        wc.DownloadFile("https://drive.google.com/u/0/uc?id=1PcRKxGY7kCAfugl16FNOc5cvL2TJNIqJ&export=download&confirm=t&uuid=89c0c722-a3ee-4d06-b302-93bf997d087f", "Adobe_Photoshop_2022_23.1.1.202.zip");
+                }
+
+                // Get the full path of the download and the destination folder.
+                string fromPath = Path.Combine(Application.StartupPath, "Adobe_Photoshop_2022_23.1.1.202.zip");
+                string toPath = Path.Combine(@"C:\\Users\\" + Environment.UserName + "\\Downloads\\Glebi-Tool\\Tools", "Adobe_Photoshop_2022_23.1.1.202.zip");
+
+                // Move the file.
+                File.Move(fromPath, toPath);
+
+                MessageBox.Show("Download Completed");
+            }
         }
 
         //Office InfoCard
@@ -119,15 +196,28 @@ namespace glebi_tool_2te_design.Forms
         //Interntet Download Manager 
         private void iconButton1_Click(object sender, EventArgs e)
         {
-            wc.DownloadFileCompleted += new AsyncCompletedEventHandler(FileDownloadComplete7);
-            Uri rarurl = new Uri("https://download1483.mediafire.com/6bnkbyj379gg/mnhsbebixa16g7w/IDM+Crack+6.40+Build+11+Patch+%2B+Serial+Key+%5BLatest%5D.zip");
-            wc.DownloadFileAsync(rarurl, "IDM Crack 6.40 Build 11 Patch + Serial Key [Latest].rar");
-        }
+            if (System.IO.File.Exists(@"C:\\Users\\" + Environment.UserName + "\\Downloads\\Glebi-Tool\\Tools\\IDM.Crack.6.40.Build.11.Patch.+.Serial.Key.zip"))
+            {
+                MessageBox.Show("Already Downlaoded");
+            }
+            else
+            {
+                {
+                    using (var wc = new WebClient())
 
-        private void FileDownloadComplete7(object sender, AsyncCompletedEventArgs e)
-        {
-            MessageBox.Show("Download Completed");
-            wc.DownloadFileCompleted -= new AsyncCompletedEventHandler(FileDownloadComplete7);
+                        wc.DownloadFile("https://github.com/davld122/Nothing-Special/releases/download/v5/IDM.Crack.6.40.Build.11.Patch.+.Serial.Key.zip", "IDM.Crack.6.40.Build.11.Patch.+.Serial.Key.zip");
+                }
+
+                // Get the full path of the download and the destination folder.
+                string fromPath = Path.Combine(Application.StartupPath, "IDM.Crack.6.40.Build.11.Patch.+.Serial.Key.zip");
+                string toPath = Path.Combine(@"C:\\Users\\" + Environment.UserName + "\\Downloads\\Glebi-Tool\\Tools", "IDM.Crack.6.40.Build.11.Patch.+.Serial.Key.zip");
+
+                // Move the file.
+                File.Move(fromPath, toPath);
+
+                MessageBox.Show("Download Completed");
+            }
+          
         }
 
         //IDM InfoCard
@@ -135,6 +225,53 @@ namespace glebi_tool_2te_design.Forms
         {
             var formPopup = new glebi_tool_2_0.InfoCards.FormIDM();
             formPopup.Show(this);
+        }
+
+        //KMS InfoCard
+        private void iconPictureBox3_Click(object sender, EventArgs e)
+        {
+            var formPopup = new glebi_tool_2_0.InfoCards.FormKMS();
+            formPopup.Show(this);
+        }
+
+        //Stardock Fences 3
+        private void iconButton1_Click_1(object sender, EventArgs e)
+        {
+            if (System.IO.File.Exists(@"C:\\Users\\" + Environment.UserName + "\\Downloads\\Glebi-Tool\\Tools\\Stardock_Fences_3.0.8.1x64.zip"))
+            {
+                MessageBox.Show("Already Downlaoded");
+            }
+            else
+            {
+                {
+                    using (var wc = new WebClient())
+
+                        wc.DownloadFile("https://github.com/davld122/Nothing-Special/releases/download/v7/Stardock_Fences_3.0.8.1x64.zip", "Stardock_Fences_3.0.8.1x64.zip");
+                }
+
+                // Get the full path of the download and the destination folder.
+                string fromPath = Path.Combine(Application.StartupPath, "Stardock_Fences_3.0.8.1x64.zip");
+                string toPath = Path.Combine(@"C:\\Users\\" + Environment.UserName + "\\Downloads\\Glebi-Tool\\Tools", "Stardock_Fences_3.0.8.1x64.zip");
+
+                // Move the file.
+                File.Move(fromPath, toPath);
+
+                MessageBox.Show("Download Completed");
+            }
+
+        }
+
+        //Fences InfoCard
+        private void iconPictureBox4_Click(object sender, EventArgs e)
+        {
+            var formPopup = new glebi_tool_2_0.InfoCards.FormFences();
+            formPopup.Show(this);
+        }
+
+        //Download Folder
+        private void iconButton2_Click(object sender, EventArgs e)
+        {
+            Process.Start(@"C:\\Users\\" + Environment.UserName + "\\Downloads\\Glebi-Tool\\Tools");
         }
     }
 }
