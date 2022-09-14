@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "RuP2PF4D+9mtx86F9naQCZMnF3eJVUMdQj3tIJL8xDsbjaas9xocdfahYaSZRF0XBL4VWxMU+aU5cyWmjRM26g==",
+  "success": true,
+  "projectFilePath": "E:\\Programiern\\vs projekte\\Glebi tool\\Updater\\Updater.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Anwender\\.nuget\\packages\\fontawesome.sharp\\5.15.4\\fontawesome.sharp.5.15.4.nupkg.sha512"
+  ],
+  "logs": []
+}
