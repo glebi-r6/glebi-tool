@@ -9,6 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Net;
+using System.IO;
 
 namespace glebi_tool_2_0.InfoCards
 {
@@ -43,9 +44,30 @@ namespace glebi_tool_2_0.InfoCards
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            wc.DownloadFileCompleted += new AsyncCompletedEventHandler(FileDownloadComplete);
-            Uri txturl = new Uri("https://download1525.mediafire.com/id4frn3863pg/fcu4n8rp9vee47z/Instructions.txt");
-            wc.DownloadFileAsync(txturl, "Instructions.txt");
+            if (System.IO.File.Exists(@"C:\\Users\\" + Environment.UserName + "\\Downloads\\Glebi-Tool\\Tools\\Instructions.txt"))
+            {
+                MessageBox.Show("Already Downlaoded");
+            }
+            else
+            {
+                using (var wc = new WebClient())
+                    wc.DownloadFileCompleted += new AsyncCompletedEventHandler(FileDownloadComplete);
+
+                {
+                    using (var wc = new WebClient())
+
+                        wc.DownloadFile("https://cdn.discordapp.com/attachments/1016408369185169488/1018144889038442496/Instructions.txt", "Instructions.txt");
+                }
+
+                // Get the full path of the download and the destination folder.
+                string fromPath = Path.Combine(Application.StartupPath, "Instructions.txt");
+                string toPath = Path.Combine(@"C:\\Users\\" + Environment.UserName + "\\Downloads\\Glebi-Tool\\Tools", "Instructions.txt");
+
+                // Move the file.
+                File.Move(fromPath, toPath);
+
+                MessageBox.Show("Download Completed");
+            }
         }
 
         private void FileDownloadComplete(object sender, AsyncCompletedEventArgs e)

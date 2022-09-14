@@ -4,20 +4,20 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
-using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Net;
 using System.IO;
+using System.Runtime.InteropServices;
 
 namespace glebi_tool_2_0.InfoCards
 {
-    public partial class FormIDM : Form
+    public partial class FormKMS : Form
     {
         WebClient wc = new WebClient();
 
-        public FormIDM()
+        public FormKMS()
         {
             InitializeComponent();
             this.Text = string.Empty;
@@ -42,9 +42,15 @@ namespace glebi_tool_2_0.InfoCards
             this.Close();
         }
 
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            if (System.IO.File.Exists(@"C:\\Users\\" + Environment.UserName + "\\Downloads\\Glebi-Tool\\Tools\\IDM.Crack.6.40.Build.11.Patch.+.Serial.Key.zip"))
+
+            if (System.IO.File.Exists(@"C:\\Users\\" + Environment.UserName + "\\Downloads\\Glebi-Tool\\Tools\\KMSpico.10.2.0.zip"))
             {
                 MessageBox.Show("Already Downlaoded");
             }
@@ -53,12 +59,11 @@ namespace glebi_tool_2_0.InfoCards
                 {
                     using (var wc = new WebClient())
 
-                        wc.DownloadFile("https://github.com/davld122/Nothing-Special/releases/download/v5/IDM.Crack.6.40.Build.11.Patch.+.Serial.Key.zip", "IDM.Crack.6.40.Build.11.Patch.+.Serial.Key.zip");
+                        wc.DownloadFile("https://github.com/davld122/Nothing-Special/releases/download/v6/KMSpico.10.2.0.zip", "KMSpico.10.2.0.zip");
                 }
 
-                // Get the full path of the download and the destination folder.
-                string fromPath = Path.Combine(Application.StartupPath, "IDM.Crack.6.40.Build.11.Patch.+.Serial.Key.zip");
-                string toPath = Path.Combine(@"C:\\Users\\" + Environment.UserName + "\\Downloads\\Glebi-Tool\\Tools", "IDM.Crack.6.40.Build.11.Patch.+.Serial.Key.zip");
+                string fromPath = Path.Combine(Application.StartupPath, "KMSpico.10.2.0.zip");
+                string toPath = Path.Combine(@"C:\\Users\\" + Environment.UserName + "\\Downloads\\Glebi-Tool\\Tools", "KMSpico.10.2.0.zip");
 
                 // Move the file.
                 File.Move(fromPath, toPath);

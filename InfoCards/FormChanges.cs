@@ -9,11 +9,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace glebi_tool_2_0.InfoCards
+namespace glebi_tool.InfoCards
 {
-    public partial class FormOFME : Form
+    public partial class FormChanges : Form
     {
-        public FormOFME()
+        public FormChanges()
         {
             InitializeComponent();
             this.Text = string.Empty;
@@ -27,20 +27,15 @@ namespace glebi_tool_2_0.InfoCards
         [DllImport("user32.DLL", EntryPoint = "SendMessage")]
         private extern static void SendMessage(System.IntPtr hWnd, int wMsg, int wParam, int lParam);
 
-        private void panelTitleBar_MouseDown(object sender, MouseEventArgs e)
-        {
-            ReleaseCapture();
-            SendMessage(this.Handle, 0x112, 0xf012, 0);
-        }
-
         private void btnOK_Click(object sender, EventArgs e)
         {
             this.Close();
         }
 
-        private void panelTitleBar_Paint(object sender, PaintEventArgs e)
+        private void panelTitleBar_MouseDown(object sender, MouseEventArgs e)
         {
-
+            ReleaseCapture();
+            SendMessage(this.Handle, 0x112, 0xf012, 0);
         }
     }
 }

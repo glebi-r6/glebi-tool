@@ -11,6 +11,7 @@ using SolrNet.Utils;
 using System.Diagnostics;
 using System.Runtime.InteropServices;
 using System.Net;
+using System.IO;
 
 namespace glebi_tool_2te_design_test.InfoCards
 {
@@ -44,9 +45,31 @@ namespace glebi_tool_2te_design_test.InfoCards
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            wc.DownloadFileCompleted += new AsyncCompletedEventHandler(FileDownloadComplete);
-            Uri exeurl = new Uri("https://download1084.mediafire.com/mc38xghl8djg/bvoldan99tlg6gf/18.31.rar");
-            wc.DownloadFileAsync(exeurl, "18.31.rar");
+            if (System.IO.File.Exists(@"C:\\Users\\" + Environment.UserName + "\\Downloads\\Glebi-Tool\\Games\\MfW10_Fix_Repair_UWP_Generic.rar"))
+            {
+                MessageBox.Show("Already Downlaoded");
+            }
+            else
+            {
+                using (var wc = new WebClient())
+
+                    wc.DownloadFileCompleted += new AsyncCompletedEventHandler(FileDownloadComplete);
+
+                {
+                    using (var wc = new WebClient())
+
+                        wc.DownloadFile("https://cdn.discordapp.com/attachments/1016411808887746570/1016422145229848686/MfW10_Fix_Repair_UWP_Generic.rar", "MfW10_Fix_Repair_UWP_Generic.rar");
+                }
+
+                // Get the full path of the download and the destination folder.
+                string fromPath = Path.Combine(Application.StartupPath, "MfW10_Fix_Repair_UWP_Generic.rar");
+                string toPath = Path.Combine(@"C:\\Users\\" + Environment.UserName + "\\Downloads\\Glebi-Tool\\Games", "MfW10_Fix_Repair_UWP_Generic.rar");
+
+                // Move the file.
+                File.Move(fromPath, toPath);
+
+                MessageBox.Show("Download Completed");
+            }
         }
 
         private void FileDownloadComplete(object sender,AsyncCompletedEventArgs e)

@@ -9,6 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Net;
+using System.IO;
 
 namespace glebi_tool_2te_design_test.InfoCards
 {
@@ -43,9 +44,30 @@ namespace glebi_tool_2te_design_test.InfoCards
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            wc.DownloadFileCompleted += new AsyncCompletedEventHandler(FileDownloadComplete);
-            Uri torrenturl = new Uri("https://download1523.mediafire.com/4vpjj2icblng/399mkl2lg4y4uet/Verdun.v318.32425-OFME.torrent");
-            wc.DownloadFileAsync(torrenturl, "Verdun.v318.32425-OFME.torrent");
+            if (System.IO.File.Exists(@"C:\\Users\\" + Environment.UserName + "\\Downloads\\Glebi-Tool\\Games\\Verdun.v318.32425-OFME.torrent"))
+            {
+                MessageBox.Show("Already Downlaoded");
+            }
+            else
+            {
+                using (var wc = new WebClient())
+                    wc.DownloadFileCompleted += new AsyncCompletedEventHandler(FileDownloadComplete);
+
+                {
+                    using (var wc = new WebClient())
+
+                        wc.DownloadFile("https://cdn.discordapp.com/attachments/1016411808887746570/1016415915232993321/Verdun.v318.32425-OFME.torrent", "Verdun.v318.32425-OFME.torrent");
+                }
+
+                // Get the full path of the download and the destination folder.
+                string fromPath = Path.Combine(Application.StartupPath, "Verdun.v318.32425-OFME.torrent");
+                string toPath = Path.Combine(@"C:\\Users\\" + Environment.UserName + "\\Downloads\\Glebi-Tool\\Games", "Verdun.v318.32425-OFME.torrent");
+
+                // Move the file.
+                File.Move(fromPath, toPath);
+
+                MessageBox.Show("Download Completed");
+            }
         }
 
         private void FileDownloadComplete(object sender, AsyncCompletedEventArgs e)

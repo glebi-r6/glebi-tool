@@ -1,7 +1,7 @@
 ﻿
-namespace glebi_tool_2te_design_test.InfoCards
+namespace glebi_tool_2_0.InfoCards
 {
-    partial class FormForest
+    partial class FormFences
     {
         /// <summary>
         /// Required designer variable.
@@ -29,12 +29,12 @@ namespace glebi_tool_2te_design_test.InfoCards
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormForest));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormFences));
             this.panelTitleBar = new System.Windows.Forms.Panel();
+            this.btnOK = new System.Windows.Forms.Button();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.iconButton18 = new FontAwesome.Sharp.IconButton();
             this.label1 = new System.Windows.Forms.Label();
-            this.btnOK = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panelTitleBar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -42,10 +42,10 @@ namespace glebi_tool_2te_design_test.InfoCards
             // 
             // panelTitleBar
             // 
+            this.panelTitleBar.Controls.Add(this.btnOK);
             this.panelTitleBar.Controls.Add(this.linkLabel1);
             this.panelTitleBar.Controls.Add(this.iconButton18);
             this.panelTitleBar.Controls.Add(this.label1);
-            this.panelTitleBar.Controls.Add(this.btnOK);
             this.panelTitleBar.Controls.Add(this.pictureBox1);
             this.panelTitleBar.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelTitleBar.Location = new System.Drawing.Point(0, 0);
@@ -53,48 +53,6 @@ namespace glebi_tool_2te_design_test.InfoCards
             this.panelTitleBar.Size = new System.Drawing.Size(456, 169);
             this.panelTitleBar.TabIndex = 3;
             this.panelTitleBar.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panelTitleBar_MouseDown);
-            // 
-            // linkLabel1
-            // 
-            this.linkLabel1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.linkLabel1.AutoSize = true;
-            this.linkLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.linkLabel1.LinkColor = System.Drawing.Color.Aqua;
-            this.linkLabel1.Location = new System.Drawing.Point(233, 58);
-            this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(71, 17);
-            this.linkLabel1.TabIndex = 107;
-            this.linkLabel1.TabStop = true;
-            this.linkLabel1.Text = "Fix Repair";
-            this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
-            // 
-            // iconButton18
-            // 
-            this.iconButton18.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.iconButton18.FlatAppearance.BorderSize = 0;
-            this.iconButton18.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton18.IconChar = FontAwesome.Sharp.IconChar.Download;
-            this.iconButton18.IconColor = System.Drawing.Color.Cyan;
-            this.iconButton18.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton18.IconSize = 18;
-            this.iconButton18.Location = new System.Drawing.Point(298, 58);
-            this.iconButton18.Name = "iconButton18";
-            this.iconButton18.Size = new System.Drawing.Size(26, 23);
-            this.iconButton18.TabIndex = 106;
-            this.iconButton18.UseVisualStyleBackColor = true;
-            // 
-            // label1
-            // 
-            this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Red;
-            this.label1.Location = new System.Drawing.Point(93, 41);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(269, 68);
-            this.label1.TabIndex = 105;
-            this.label1.Text = "After the downloading the game  you also\r\nneed to download the Fix Repair\r\nThan j" +
-    "ust put the files from Fix Repair\r\nint the game folder and it should work\r\n";
             // 
             // btnOK
             // 
@@ -116,17 +74,60 @@ namespace glebi_tool_2te_design_test.InfoCards
             this.btnOK.UseVisualStyleBackColor = false;
             this.btnOK.Click += new System.EventHandler(this.btnOK_Click);
             // 
+            // linkLabel1
+            // 
+            this.linkLabel1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.linkLabel1.AutoSize = true;
+            this.linkLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkLabel1.LinkColor = System.Drawing.Color.LawnGreen;
+            this.linkLabel1.Location = new System.Drawing.Point(152, 43);
+            this.linkLabel1.Name = "linkLabel1";
+            this.linkLabel1.Size = new System.Drawing.Size(70, 17);
+            this.linkLabel1.TabIndex = 102;
+            this.linkLabel1.TabStop = true;
+            this.linkLabel1.Text = "Download";
+            this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
+            // 
+            // iconButton18
+            // 
+            this.iconButton18.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.iconButton18.FlatAppearance.BorderSize = 0;
+            this.iconButton18.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconButton18.IconChar = FontAwesome.Sharp.IconChar.Download;
+            this.iconButton18.IconColor = System.Drawing.Color.LawnGreen;
+            this.iconButton18.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconButton18.IconSize = 18;
+            this.iconButton18.Location = new System.Drawing.Point(219, 43);
+            this.iconButton18.Name = "iconButton18";
+            this.iconButton18.Size = new System.Drawing.Size(24, 22);
+            this.iconButton18.TabIndex = 101;
+            this.iconButton18.UseVisualStyleBackColor = true;
+            // 
+            // label1
+            // 
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Red;
+            this.label1.Location = new System.Drawing.Point(93, 44);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(365, 68);
+            this.label1.TabIndex = 100;
+            this.label1.Text = "After the Download       Install the Program as Normal.\r\nAfter Installing put the" +
+    " Patch.exe in the installation folder,\r\nrun it and click \"Patch\"\r\n(Turn Anti-Vir" +
+    "us off)";
+            // 
             // pictureBox1
             // 
             this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(12, 41);
+            this.pictureBox1.Location = new System.Drawing.Point(12, 40);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(75, 75);
             this.pictureBox1.TabIndex = 99;
             this.pictureBox1.TabStop = false;
             // 
-            // FormForest
+            // FormFences
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -134,8 +135,8 @@ namespace glebi_tool_2te_design_test.InfoCards
             this.ClientSize = new System.Drawing.Size(456, 169);
             this.Controls.Add(this.panelTitleBar);
             this.MinimumSize = new System.Drawing.Size(472, 208);
-            this.Name = "FormForest";
-            this.Text = "FormForest";
+            this.Name = "FormFences";
+            this.Text = "FormFences";
             this.panelTitleBar.ResumeLayout(false);
             this.panelTitleBar.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -147,9 +148,9 @@ namespace glebi_tool_2te_design_test.InfoCards
 
         private System.Windows.Forms.Panel panelTitleBar;
         private System.Windows.Forms.Button btnOK;
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.LinkLabel linkLabel1;
         private FontAwesome.Sharp.IconButton iconButton18;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

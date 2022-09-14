@@ -9,6 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Net;
+using System.IO;
 
 namespace glebi_tool_2te_design_test.InfoCards
 {
@@ -42,9 +43,30 @@ namespace glebi_tool_2te_design_test.InfoCards
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            wc.DownloadFileCompleted += new AsyncCompletedEventHandler(FileDownloadComplete);
-            Uri torrenturl = new Uri("https://download1338.mediafire.com/7670jxokbodg/8m59qsj2dtb89jo/Ready.or.Not.v19020-OFME.torrent");
-            wc.DownloadFileAsync(torrenturl, "Ready.or.Not.v19020-OFME.torrent");
+            if (System.IO.File.Exists(@"C:\\Users\\" + Environment.UserName + "\\Downloads\\Glebi-Tool\\Games\\Ready.or.Not.Build.09082022-OFME.torrent"))
+            {
+                MessageBox.Show("Already Downlaoded");
+            }
+            else
+            {
+                using (var wc = new WebClient())
+                    wc.DownloadFileCompleted += new AsyncCompletedEventHandler(FileDownloadComplete);
+
+                {
+                    using (var wc = new WebClient())
+
+                        wc.DownloadFile("https://cdn.discordapp.com/attachments/1016411808887746570/1016417314226307173/Ready.or.Not.Build.09082022-OFME.torrent", "Ready.or.Not.Build.09082022-OFME.torrent");
+                }
+
+                // Get the full path of the download and the destination folder.
+                string fromPath = Path.Combine(Application.StartupPath, "Ready.or.Not.Build.09082022-OFME.torrent");
+                string toPath = Path.Combine(@"C:\\Users\\" + Environment.UserName + "\\Downloads\\Glebi-Tool\\Games", "Ready.or.Not.Build.09082022-OFME.torrent");
+
+                // Move the file.
+                File.Move(fromPath, toPath);
+
+                MessageBox.Show("Download Completed");
+            }
         }
 
         private void FileDownloadComplete(object sender, AsyncCompletedEventArgs e)

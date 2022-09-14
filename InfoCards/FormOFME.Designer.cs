@@ -30,15 +30,15 @@ namespace glebi_tool_2_0.InfoCards
         private void InitializeComponent()
         {
             this.panelTitleBar = new System.Windows.Forms.Panel();
-            this.btnOK = new System.Windows.Forms.Button();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
+            this.btnOK = new System.Windows.Forms.Button();
             this.panelTitleBar.SuspendLayout();
             this.SuspendLayout();
             // 
             // panelTitleBar
             // 
-            this.panelTitleBar.Controls.Add(this.label2);
+            this.panelTitleBar.Controls.Add(this.textBox1);
             this.panelTitleBar.Controls.Add(this.label1);
             this.panelTitleBar.Controls.Add(this.btnOK);
             this.panelTitleBar.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -46,7 +46,34 @@ namespace glebi_tool_2_0.InfoCards
             this.panelTitleBar.Name = "panelTitleBar";
             this.panelTitleBar.Size = new System.Drawing.Size(274, 169);
             this.panelTitleBar.TabIndex = 2;
+            this.panelTitleBar.Paint += new System.Windows.Forms.PaintEventHandler(this.panelTitleBar_Paint);
             this.panelTitleBar.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panelTitleBar_MouseDown);
+            // 
+            // textBox1
+            // 
+            this.textBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.textBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
+            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.5F);
+            this.textBox1.ForeColor = System.Drawing.Color.Orange;
+            this.textBox1.Location = new System.Drawing.Point(92, 53);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.ReadOnly = true;
+            this.textBox1.Size = new System.Drawing.Size(97, 16);
+            this.textBox1.TabIndex = 106;
+            this.textBox1.Text = "\"online-fix.me\"";
+            // 
+            // label1
+            // 
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Red;
+            this.label1.Location = new System.Drawing.Point(5, 27);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(271, 17);
+            this.label1.TabIndex = 104;
+            this.label1.Text = "Password for torrents ending with \"OFME\"";
             // 
             // btnOK
             // 
@@ -68,30 +95,6 @@ namespace glebi_tool_2_0.InfoCards
             this.btnOK.UseVisualStyleBackColor = false;
             this.btnOK.Click += new System.EventHandler(this.btnOK_Click);
             // 
-            // label1
-            // 
-            this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Red;
-            this.label1.Location = new System.Drawing.Point(5, 27);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(271, 17);
-            this.label1.TabIndex = 104;
-            this.label1.Text = "Password for torrents ending with \"OFME\"";
-            // 
-            // label2
-            // 
-            this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.Red;
-            this.label2.Location = new System.Drawing.Point(86, 53);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(97, 17);
-            this.label2.TabIndex = 105;
-            this.label2.Text = "\"online-fix.me\"";
-            // 
             // FormOFME
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -112,7 +115,7 @@ namespace glebi_tool_2_0.InfoCards
 
         private System.Windows.Forms.Panel panelTitleBar;
         private System.Windows.Forms.Button btnOK;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }

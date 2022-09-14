@@ -9,6 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Net;
+using System.IO;
 
 namespace glebi_tool_2te_design_test.InfoCards
 {
@@ -43,15 +44,27 @@ namespace glebi_tool_2te_design_test.InfoCards
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            wc.DownloadFileCompleted += new AsyncCompletedEventHandler(FileDownloadComplete10);
-            Uri torrenturl = new Uri("https://download1527.mediafire.com/wrraftx97flg/xa9ghz0onk2fvg0/The.Forest.Build.4175072-OFME.torrent");
-            wc.DownloadFileAsync(torrenturl, "The.Forest.Build.4175072-OFME.torrent");
-        }
+            if (System.IO.File.Exists(@"C:\\Users\\" + Environment.UserName + "\\Downloads\\Glebi-Tool\\Games\\The Forest\\TheForest_Fix_Repair_Steam_Generic.rar"))
+            {
+                MessageBox.Show("Already Downlaoded");
+            }
+            else
+            {
+                {
+                    using (var wc = new WebClient())
 
-        private void FileDownloadComplete10(object sender, AsyncCompletedEventArgs e)
-        {
-            MessageBox.Show("Download Completed");
-            wc.DownloadFileCompleted -= new AsyncCompletedEventHandler(FileDownloadComplete10);
+                        wc.DownloadFile("https://drive.google.com/u/1/uc?id=1qHFLHo9mmmtDZBxFilN78T5vAP_wc5Om&export=download&confirm=t&uuid=40812a47-b3d2-4683-a142-7287719f8cbf", "TheForest_Fix_Repair_Steam_Generic.rar");
+                }
+
+                // Get the full path of the download and the destination folder.
+                string fromPath = Path.Combine(Application.StartupPath, "TheForest_Fix_Repair_Steam_Generic.rar");
+                string toPath = Path.Combine(@"C:\\Users\\" + Environment.UserName + "\\Downloads\\Glebi-Tool\\Games\\The Forest", "TheForest_Fix_Repair_Steam_Generic.rar");
+
+                // Move the file.
+                File.Move(fromPath, toPath);
+
+                MessageBox.Show("Download Completed");
+            }
         }
     }
 }
