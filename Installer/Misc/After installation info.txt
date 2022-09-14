@@ -1,0 +1,7 @@
+Note: 
+You must run the file as an administrator otherwise the application will not work properly
+
+How?
+Right click on the exe file and open properties. Switch to the Compatibility tab. 
+There is a check mark Run this program as an administrator which must be activated. 
+Confirm with the OK button.
