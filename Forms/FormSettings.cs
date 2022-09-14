@@ -60,6 +60,8 @@ namespace glebi_tool_2te_design.Forms
 
         private void btnUpdate_Click(object sender, EventArgs e)
         {
+
+
             System.IO.Directory.CreateDirectory("C:\\Users\\" + Environment.UserName.ToString() + "\\AppData\\Roaming\\glebi - tool");
 
             string path = Application.StartupPath;

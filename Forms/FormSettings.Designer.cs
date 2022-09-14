@@ -44,7 +44,6 @@ namespace glebi_tool_2te_design.Forms
             this.button3 = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.iconPictureBox1 = new FontAwesome.Sharp.IconPictureBox();
             this.lblWelcome = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.linkLabel2 = new System.Windows.Forms.LinkLabel();
@@ -55,7 +54,6 @@ namespace glebi_tool_2te_design.Forms
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox1
@@ -186,7 +184,7 @@ namespace glebi_tool_2te_design.Forms
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Red;
-            this.label2.Location = new System.Drawing.Point(12, 178);
+            this.label2.Location = new System.Drawing.Point(12, 263);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(82, 22);
             this.label2.TabIndex = 11;
@@ -233,40 +231,25 @@ namespace glebi_tool_2te_design.Forms
             this.label4.TabIndex = 15;
             this.label4.Text = "version 2.1.1";
             // 
-            // iconPictureBox1
-            // 
-            this.iconPictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.iconPictureBox1.Cursor = System.Windows.Forms.Cursors.No;
-            this.iconPictureBox1.ForeColor = System.Drawing.Color.Red;
-            this.iconPictureBox1.IconChar = FontAwesome.Sharp.IconChar.Bug;
-            this.iconPictureBox1.IconColor = System.Drawing.Color.Red;
-            this.iconPictureBox1.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconPictureBox1.IconSize = 46;
-            this.iconPictureBox1.Location = new System.Drawing.Point(461, 73);
-            this.iconPictureBox1.Name = "iconPictureBox1";
-            this.iconPictureBox1.Size = new System.Drawing.Size(47, 46);
-            this.iconPictureBox1.TabIndex = 17;
-            this.iconPictureBox1.TabStop = false;
-            // 
             // lblWelcome
             // 
             this.lblWelcome.AutoSize = true;
             this.lblWelcome.Cursor = System.Windows.Forms.Cursors.Default;
             this.lblWelcome.Font = new System.Drawing.Font("Microsoft Tai Le", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblWelcome.ForeColor = System.Drawing.Color.Red;
-            this.lblWelcome.Location = new System.Drawing.Point(238, 51);
+            this.lblWelcome.Location = new System.Drawing.Point(13, 154);
             this.lblWelcome.Name = "lblWelcome";
-            this.lblWelcome.Size = new System.Drawing.Size(305, 90);
+            this.lblWelcome.Size = new System.Drawing.Size(417, 36);
             this.lblWelcome.TabIndex = 18;
-            this.lblWelcome.Text = "Update system still under development \r\nand not tested yet\r\nShould work if 2.1.2 " +
-    "comes out\r\n\r\nJoin Discord server    for Update notification";
+            this.lblWelcome.Text = "!Application folder must be in \"C:\\Program Files\\Glebi-tool\"!\r\nJoin Discord serve" +
+    "r    for Update notification";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Tai Le", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.Red;
-            this.label5.Location = new System.Drawing.Point(102, 210);
+            this.label5.Location = new System.Drawing.Point(102, 295);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(206, 36);
             this.label5.TabIndex = 19;
@@ -279,7 +262,7 @@ namespace glebi_tool_2te_design.Forms
             this.linkLabel2.Cursor = System.Windows.Forms.Cursors.Help;
             this.linkLabel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.linkLabel2.LinkColor = System.Drawing.Color.Red;
-            this.linkLabel2.Location = new System.Drawing.Point(269, 122);
+            this.linkLabel2.Location = new System.Drawing.Point(44, 171);
             this.linkLabel2.Name = "linkLabel2";
             this.linkLabel2.Size = new System.Drawing.Size(114, 17);
             this.linkLabel2.TabIndex = 20;
@@ -292,7 +275,7 @@ namespace glebi_tool_2te_design.Forms
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.Red;
-            this.label6.Location = new System.Drawing.Point(12, 268);
+            this.label6.Location = new System.Drawing.Point(12, 353);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(75, 22);
             this.label6.TabIndex = 21;
@@ -307,7 +290,7 @@ namespace glebi_tool_2te_design.Forms
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.button1.Location = new System.Drawing.Point(16, 305);
+            this.button1.Location = new System.Drawing.Point(16, 390);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(216, 41);
             this.button1.TabIndex = 22;
@@ -318,7 +301,7 @@ namespace glebi_tool_2te_design.Forms
             // AutoStart
             // 
             this.AutoStart.AutoSize = true;
-            this.AutoStart.Location = new System.Drawing.Point(16, 216);
+            this.AutoStart.Location = new System.Drawing.Point(16, 301);
             this.AutoStart.MinimumSize = new System.Drawing.Size(59, 30);
             this.AutoStart.Name = "AutoStart";
             this.AutoStart.OffBackColor = System.Drawing.Color.Gray;
@@ -341,7 +324,6 @@ namespace glebi_tool_2te_design.Forms
             this.Controls.Add(this.label6);
             this.Controls.Add(this.linkLabel2);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.iconPictureBox1);
             this.Controls.Add(this.lblWelcome);
             this.Controls.Add(this.AutoStart);
             this.Controls.Add(this.label4);
@@ -365,7 +347,6 @@ namespace glebi_tool_2te_design.Forms
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -387,7 +368,6 @@ namespace glebi_tool_2te_design.Forms
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private glebi_tool_2te_design_test.Controls.Toggle_switch AutoStart;
-        private FontAwesome.Sharp.IconPictureBox iconPictureBox1;
         private System.Windows.Forms.Label lblWelcome;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.LinkLabel linkLabel2;
