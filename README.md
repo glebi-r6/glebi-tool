@@ -27,7 +27,7 @@ Code ✅
 </p>
 
 * ` More cracked games and tools`
-* ` update system`
+* ` better Cheats`
 * ` themes changer`
 * ` chat system (chat in the tool with other useres)`
 
@@ -40,15 +40,24 @@ Code ✅
 
 ## Installation 
 
+
+#### Installer Version
+```sh-session
+https://github.com/glebi-r6/glebi-tool/releases
+Download the latest release (2.1.1-Setup.exe).
+And run "2.1.1-Setup.exe"
+```
+
 #### exe Version
 ```sh-session
 https://github.com/glebi-r6/glebi-tool/releases
-Download the latest release (glebi - tool.rar) and open folder.
-And run glebi tool 2.1.exe
+Download the latest release (Glebi-tool.2.1.1.zip).
+Put "Glebi-tool" folder in "C:\Program Files"
+And run "glebi tool 2.1.exe" as administrator
 ```
 
 #### Source Code Version
-```
+```sh-session
 Click the green "Code" button.
 Click "Download ZIP"
 
