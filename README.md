@@ -42,7 +42,7 @@ Code ✅
 
 
 #### Installer Version
-```sh-session
+```console
 https://github.com/glebi-r6/glebi-tool/releases
 Download the latest release (2.1.1-Setup.exe).
 And run "2.1.1-Setup.exe"
@@ -51,7 +51,6 @@ And run "2.1.1-Setup.exe"
 #### exe Version
 ```sh-session
 https://github.com/glebi-r6/glebi-tool/releases
-/sh-session
 Download the latest release (Glebi-tool.2.1.1.zip).
 Put "Glebi-tool" folder in "C:\Program Files"
 And run "glebi tool 2.1.exe" as administrator
