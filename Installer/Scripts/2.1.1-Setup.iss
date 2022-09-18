@@ -13,7 +13,7 @@
 [Setup]
 ; NOTE: The value of AppId uniquely identifies this application. Do not use the same AppId value in installers for other applications.
 ; (To generate a new GUID, click Tools | Generate GUID inside the IDE.)
-AppId={{A4B3EDA4-4CA8-4E14-8E80-EFBAA52B34CF}
+AppId={{80AD28A4-4010-4FF5-B633-BB806FA1A667}
 AppName={#MyAppName}
 AppVersion={#MyAppVersion}
 ;AppVerName={#MyAppName} {#MyAppVersion}
@@ -29,6 +29,7 @@ LicenseFile=C:\Users\Anwender\Desktop\Installer\Misc\GNU GENERAL PUBLIC LICENSE.
 InfoAfterFile=C:\Users\Anwender\Desktop\Installer\Misc\After installation info.txt
 ; Uncomment the following line to run in non administrative install mode (install for current user only.)
 ;PrivilegesRequired=lowest
+OutputDir=C:\Users\Anwender\Desktop\Installer\Output
 OutputBaseFilename=2.1.1-Setup
 SetupIconFile=C:\Users\Anwender\Desktop\Installer\Misc\scheibe.ico
 Compression=lzma
