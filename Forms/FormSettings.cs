@@ -1,17 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Text;
 using System.Windows.Forms;
 using System.Diagnostics;
 using System.IO;
 using Microsoft.Win32;
-using System.Linq;
-using System.Threading.Tasks;
-using glebi_tool.Properties;
-using System.Net;
 
 namespace glebi_tool_2te_design.Forms
 {
@@ -21,6 +12,9 @@ namespace glebi_tool_2te_design.Forms
         public FormSettings()
         {
             InitializeComponent();
+            string path = Application.StartupPath;
+            string filename = Path.GetFileName(Application.ExecutablePath);
+            string pid = Process.GetCurrentProcess().Id.ToString();
         }
 
         private void llblDiscordsupport_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
@@ -60,14 +54,10 @@ namespace glebi_tool_2te_design.Forms
 
         private void btnUpdate_Click(object sender, EventArgs e)
         {
-
-
-            System.IO.Directory.CreateDirectory("C:\\Users\\" + Environment.UserName.ToString() + "\\AppData\\Roaming\\glebi - tool");
-
             string path = Application.StartupPath;
             string filename = Path.GetFileName(Application.ExecutablePath);
             string pid = Process.GetCurrentProcess().Id.ToString();
-            Process.Start("C:\\Program Files\\Glebi-tool\\Updater.exe", "\"" + path + "\"" + " " + "\"" + filename + "\"" + " " + "\"" + pid + "\"");
+            Process.Start("Updater.exe", "\"" + path + "\"" + " " + "\"" + filename + "\"" + " " + "\"" + pid + "\"");
         }
 
         private void FormSettings_Load(object sender, EventArgs e)
@@ -84,6 +74,11 @@ namespace glebi_tool_2te_design.Forms
         {
             var formPopup = new glebi_tool.InfoCards.FormChanges();
             formPopup.Show(this);
+        }
+
+        private void linkLabel3_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            System.Diagnostics.Process.Start("https://dotnet.microsoft.com/en-us/download/dotnet/3.1");
         }
     }
 }

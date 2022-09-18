@@ -341,7 +341,6 @@ namespace glebi_tool_2te_design.Forms
             if (System.IO.File.Exists(@"C:\\Users\\" + Environment.UserName + "\\Downloads\\Glebi-Tool\\Games\\The Forest\\The.Forest.Build.4175072-OFME.torrent"))
             {
                 MessageBox.Show("Already Downlaoded");
-                iconPictureBox2.Visible = true;
             }
             else
             {

@@ -649,7 +649,6 @@ namespace glebi_tool_2te_design.Forms
             this.iconPictureBox2.Size = new System.Drawing.Size(32, 32);
             this.iconPictureBox2.TabIndex = 124;
             this.iconPictureBox2.TabStop = false;
-            this.iconPictureBox2.Visible = false;
             this.iconPictureBox2.Click += new System.EventHandler(this.iconPictureBox2_Click);
             // 
             // iconPictureBox1

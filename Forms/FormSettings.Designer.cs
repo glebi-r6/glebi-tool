@@ -50,6 +50,7 @@ namespace glebi_tool_2te_design.Forms
             this.label6 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.AutoStart = new glebi_tool_2te_design_test.Controls.Toggle_switch();
+            this.linkLabel3 = new System.Windows.Forms.LinkLabel();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -239,10 +240,10 @@ namespace glebi_tool_2te_design.Forms
             this.lblWelcome.ForeColor = System.Drawing.Color.Red;
             this.lblWelcome.Location = new System.Drawing.Point(13, 154);
             this.lblWelcome.Name = "lblWelcome";
-            this.lblWelcome.Size = new System.Drawing.Size(417, 36);
+            this.lblWelcome.Size = new System.Drawing.Size(305, 36);
             this.lblWelcome.TabIndex = 18;
-            this.lblWelcome.Text = "!Application folder must be in \"C:\\Program Files\\Glebi-tool\"!\r\nJoin Discord serve" +
-    "r    for Update notification";
+            this.lblWelcome.Text = "! You have to download .NET Core 3.1 !\r\nJoin Discord server    for Update notific" +
+    "ation";
             // 
             // label5
             // 
@@ -314,12 +315,27 @@ namespace glebi_tool_2te_design.Forms
             this.AutoStart.Visible = false;
             this.AutoStart.CheckedChanged += new System.EventHandler(this.AutoStart_CheckedChanged);
             // 
+            // linkLabel3
+            // 
+            this.linkLabel3.AutoSize = true;
+            this.linkLabel3.BackColor = System.Drawing.Color.Transparent;
+            this.linkLabel3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkLabel3.LinkColor = System.Drawing.Color.Red;
+            this.linkLabel3.Location = new System.Drawing.Point(178, 153);
+            this.linkLabel3.Name = "linkLabel3";
+            this.linkLabel3.Size = new System.Drawing.Size(96, 15);
+            this.linkLabel3.TabIndex = 23;
+            this.linkLabel3.TabStop = true;
+            this.linkLabel3.Text = ".NET Core 3.1";
+            this.linkLabel3.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel3_LinkClicked);
+            // 
             // FormSettings
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
             this.ClientSize = new System.Drawing.Size(839, 458);
+            this.Controls.Add(this.linkLabel3);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.linkLabel2);
@@ -373,5 +389,6 @@ namespace glebi_tool_2te_design.Forms
         private System.Windows.Forms.LinkLabel linkLabel2;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.LinkLabel linkLabel3;
     }
 }
