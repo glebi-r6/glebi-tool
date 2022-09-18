@@ -79,14 +79,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="glebi-tool 2.1.1.exe" size="19672576">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="glebi-tool 2.1.1.exe" size="19673088">
       <assemblyIdentity name="glebi-tool 2.1.1" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>GahI17WNVRa1gMW49yjfuxjWE23SPI4BzOW7jZPfHhw=</dsig:DigestValue>
+        <dsig:DigestValue>SlIQH1qhen/G325blAdBkaSlFqHlyAp2/OugvehCoBc=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

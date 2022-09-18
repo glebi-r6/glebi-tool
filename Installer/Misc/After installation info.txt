@@ -1,6 +1,9 @@
-Note: 
-You must run the file as an administrator otherwise the application will not work properly
+First of all:
+Download .NET Core 3.1
+https://dotnet.microsoft.com/en-us/download/dotnet/3.1
 
+Second point: 
+You must run the file as an administrator otherwise the application will not work properly
 How?
 Right click on the exe file and open properties. Switch to the Compatibility tab. 
 There is a check mark Run this program as an administrator which must be activated. 
