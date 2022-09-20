@@ -1,14 +1,13 @@
-﻿using glebi_tool_2te_design;
-using Recoil;
+﻿using glebi_tool;
+using glebi_tool.cheat.Recoil;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Threading;
-using NoRecoil;
 
-namespace glebi_tool_2te_design_test
+namespace glebi_tool
 {
     static class Program
     {
@@ -31,7 +30,7 @@ namespace glebi_tool_2te_design_test
         [STAThread]
         static void Main()
         {
-            Recoil.Timer.QueryFrequency();
+            glebi_tool.cheat.Recoil.Timer.QueryFrequency();
 
             g_weapon_index = WeaponIndex.AR;
 

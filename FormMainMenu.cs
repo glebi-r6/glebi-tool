@@ -10,12 +10,8 @@ using FontAwesome.Sharp;
 using System.Media;
 using System.Net;
 using System.Linq;
-using System.Threading.Tasks;
-using System.IO;
-using System.Diagnostics;
-using glebi_tool_2te_design.Forms;
 
-namespace glebi_tool_2te_design
+namespace glebi_tool
 {
     public partial class FormMainMenu : Form
     {
@@ -52,6 +48,8 @@ namespace glebi_tool_2te_design
             public static Color color5 = Color.FromArgb(255, 0, 0);
             public static Color color6 = Color.FromArgb(24, 161, 251);
             public static Color color7 = Color.FromArgb(227, 36, 43);
+            public static Color color8 = Color.FromArgb(89, 7, 244); //Purple
+            public static Color color9 = Color.FromArgb(220, 20, 60); //Crimson
         }
 
         //Methods
@@ -115,7 +113,7 @@ namespace glebi_tool_2te_design
         {
             System.IO.Directory.CreateDirectory("C:\\Users\\" + Environment.UserName.ToString() + "\\Downloads\\Glebi-Tool\\Games");
 
-            ActivateButton(sender, RGBColors.color1);
+            ActivateButton(sender, RGBColors.color9);
             OpenChildForm(new Forms.FormCrackedGames());
         }
 
@@ -123,31 +121,31 @@ namespace glebi_tool_2te_design
         {
             System.IO.Directory.CreateDirectory("C:\\Users\\" + Environment.UserName.ToString() + "\\Downloads\\Glebi-Tool\\Tools");
 
-            ActivateButton(sender, RGBColors.color2);
-            OpenChildForm(new Forms.FormTools());
+            ActivateButton(sender, RGBColors.color9);
+            OpenChildForm(new glebi_tool.Forms.FormTools());
         }
 
         private void btnYouTube_Click(object sender, EventArgs e)
         {
-            ActivateButton(sender, RGBColors.color7);
+            ActivateButton(sender, RGBColors.color9);
             OpenChildForm(new Forms.FormYouTube());
         }
 
         private void btnDiscrod_Click(object sender, EventArgs e)
         {
-            ActivateButton(sender, RGBColors.color3);
+            ActivateButton(sender, RGBColors.color9);
             OpenChildForm(new Forms.FormDiscord());
         }
 
         private void btnWebsite_Click(object sender, EventArgs e)
         {
-            ActivateButton(sender, RGBColors.color5);
+            ActivateButton(sender, RGBColors.color9);
             OpenChildForm(new Forms.FormWebsite());
         }
 
         private void btnSettings_Click(object sender, EventArgs e)
         {
-            ActivateButton(sender, RGBColors.color6);
+            ActivateButton(sender, RGBColors.color9);
             OpenChildForm(new Forms.FormSettings());
         }
 

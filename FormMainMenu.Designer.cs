@@ -1,5 +1,5 @@
 ﻿
-namespace glebi_tool_2te_design
+namespace glebi_tool
 {
     partial class FormMainMenu
     {
