@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Net;
 
-namespace glebi_tool_2te_design_test.InfoCards
+namespace glebi_tool.InfoCards
 {
     public partial class FormLGSW : Form
     {

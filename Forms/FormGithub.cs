@@ -11,7 +11,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace glebi_tool_2te_design_test.Forms
+namespace glebi_tool.Forms
 {
     public partial class FormGithub : Form
     {

@@ -9,7 +9,7 @@ using System.Net;
 using System.IO;
 using System.Diagnostics;
 
-namespace glebi_tool_2te_design.Forms
+namespace glebi_tool.Forms
 {
     public partial class FormCrackedGames : Form
     {
@@ -37,55 +37,55 @@ namespace glebi_tool_2te_design.Forms
 
         private void iconPictureBox6_Click(object sender, EventArgs e)
         {
-            var formPopup = new glebi_tool_2te_design_test.InfoCards.FormMinecraft();
+            var formPopup = new glebi_tool.InfoCards.FormMinecraft();
             formPopup.Show(this);
         }
 
         private void iconPictureBox5_Click(object sender, EventArgs e)
         {
-            var formPopup = new glebi_tool_2te_design_test.InfoCards.FormStickFight();
+            var formPopup = new glebi_tool.InfoCards.FormStickFight();
             formPopup.Show(this);
         }
 
         private void iconPictureBox4_Click(object sender, EventArgs e)
         {
-            var formPopup = new glebi_tool_2te_design_test.InfoCards.FormVerdun();
+            var formPopup = new glebi_tool.InfoCards.FormVerdun();
             formPopup.Show(this);
         }
 
         private void iconPictureBox1_Click(object sender, EventArgs e)
         {
-            var formPopup = new glebi_tool_2te_design_test.InfoCards.FormLGSW();
+            var formPopup = new glebi_tool.InfoCards.FormLGSW();
             formPopup.Show(this);
         }
 
         private void iconPictureBox2_Click(object sender, EventArgs e)
         {
-            var formPopup = new glebi_tool_2te_design_test.InfoCards.FormForest();
+            var formPopup = new glebi_tool.InfoCards.FormForest();
             formPopup.Show(this);
         }
 
         private void iconPictureBox7_Click(object sender, EventArgs e)
         {
-            var formPopup = new glebi_tool_2te_design_test.InfoCards.FormVolcan();
+            var formPopup = new glebi_tool.InfoCards.FormVolcan();
             formPopup.Show(this);
         }
 
         private void iconPictureBox3_Click(object sender, EventArgs e)
         {
-            var formPopup = new glebi_tool_2te_design_test.InfoCards.FormRON();
+            var formPopup = new glebi_tool.InfoCards.FormRON();
             formPopup.Show(this);
         }
 
         private void iconPictureBox8_Click(object sender, EventArgs e)
         {
-            var formPopup = new glebi_tool_2_0.InfoCards.FormTannenBerg();
+            var formPopup = new glebi_tool.InfoCards.FormTannenBerg();
             formPopup.Show(this);
         }
 
         private void iconPictureBox9_Click(object sender, EventArgs e)
         {
-            var formPopup = new glebi_tool_2_0.InfoCards.FormGarrysMod();
+            var formPopup = new glebi_tool.InfoCards.FormGarrysMod();
             formPopup.Show(this);
         }
 
@@ -197,7 +197,7 @@ namespace glebi_tool_2te_design.Forms
         //Hitman 3
         private void btnHitman3_Click(object sender, EventArgs e)
         {
-            if (System.IO.File.Exists(@"C:\\Users\\" + Environment.UserName + "\\Downloads\\Glebi-Tool\\Games\\HITMAN.3-FULL.UNLOCKED.torrent"))
+            if (System.IO.File.Exists(@"C:\\Users\\" + Environment.UserName + "\\Downloads\\Glebi-Tool\\Games\\HITMAN.3.Deluxe.Edition.v3.120.0.0-P2P.torrent"))
             {
                 MessageBox.Show("Already Downlaoded");
             }
@@ -206,12 +206,12 @@ namespace glebi_tool_2te_design.Forms
                 {
                     using (var wc = new WebClient())
 
-                        wc.DownloadFile("https://cdn.discordapp.com/attachments/1016411808887746570/1016416201729130597/HITMAN.3-FULL.UNLOCKED.torrent", "HITMAN.3-FULL.UNLOCKED.torrent");
+                        wc.DownloadFile("https://cdn.discordapp.com/attachments/1016411808887746570/1021180166766080041/HITMAN.3.Deluxe.Edition.v3.120.0.0-P2P.torrent", "HITMAN.3.Deluxe.Edition.v3.120.0.0-P2P.torrent");
                 }
 
                 // Get the full path of the download and the destination folder.
-                string fromPath = Path.Combine(Application.StartupPath, "HITMAN.3-FULL.UNLOCKED.torrent");
-                string toPath = Path.Combine(@"C:\\Users\\" + Environment.UserName + "\\Downloads\\Glebi-Tool\\Games", "HITMAN.3-FULL.UNLOCKED.torrent");
+                string fromPath = Path.Combine(Application.StartupPath, "HITMAN.3.Deluxe.Edition.v3.120.0.0-P2P.torrent");
+                string toPath = Path.Combine(@"C:\\Users\\" + Environment.UserName + "\\Downloads\\Glebi-Tool\\Games", "HITMAN.3.Deluxe.Edition.v3.120.0.0-P2P.torrent");
 
                 // Move the file.
                 File.Move(fromPath, toPath);
@@ -275,7 +275,7 @@ namespace glebi_tool_2te_design.Forms
         //OFME InfoCard
         private void iconPictureBox10_Click(object sender, EventArgs e)
         {
-            var formPopup = new glebi_tool_2_0.InfoCards.FormOFME();
+            var formPopup = new glebi_tool.InfoCards.FormOFME();
             formPopup.Show(this);
         }
 
@@ -500,6 +500,84 @@ namespace glebi_tool_2te_design.Forms
         private void iconButton1_Click(object sender, EventArgs e)
         {
             Process.Start(@"C:\\Users\\" + Environment.UserName + "\\Downloads\\Glebi-Tool\\Games");
+        }
+
+        //Horizon Zero Dawn Complete Edition
+        private void iconButton5_Click(object sender, EventArgs e)
+        {
+            if (System.IO.File.Exists(@"C:\\Users\\" + Environment.UserName + "\\Downloads\\Glebi-Tool\\Games\\Horizon.Zero.Dawn.Complete.Edition.v1.0.11.14-GOG.torrent"))
+            {
+                MessageBox.Show("Already Downlaoded");
+            }
+            else
+            {
+                {
+                    using (var wc = new WebClient())
+
+                        wc.DownloadFile("https://cdn.discordapp.com/attachments/1016411808887746570/1021166358349758545/Horizon.Zero.Dawn.Complete.Edition.v1.0.11.14-GOG.torrent", "Horizon.Zero.Dawn.Complete.Edition.v1.0.11.14-GOG.torrent");
+                }
+
+                // Get the full path of the download and the destination folder.
+                string fromPath = Path.Combine(Application.StartupPath, "Horizon.Zero.Dawn.Complete.Edition.v1.0.11.14-GOG.torrent");
+                string toPath = Path.Combine(@"C:\\Users\\" + Environment.UserName + "\\Downloads\\Glebi-Tool\\Games", "Horizon.Zero.Dawn.Complete.Edition.v1.0.11.14-GOG.torrent");
+
+                // Move the file.
+                File.Move(fromPath, toPath);
+
+                MessageBox.Show("Download Completed");
+            }
+        }
+
+        //Marvel Spider Man Remastered
+        private void iconButton8_Click(object sender, EventArgs e)
+        {
+            if (System.IO.File.Exists(@"C:\\Users\\" + Environment.UserName + "\\Downloads\\Glebi-Tool\\Games\\Marvels.Spider.Man.Remastered.v1.907.0.0-P2P.torrent"))
+            {
+                MessageBox.Show("Already Downlaoded");
+            }
+            else
+            {
+                {
+                    using (var wc = new WebClient())
+
+                        wc.DownloadFile("https://cdn.discordapp.com/attachments/1016411808887746570/1021180133643661432/Marvels.Spider.Man.Remastered.v1.907.0.0-P2P.torrent", "Marvels.Spider.Man.Remastered.v1.907.0.0-P2P.torrent");
+                }
+
+                // Get the full path of the download and the destination folder.
+                string fromPath = Path.Combine(Application.StartupPath, "Marvels.Spider.Man.Remastered.v1.907.0.0-P2P.torrent");
+                string toPath = Path.Combine(@"C:\\Users\\" + Environment.UserName + "\\Downloads\\Glebi-Tool\\Games", "Marvels.Spider.Man.Remastered.v1.907.0.0-P2P.torrent");
+
+                // Move the file.
+                File.Move(fromPath, toPath);
+
+                MessageBox.Show("Download Completed");
+            }
+        }
+
+        //Red Dead Redemption 2
+        private void iconButton14_Click(object sender, EventArgs e)
+        {
+            if (System.IO.File.Exists(@"C:\\Users\\" + Environment.UserName + "\\Downloads\\Glebi-Tool\\Games\\Red.Dead.Redemption.2.Build.1436.28-EMPRESSMr_Goldberg.torrent"))
+            {
+                MessageBox.Show("Already Downlaoded");
+            }
+            else
+            {
+                {
+                    using (var wc = new WebClient())
+
+                        wc.DownloadFile("https://cdn.discordapp.com/attachments/1016411808887746570/1021180293249507388/Red.Dead.Redemption.2.Build.1436.28-EMPRESSMr_Goldberg.torrent", "Red.Dead.Redemption.2.Build.1436.28-EMPRESSMr_Goldberg.torrent");
+                }
+
+                // Get the full path of the download and the destination folder.
+                string fromPath = Path.Combine(Application.StartupPath, "Red.Dead.Redemption.2.Build.1436.28-EMPRESSMr_Goldberg.torrent");
+                string toPath = Path.Combine(@"C:\\Users\\" + Environment.UserName + "\\Downloads\\Glebi-Tool\\Games", "Red.Dead.Redemption.2.Build.1436.28-EMPRESSMr_Goldberg.torrent");
+
+                // Move the file.
+                File.Move(fromPath, toPath);
+
+                MessageBox.Show("Download Completed");
+            }
         }
     }
 }

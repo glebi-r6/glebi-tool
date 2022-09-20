@@ -9,7 +9,7 @@ using System.Net;
 using System.IO;
 using System.Diagnostics;
 
-namespace glebi_tool_2te_design.Forms
+namespace glebi_tool.Forms
 {
     public partial class FormTools : Form
     {
@@ -189,7 +189,7 @@ namespace glebi_tool_2te_design.Forms
         //Office InfoCard
         private void iconPictureBox1_Click(object sender, EventArgs e)
         {
-            var formPopup = new glebi_tool_2_0.InfoCards.FromOffice();
+            var formPopup = new glebi_tool.InfoCards.FromOffice();
             formPopup.Show(this);
         }
 
@@ -223,14 +223,14 @@ namespace glebi_tool_2te_design.Forms
         //IDM InfoCard
         private void iconPictureBox2_Click(object sender, EventArgs e)
         {
-            var formPopup = new glebi_tool_2_0.InfoCards.FormIDM();
+            var formPopup = new glebi_tool.InfoCards.FormIDM();
             formPopup.Show(this);
         }
 
         //KMS InfoCard
         private void iconPictureBox3_Click(object sender, EventArgs e)
         {
-            var formPopup = new glebi_tool_2_0.InfoCards.FormKMS();
+            var formPopup = new glebi_tool.InfoCards.FormKMS();
             formPopup.Show(this);
         }
 
@@ -264,7 +264,7 @@ namespace glebi_tool_2te_design.Forms
         //Fences InfoCard
         private void iconPictureBox4_Click(object sender, EventArgs e)
         {
-            var formPopup = new glebi_tool_2_0.InfoCards.FormFences();
+            var formPopup = new glebi_tool.InfoCards.FormFences();
             formPopup.Show(this);
         }
 

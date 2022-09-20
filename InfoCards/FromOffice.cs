@@ -11,7 +11,7 @@ using System.Windows.Forms;
 using System.Net;
 using System.IO;
 
-namespace glebi_tool_2_0.InfoCards
+namespace glebi_tool.InfoCards
 {
     public partial class FromOffice : Form
     {

@@ -8,7 +8,7 @@ using System.Drawing;
 using System.Drawing.Drawing2D;
 using System.ComponentModel;
 
-namespace glebi_tool_2te_design_test.Controls
+namespace glebi_tool.Controls
 {
     public class Games_button : Button
     {

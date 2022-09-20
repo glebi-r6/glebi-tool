@@ -1,5 +1,5 @@
 ﻿
-namespace glebi_tool_2te_design_test.Forms
+namespace glebi_tool.Forms
 {
     partial class FormGithub
     {
@@ -78,7 +78,7 @@ namespace glebi_tool_2te_design_test.Forms
             this.llblGithub.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.llblGithub.AutoSize = true;
             this.llblGithub.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.llblGithub.LinkColor = System.Drawing.Color.Red;
+            this.llblGithub.LinkColor = System.Drawing.Color.Crimson;
             this.llblGithub.Location = new System.Drawing.Point(231, 124);
             this.llblGithub.Name = "llblGithub";
             this.llblGithub.Size = new System.Drawing.Size(104, 22);

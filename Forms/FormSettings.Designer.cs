@@ -1,5 +1,5 @@
 ﻿
-namespace glebi_tool_2te_design.Forms
+namespace glebi_tool.Forms
 {
     partial class FormSettings
     {
@@ -48,9 +48,11 @@ namespace glebi_tool_2te_design.Forms
             this.label5 = new System.Windows.Forms.Label();
             this.linkLabel2 = new System.Windows.Forms.LinkLabel();
             this.label6 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.AutoStart = new glebi_tool_2te_design_test.Controls.Toggle_switch();
+            this.btnJade = new System.Windows.Forms.Button();
             this.linkLabel3 = new System.Windows.Forms.LinkLabel();
+            this.btnRuby = new System.Windows.Forms.Button();
+            this.btnAzurite = new System.Windows.Forms.Button();
+            this.AutoStart = new glebi_tool.Controls.Toggle_switch();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -166,9 +168,10 @@ namespace glebi_tool_2te_design.Forms
             // 
             // btnUpdate
             // 
-            this.btnUpdate.BackColor = System.Drawing.Color.Red;
+            this.btnUpdate.BackColor = System.Drawing.Color.Crimson;
             this.btnUpdate.Cursor = System.Windows.Forms.Cursors.Help;
-            this.btnUpdate.FlatAppearance.BorderSize = 0;
+            this.btnUpdate.FlatAppearance.BorderColor = System.Drawing.Color.Red;
+            this.btnUpdate.FlatAppearance.BorderSize = 3;
             this.btnUpdate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnUpdate.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnUpdate.ForeColor = System.Drawing.Color.WhiteSmoke;
@@ -185,7 +188,7 @@ namespace glebi_tool_2te_design.Forms
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Red;
-            this.label2.Location = new System.Drawing.Point(12, 263);
+            this.label2.Location = new System.Drawing.Point(356, 9);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(82, 22);
             this.label2.TabIndex = 11;
@@ -194,9 +197,10 @@ namespace glebi_tool_2te_design.Forms
             // 
             // button3
             // 
-            this.button3.BackColor = System.Drawing.Color.Red;
+            this.button3.BackColor = System.Drawing.Color.Crimson;
             this.button3.Cursor = System.Windows.Forms.Cursors.Help;
-            this.button3.FlatAppearance.BorderSize = 0;
+            this.button3.FlatAppearance.BorderColor = System.Drawing.Color.Red;
+            this.button3.FlatAppearance.BorderSize = 3;
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.ForeColor = System.Drawing.Color.WhiteSmoke;
@@ -230,14 +234,14 @@ namespace glebi_tool_2te_design.Forms
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(76, 15);
             this.label4.TabIndex = 15;
-            this.label4.Text = "version 2.1.1";
+            this.label4.Text = "version 2.1.2";
             // 
             // lblWelcome
             // 
             this.lblWelcome.AutoSize = true;
             this.lblWelcome.Cursor = System.Windows.Forms.Cursors.Default;
             this.lblWelcome.Font = new System.Drawing.Font("Microsoft Tai Le", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblWelcome.ForeColor = System.Drawing.Color.Red;
+            this.lblWelcome.ForeColor = System.Drawing.Color.Crimson;
             this.lblWelcome.Location = new System.Drawing.Point(13, 154);
             this.lblWelcome.Name = "lblWelcome";
             this.lblWelcome.Size = new System.Drawing.Size(305, 36);
@@ -249,8 +253,8 @@ namespace glebi_tool_2te_design.Forms
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Tai Le", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.Red;
-            this.label5.Location = new System.Drawing.Point(102, 295);
+            this.label5.ForeColor = System.Drawing.Color.Crimson;
+            this.label5.Location = new System.Drawing.Point(446, 51);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(206, 36);
             this.label5.TabIndex = 19;
@@ -274,46 +278,33 @@ namespace glebi_tool_2te_design.Forms
             // label6
             // 
             this.label6.AutoSize = true;
+            this.label6.Cursor = System.Windows.Forms.Cursors.Default;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.Red;
-            this.label6.Location = new System.Drawing.Point(12, 353);
+            this.label6.Location = new System.Drawing.Point(12, 215);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(75, 22);
             this.label6.TabIndex = 21;
             this.label6.Text = "Themes";
             this.label6.Visible = false;
             // 
-            // button1
+            // btnJade
             // 
-            this.button1.BackColor = System.Drawing.Color.Red;
-            this.button1.Cursor = System.Windows.Forms.Cursors.No;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.button1.Location = new System.Drawing.Point(16, 390);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(216, 41);
-            this.button1.TabIndex = 22;
-            this.button1.Text = "Smaragd";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Visible = false;
-            // 
-            // AutoStart
-            // 
-            this.AutoStart.AutoSize = true;
-            this.AutoStart.Location = new System.Drawing.Point(16, 301);
-            this.AutoStart.MinimumSize = new System.Drawing.Size(59, 30);
-            this.AutoStart.Name = "AutoStart";
-            this.AutoStart.OffBackColor = System.Drawing.Color.Gray;
-            this.AutoStart.OffToggleColor = System.Drawing.Color.Gainsboro;
-            this.AutoStart.OnBackColor = System.Drawing.Color.Red;
-            this.AutoStart.OnToggleColor = System.Drawing.Color.WhiteSmoke;
-            this.AutoStart.Size = new System.Drawing.Size(59, 30);
-            this.AutoStart.TabIndex = 16;
-            this.AutoStart.UseVisualStyleBackColor = true;
-            this.AutoStart.Visible = false;
-            this.AutoStart.CheckedChanged += new System.EventHandler(this.AutoStart_CheckedChanged);
+            this.btnJade.BackColor = System.Drawing.Color.MediumSeaGreen;
+            this.btnJade.Cursor = System.Windows.Forms.Cursors.Default;
+            this.btnJade.FlatAppearance.BorderColor = System.Drawing.Color.LightSeaGreen;
+            this.btnJade.FlatAppearance.BorderSize = 3;
+            this.btnJade.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnJade.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnJade.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.btnJade.Location = new System.Drawing.Point(16, 299);
+            this.btnJade.Name = "btnJade";
+            this.btnJade.Size = new System.Drawing.Size(216, 41);
+            this.btnJade.TabIndex = 22;
+            this.btnJade.Text = "Jade";
+            this.btnJade.UseVisualStyleBackColor = false;
+            this.btnJade.Visible = false;
+            this.btnJade.Click += new System.EventHandler(this.btnjade_Click);
             // 
             // linkLabel3
             // 
@@ -329,14 +320,66 @@ namespace glebi_tool_2te_design.Forms
             this.linkLabel3.Text = ".NET Core 3.1";
             this.linkLabel3.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel3_LinkClicked);
             // 
+            // btnRuby
+            // 
+            this.btnRuby.BackColor = System.Drawing.Color.Crimson;
+            this.btnRuby.Cursor = System.Windows.Forms.Cursors.Default;
+            this.btnRuby.FlatAppearance.BorderColor = System.Drawing.Color.Red;
+            this.btnRuby.FlatAppearance.BorderSize = 3;
+            this.btnRuby.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRuby.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRuby.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.btnRuby.Location = new System.Drawing.Point(16, 252);
+            this.btnRuby.Name = "btnRuby";
+            this.btnRuby.Size = new System.Drawing.Size(216, 41);
+            this.btnRuby.TabIndex = 25;
+            this.btnRuby.Text = "Ruby";
+            this.btnRuby.UseVisualStyleBackColor = false;
+            this.btnRuby.Visible = false;
+            // 
+            // btnAzurite
+            // 
+            this.btnAzurite.BackColor = System.Drawing.Color.DodgerBlue;
+            this.btnAzurite.Cursor = System.Windows.Forms.Cursors.Default;
+            this.btnAzurite.FlatAppearance.BorderColor = System.Drawing.Color.RoyalBlue;
+            this.btnAzurite.FlatAppearance.BorderSize = 3;
+            this.btnAzurite.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAzurite.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAzurite.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.btnAzurite.Location = new System.Drawing.Point(16, 346);
+            this.btnAzurite.Name = "btnAzurite";
+            this.btnAzurite.Size = new System.Drawing.Size(216, 41);
+            this.btnAzurite.TabIndex = 24;
+            this.btnAzurite.Text = "Azurite";
+            this.btnAzurite.UseVisualStyleBackColor = false;
+            this.btnAzurite.Visible = false;
+            // 
+            // AutoStart
+            // 
+            this.AutoStart.AutoSize = true;
+            this.AutoStart.Location = new System.Drawing.Point(360, 57);
+            this.AutoStart.MinimumSize = new System.Drawing.Size(59, 30);
+            this.AutoStart.Name = "AutoStart";
+            this.AutoStart.OffBackColor = System.Drawing.Color.Gray;
+            this.AutoStart.OffToggleColor = System.Drawing.Color.Gainsboro;
+            this.AutoStart.OnBackColor = System.Drawing.Color.Red;
+            this.AutoStart.OnToggleColor = System.Drawing.Color.WhiteSmoke;
+            this.AutoStart.Size = new System.Drawing.Size(59, 30);
+            this.AutoStart.TabIndex = 16;
+            this.AutoStart.UseVisualStyleBackColor = true;
+            this.AutoStart.Visible = false;
+            this.AutoStart.CheckedChanged += new System.EventHandler(this.AutoStart_CheckedChanged);
+            // 
             // FormSettings
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
             this.ClientSize = new System.Drawing.Size(839, 458);
+            this.Controls.Add(this.btnRuby);
+            this.Controls.Add(this.btnAzurite);
             this.Controls.Add(this.linkLabel3);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnJade);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.linkLabel2);
             this.Controls.Add(this.label5);
@@ -383,12 +426,14 @@ namespace glebi_tool_2te_design.Forms
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
-        private glebi_tool_2te_design_test.Controls.Toggle_switch AutoStart;
+        private glebi_tool.Controls.Toggle_switch AutoStart;
         private System.Windows.Forms.Label lblWelcome;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.LinkLabel linkLabel2;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnJade;
         private System.Windows.Forms.LinkLabel linkLabel3;
+        private System.Windows.Forms.Button btnRuby;
+        private System.Windows.Forms.Button btnAzurite;
     }
 }

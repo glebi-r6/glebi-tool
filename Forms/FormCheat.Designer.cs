@@ -1,5 +1,5 @@
 ﻿
-namespace glebi_tool_2te_design.Forms
+namespace glebi_tool.Forms
 {
     partial class FormDiscord
     {
@@ -39,9 +39,10 @@ namespace glebi_tool_2te_design.Forms
             // 
             // btnBasic
             // 
-            this.btnBasic.BackColor = System.Drawing.Color.Red;
+            this.btnBasic.BackColor = System.Drawing.Color.Crimson;
             this.btnBasic.Cursor = System.Windows.Forms.Cursors.Default;
-            this.btnBasic.FlatAppearance.BorderSize = 0;
+            this.btnBasic.FlatAppearance.BorderColor = System.Drawing.Color.Red;
+            this.btnBasic.FlatAppearance.BorderSize = 3;
             this.btnBasic.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnBasic.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBasic.ForeColor = System.Drawing.Color.WhiteSmoke;
@@ -55,9 +56,10 @@ namespace glebi_tool_2te_design.Forms
             // 
             // btnRust
             // 
-            this.btnRust.BackColor = System.Drawing.Color.Red;
+            this.btnRust.BackColor = System.Drawing.Color.Crimson;
             this.btnRust.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.btnRust.FlatAppearance.BorderSize = 0;
+            this.btnRust.FlatAppearance.BorderColor = System.Drawing.Color.Red;
+            this.btnRust.FlatAppearance.BorderSize = 3;
             this.btnRust.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRust.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRust.ForeColor = System.Drawing.Color.WhiteSmoke;
@@ -93,9 +95,10 @@ namespace glebi_tool_2te_design.Forms
             // 
             // button1
             // 
-            this.button1.BackColor = System.Drawing.Color.Red;
+            this.button1.BackColor = System.Drawing.Color.Crimson;
             this.button1.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.Red;
+            this.button1.FlatAppearance.BorderSize = 3;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.WhiteSmoke;

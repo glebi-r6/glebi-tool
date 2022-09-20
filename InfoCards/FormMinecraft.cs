@@ -13,7 +13,7 @@ using System.Runtime.InteropServices;
 using System.Net;
 using System.IO;
 
-namespace glebi_tool_2te_design_test.InfoCards
+namespace glebi_tool.InfoCards
 {
     public partial class FormMinecraft : Form
     {

@@ -5,11 +5,10 @@ using System.Data;
 using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
-using NoRecoil;
-using Recoil;
+using glebi_tool.cheat.Recoil;
 using System.IO;
 
-namespace glebi_tool_2te_design.Forms
+namespace glebi_tool.Forms
 {
     public partial class FormDiscord : Form
     {
@@ -25,7 +24,7 @@ namespace glebi_tool_2te_design.Forms
 
         private void btnRust_Click(object sender, EventArgs e)
         {
-            var formPopup = new Recoil.Form1();
+            var formPopup = new glebi_tool.cheat.Recoil.Form1();
             formPopup.Show(this);
         }
 
@@ -33,8 +32,12 @@ namespace glebi_tool_2te_design.Forms
         {
            System.IO.Directory.CreateDirectory("C:\\Users\\" + Environment.UserName.ToString() + "\\AppData\\Roaming\\MagicMouse");
 
-           var formPopup2 = new NoRecoil.gui();
-            formPopup2.Show(this);
+            if (sender == btnBasic)
+            {
+                var formPopup2 = new glebi_tool.cheat.Recoil2.gui();
+                formPopup2.Show(this);
+            }
+            
         }
 
         private void button1_Click(object sender, EventArgs e)

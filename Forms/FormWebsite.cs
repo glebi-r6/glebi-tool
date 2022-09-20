@@ -6,7 +6,7 @@ using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
 
-namespace glebi_tool_2te_design.Forms
+namespace glebi_tool.Forms
 {
     public partial class FormWebsite : Form
     {

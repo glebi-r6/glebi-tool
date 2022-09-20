@@ -1,5 +1,5 @@
 ﻿
-namespace glebi_tool_2_0.InfoCards
+namespace glebi_tool.InfoCards
 {
     partial class FormGarrysMod
     {
@@ -31,10 +31,10 @@ namespace glebi_tool_2_0.InfoCards
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormGarrysMod));
             this.panelTitleBar = new System.Windows.Forms.Panel();
+            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.btnOK = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.panelTitleBar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -52,6 +52,20 @@ namespace glebi_tool_2_0.InfoCards
             this.panelTitleBar.TabIndex = 4;
             this.panelTitleBar.Paint += new System.Windows.Forms.PaintEventHandler(this.panelTitleBar_Paint);
             this.panelTitleBar.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panelTitleBar_MouseDown);
+            // 
+            // linkLabel1
+            // 
+            this.linkLabel1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.linkLabel1.AutoSize = true;
+            this.linkLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkLabel1.LinkColor = System.Drawing.Color.Crimson;
+            this.linkLabel1.Location = new System.Drawing.Point(154, 29);
+            this.linkLabel1.Name = "linkLabel1";
+            this.linkLabel1.Size = new System.Drawing.Size(88, 17);
+            this.linkLabel1.TabIndex = 104;
+            this.linkLabel1.TabStop = true;
+            this.linkLabel1.Text = "Radmin VPN";
+            this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
             // 
             // btnOK
             // 
@@ -94,20 +108,6 @@ namespace glebi_tool_2_0.InfoCards
             this.pictureBox1.Size = new System.Drawing.Size(75, 75);
             this.pictureBox1.TabIndex = 99;
             this.pictureBox1.TabStop = false;
-            // 
-            // linkLabel1
-            // 
-            this.linkLabel1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.linkLabel1.AutoSize = true;
-            this.linkLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.linkLabel1.LinkColor = System.Drawing.Color.Red;
-            this.linkLabel1.Location = new System.Drawing.Point(154, 29);
-            this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(88, 17);
-            this.linkLabel1.TabIndex = 104;
-            this.linkLabel1.TabStop = true;
-            this.linkLabel1.Text = "Radmin VPN";
-            this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
             // 
             // FormGarrysMod
             // 

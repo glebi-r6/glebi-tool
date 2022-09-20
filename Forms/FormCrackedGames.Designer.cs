@@ -1,5 +1,5 @@
 ﻿
-namespace glebi_tool_2te_design.Forms
+namespace glebi_tool.Forms
 {
     partial class FormCrackedGames
     {
@@ -48,6 +48,18 @@ namespace glebi_tool_2te_design.Forms
             this.iconPictureBox10 = new FontAwesome.Sharp.IconPictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.iconButton8 = new FontAwesome.Sharp.IconButton();
+            this.iconButton9 = new FontAwesome.Sharp.IconButton();
+            this.label25 = new System.Windows.Forms.Label();
+            this.pictureBox19 = new System.Windows.Forms.PictureBox();
+            this.label26 = new System.Windows.Forms.Label();
+            this.pictureBox20 = new System.Windows.Forms.PictureBox();
+            this.iconButton14 = new FontAwesome.Sharp.IconButton();
+            this.label27 = new System.Windows.Forms.Label();
+            this.pictureBox21 = new System.Windows.Forms.PictureBox();
+            this.iconButton5 = new FontAwesome.Sharp.IconButton();
+            this.label24 = new System.Windows.Forms.Label();
+            this.pictureBox18 = new System.Windows.Forms.PictureBox();
             this.iconButton4 = new FontAwesome.Sharp.IconButton();
             this.btnLSWTSS = new FontAwesome.Sharp.IconButton();
             this.iconPictureBox9 = new FontAwesome.Sharp.IconPictureBox();
@@ -110,6 +122,10 @@ namespace glebi_tool_2te_design.Forms
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox10)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox19)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox20)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox21)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox18)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox8)).BeginInit();
@@ -152,7 +168,7 @@ namespace glebi_tool_2te_design.Forms
             // 
             this.llblBittorrent.AutoSize = true;
             this.llblBittorrent.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.llblBittorrent.LinkColor = System.Drawing.Color.Red;
+            this.llblBittorrent.LinkColor = System.Drawing.Color.Crimson;
             this.llblBittorrent.Location = new System.Drawing.Point(60, 55);
             this.llblBittorrent.Name = "llblBittorrent";
             this.llblBittorrent.Size = new System.Drawing.Size(93, 22);
@@ -189,7 +205,7 @@ namespace glebi_tool_2te_design.Forms
             this.llblDiscordsupport.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.llblDiscordsupport.AutoSize = true;
             this.llblDiscordsupport.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.llblDiscordsupport.LinkColor = System.Drawing.Color.Red;
+            this.llblDiscordsupport.LinkColor = System.Drawing.Color.Crimson;
             this.llblDiscordsupport.Location = new System.Drawing.Point(738, 69);
             this.llblDiscordsupport.Name = "llblDiscordsupport";
             this.llblDiscordsupport.Size = new System.Drawing.Size(139, 22);
@@ -359,6 +375,18 @@ namespace glebi_tool_2te_design.Forms
             // panel3
             // 
             this.panel3.AutoScroll = true;
+            this.panel3.Controls.Add(this.iconButton8);
+            this.panel3.Controls.Add(this.iconButton9);
+            this.panel3.Controls.Add(this.label25);
+            this.panel3.Controls.Add(this.pictureBox19);
+            this.panel3.Controls.Add(this.label26);
+            this.panel3.Controls.Add(this.pictureBox20);
+            this.panel3.Controls.Add(this.iconButton14);
+            this.panel3.Controls.Add(this.label27);
+            this.panel3.Controls.Add(this.pictureBox21);
+            this.panel3.Controls.Add(this.iconButton5);
+            this.panel3.Controls.Add(this.label24);
+            this.panel3.Controls.Add(this.pictureBox18);
             this.panel3.Controls.Add(this.iconButton4);
             this.panel3.Controls.Add(this.btnLSWTSS);
             this.panel3.Controls.Add(this.iconPictureBox9);
@@ -422,6 +450,144 @@ namespace glebi_tool_2te_design.Forms
             this.panel3.Size = new System.Drawing.Size(914, 322);
             this.panel3.TabIndex = 17;
             // 
+            // iconButton8
+            // 
+            this.iconButton8.FlatAppearance.BorderSize = 0;
+            this.iconButton8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconButton8.IconChar = FontAwesome.Sharp.IconChar.Download;
+            this.iconButton8.IconColor = System.Drawing.Color.LawnGreen;
+            this.iconButton8.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconButton8.IconSize = 20;
+            this.iconButton8.Location = new System.Drawing.Point(16, 606);
+            this.iconButton8.Name = "iconButton8";
+            this.iconButton8.Size = new System.Drawing.Size(38, 29);
+            this.iconButton8.TabIndex = 152;
+            this.iconButton8.UseVisualStyleBackColor = true;
+            this.iconButton8.Click += new System.EventHandler(this.iconButton8_Click);
+            // 
+            // iconButton9
+            // 
+            this.iconButton9.FlatAppearance.BorderSize = 0;
+            this.iconButton9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconButton9.IconChar = FontAwesome.Sharp.IconChar.Download;
+            this.iconButton9.IconColor = System.Drawing.Color.LawnGreen;
+            this.iconButton9.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconButton9.IconSize = 20;
+            this.iconButton9.Location = new System.Drawing.Point(423, 606);
+            this.iconButton9.Name = "iconButton9";
+            this.iconButton9.Size = new System.Drawing.Size(38, 29);
+            this.iconButton9.TabIndex = 151;
+            this.iconButton9.UseVisualStyleBackColor = true;
+            this.iconButton9.Visible = false;
+            // 
+            // label25
+            // 
+            this.label25.AutoSize = true;
+            this.label25.ForeColor = System.Drawing.Color.Red;
+            this.label25.Location = new System.Drawing.Point(505, 556);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(127, 13);
+            this.label25.TabIndex = 150;
+            this.label25.Text = "Assassins Creed Odyssey";
+            this.label25.Visible = false;
+            // 
+            // pictureBox19
+            // 
+            this.pictureBox19.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox19.Image")));
+            this.pictureBox19.Location = new System.Drawing.Point(424, 525);
+            this.pictureBox19.Name = "pictureBox19";
+            this.pictureBox19.Size = new System.Drawing.Size(75, 75);
+            this.pictureBox19.TabIndex = 149;
+            this.pictureBox19.TabStop = false;
+            this.pictureBox19.Visible = false;
+            // 
+            // label26
+            // 
+            this.label26.AutoSize = true;
+            this.label26.ForeColor = System.Drawing.Color.Red;
+            this.label26.Location = new System.Drawing.Point(301, 556);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(125, 13);
+            this.label26.TabIndex = 148;
+            this.label26.Text = "Red Dead Redemption 2";
+            // 
+            // pictureBox20
+            // 
+            this.pictureBox20.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox20.Image")));
+            this.pictureBox20.Location = new System.Drawing.Point(220, 525);
+            this.pictureBox20.Name = "pictureBox20";
+            this.pictureBox20.Size = new System.Drawing.Size(75, 75);
+            this.pictureBox20.TabIndex = 147;
+            this.pictureBox20.TabStop = false;
+            // 
+            // iconButton14
+            // 
+            this.iconButton14.FlatAppearance.BorderSize = 0;
+            this.iconButton14.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconButton14.IconChar = FontAwesome.Sharp.IconChar.Download;
+            this.iconButton14.IconColor = System.Drawing.Color.LawnGreen;
+            this.iconButton14.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconButton14.IconSize = 20;
+            this.iconButton14.Location = new System.Drawing.Point(220, 606);
+            this.iconButton14.Name = "iconButton14";
+            this.iconButton14.Size = new System.Drawing.Size(38, 29);
+            this.iconButton14.TabIndex = 146;
+            this.iconButton14.UseVisualStyleBackColor = true;
+            this.iconButton14.Click += new System.EventHandler(this.iconButton14_Click);
+            // 
+            // label27
+            // 
+            this.label27.AutoSize = true;
+            this.label27.ForeColor = System.Drawing.Color.Red;
+            this.label27.Location = new System.Drawing.Point(97, 556);
+            this.label27.Name = "label27";
+            this.label27.Size = new System.Drawing.Size(101, 13);
+            this.label27.TabIndex = 145;
+            this.label27.Text = "Marvels Spider Man";
+            // 
+            // pictureBox21
+            // 
+            this.pictureBox21.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox21.Image")));
+            this.pictureBox21.Location = new System.Drawing.Point(16, 525);
+            this.pictureBox21.Name = "pictureBox21";
+            this.pictureBox21.Size = new System.Drawing.Size(75, 75);
+            this.pictureBox21.TabIndex = 144;
+            this.pictureBox21.TabStop = false;
+            // 
+            // iconButton5
+            // 
+            this.iconButton5.FlatAppearance.BorderSize = 0;
+            this.iconButton5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconButton5.IconChar = FontAwesome.Sharp.IconChar.Download;
+            this.iconButton5.IconColor = System.Drawing.Color.LawnGreen;
+            this.iconButton5.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconButton5.IconSize = 20;
+            this.iconButton5.Location = new System.Drawing.Point(627, 480);
+            this.iconButton5.Name = "iconButton5";
+            this.iconButton5.Size = new System.Drawing.Size(38, 29);
+            this.iconButton5.TabIndex = 143;
+            this.iconButton5.UseVisualStyleBackColor = true;
+            this.iconButton5.Click += new System.EventHandler(this.iconButton5_Click);
+            // 
+            // label24
+            // 
+            this.label24.AutoSize = true;
+            this.label24.ForeColor = System.Drawing.Color.Red;
+            this.label24.Location = new System.Drawing.Point(709, 424);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(102, 26);
+            this.label24.TabIndex = 142;
+            this.label24.Text = "Horizon Zero Dawn \r\nComplete Edition";
+            // 
+            // pictureBox18
+            // 
+            this.pictureBox18.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox18.Image")));
+            this.pictureBox18.Location = new System.Drawing.Point(628, 399);
+            this.pictureBox18.Name = "pictureBox18";
+            this.pictureBox18.Size = new System.Drawing.Size(75, 75);
+            this.pictureBox18.TabIndex = 141;
+            this.pictureBox18.TabStop = false;
+            // 
             // iconButton4
             // 
             this.iconButton4.FlatAppearance.BorderSize = 0;
@@ -459,7 +625,7 @@ namespace glebi_tool_2te_design.Forms
             this.iconPictureBox9.IconChar = FontAwesome.Sharp.IconChar.InfoCircle;
             this.iconPictureBox9.IconColor = System.Drawing.Color.Red;
             this.iconPictureBox9.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconPictureBox9.Location = new System.Drawing.Point(670, 480);
+            this.iconPictureBox9.Location = new System.Drawing.Point(672, 666);
             this.iconPictureBox9.Name = "iconPictureBox9";
             this.iconPictureBox9.Size = new System.Drawing.Size(32, 32);
             this.iconPictureBox9.TabIndex = 138;
@@ -475,7 +641,7 @@ namespace glebi_tool_2te_design.Forms
             this.iconButton13.IconColor = System.Drawing.Color.Cyan;
             this.iconButton13.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconButton13.IconSize = 20;
-            this.iconButton13.Location = new System.Drawing.Point(626, 480);
+            this.iconButton13.Location = new System.Drawing.Point(628, 666);
             this.iconButton13.Name = "iconButton13";
             this.iconButton13.Size = new System.Drawing.Size(38, 29);
             this.iconButton13.TabIndex = 137;
@@ -486,7 +652,7 @@ namespace glebi_tool_2te_design.Forms
             // 
             this.label16.AutoSize = true;
             this.label16.ForeColor = System.Drawing.Color.Red;
-            this.label16.Location = new System.Drawing.Point(708, 430);
+            this.label16.Location = new System.Drawing.Point(710, 616);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(63, 13);
             this.label16.TabIndex = 136;
@@ -496,7 +662,7 @@ namespace glebi_tool_2te_design.Forms
             // pictureBox14
             // 
             this.pictureBox14.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox14.Image")));
-            this.pictureBox14.Location = new System.Drawing.Point(627, 399);
+            this.pictureBox14.Location = new System.Drawing.Point(629, 585);
             this.pictureBox14.Name = "pictureBox14";
             this.pictureBox14.Size = new System.Drawing.Size(75, 75);
             this.pictureBox14.TabIndex = 135;
@@ -510,7 +676,7 @@ namespace glebi_tool_2te_design.Forms
             this.iconPictureBox8.IconChar = FontAwesome.Sharp.IconChar.InfoCircle;
             this.iconPictureBox8.IconColor = System.Drawing.Color.Red;
             this.iconPictureBox8.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconPictureBox8.Location = new System.Drawing.Point(708, 480);
+            this.iconPictureBox8.Location = new System.Drawing.Point(710, 666);
             this.iconPictureBox8.Name = "iconPictureBox8";
             this.iconPictureBox8.Size = new System.Drawing.Size(32, 32);
             this.iconPictureBox8.TabIndex = 134;
@@ -526,7 +692,7 @@ namespace glebi_tool_2te_design.Forms
             this.iconButton12.IconColor = System.Drawing.Color.LawnGreen;
             this.iconButton12.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconButton12.IconSize = 20;
-            this.iconButton12.Location = new System.Drawing.Point(423, 480);
+            this.iconButton12.Location = new System.Drawing.Point(424, 480);
             this.iconButton12.Name = "iconButton12";
             this.iconButton12.Size = new System.Drawing.Size(38, 29);
             this.iconButton12.TabIndex = 133;
@@ -891,9 +1057,9 @@ namespace glebi_tool_2te_design.Forms
             this.label8.ForeColor = System.Drawing.Color.Red;
             this.label8.Location = new System.Drawing.Point(301, 430);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(105, 13);
+            this.label8.Size = new System.Drawing.Size(120, 13);
             this.label8.TabIndex = 92;
-            this.label8.Text = "Hitman 3 (Unlock all)";
+            this.label8.Text = "Hitman 3 Deluxe Edition";
             // 
             // pictureBox6
             // 
@@ -1116,6 +1282,10 @@ namespace glebi_tool_2te_design.Forms
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox19)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox20)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox21)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox18)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox9)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox8)).EndInit();
@@ -1222,5 +1392,17 @@ namespace glebi_tool_2te_design.Forms
         private FontAwesome.Sharp.IconPictureBox iconPictureBox8;
         private FontAwesome.Sharp.IconButton iconButton1;
         private System.Windows.Forms.Label label23;
+        private FontAwesome.Sharp.IconButton iconButton5;
+        private System.Windows.Forms.Label label24;
+        private System.Windows.Forms.PictureBox pictureBox18;
+        private FontAwesome.Sharp.IconButton iconButton8;
+        private FontAwesome.Sharp.IconButton iconButton9;
+        private System.Windows.Forms.Label label25;
+        private System.Windows.Forms.PictureBox pictureBox19;
+        private System.Windows.Forms.Label label26;
+        private System.Windows.Forms.PictureBox pictureBox20;
+        private FontAwesome.Sharp.IconButton iconButton14;
+        private System.Windows.Forms.Label label27;
+        private System.Windows.Forms.PictureBox pictureBox21;
     }
 }

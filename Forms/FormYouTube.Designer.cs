@@ -1,5 +1,5 @@
 ﻿
-namespace glebi_tool_2te_design.Forms
+namespace glebi_tool.Forms
 {
     partial class FormYouTube
     {
@@ -83,7 +83,7 @@ namespace glebi_tool_2te_design.Forms
             this.llblYouTube.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.llblYouTube.AutoSize = true;
             this.llblYouTube.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.llblYouTube.LinkColor = System.Drawing.Color.Red;
+            this.llblYouTube.LinkColor = System.Drawing.Color.Crimson;
             this.llblYouTube.Location = new System.Drawing.Point(531, 382);
             this.llblYouTube.Name = "llblYouTube";
             this.llblYouTube.Size = new System.Drawing.Size(90, 22);

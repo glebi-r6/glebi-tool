@@ -1,5 +1,5 @@
 ﻿
-namespace glebi_tool_2te_design.Forms
+namespace glebi_tool.Forms
 {
     partial class FormWebsite
     {

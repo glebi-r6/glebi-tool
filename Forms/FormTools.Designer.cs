@@ -1,5 +1,5 @@
 ﻿
-namespace glebi_tool_2te_design.Forms
+namespace glebi_tool.Forms
 {
     partial class FormTools
     {
@@ -33,6 +33,8 @@ namespace glebi_tool_2te_design.Forms
             this.llblDiscordsupport = new System.Windows.Forms.LinkLabel();
             this.lblWelcome = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.iconButton2 = new FontAwesome.Sharp.IconButton();
+            this.label23 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -65,8 +67,6 @@ namespace glebi_tool_2te_design.Forms
             this.label4 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.btnKms = new FontAwesome.Sharp.IconButton();
-            this.iconButton2 = new FontAwesome.Sharp.IconButton();
-            this.label23 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -90,7 +90,7 @@ namespace glebi_tool_2te_design.Forms
             this.llblDiscordsupport.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.llblDiscordsupport.AutoSize = true;
             this.llblDiscordsupport.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.llblDiscordsupport.LinkColor = System.Drawing.Color.Red;
+            this.llblDiscordsupport.LinkColor = System.Drawing.Color.Crimson;
             this.llblDiscordsupport.Location = new System.Drawing.Point(739, 69);
             this.llblDiscordsupport.Name = "llblDiscordsupport";
             this.llblDiscordsupport.Size = new System.Drawing.Size(139, 22);
@@ -119,6 +119,34 @@ namespace glebi_tool_2te_design.Forms
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(914, 102);
             this.panel1.TabIndex = 67;
+            // 
+            // iconButton2
+            // 
+            this.iconButton2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.iconButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconButton2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
+            this.iconButton2.IconChar = FontAwesome.Sharp.IconChar.FolderOpen;
+            this.iconButton2.IconColor = System.Drawing.Color.Orange;
+            this.iconButton2.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconButton2.IconSize = 40;
+            this.iconButton2.Location = new System.Drawing.Point(812, 58);
+            this.iconButton2.Name = "iconButton2";
+            this.iconButton2.Size = new System.Drawing.Size(50, 38);
+            this.iconButton2.TabIndex = 135;
+            this.iconButton2.UseVisualStyleBackColor = true;
+            this.iconButton2.Click += new System.EventHandler(this.iconButton2_Click);
+            // 
+            // label23
+            // 
+            this.label23.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label23.AutoSize = true;
+            this.label23.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label23.ForeColor = System.Drawing.Color.Red;
+            this.label23.Location = new System.Drawing.Point(776, 18);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(127, 34);
+            this.label23.TabIndex = 134;
+            this.label23.Text = "Open Download \r\n       Folder";
             // 
             // panel2
             // 
@@ -518,34 +546,6 @@ namespace glebi_tool_2te_design.Forms
             this.btnKms.TabIndex = 67;
             this.btnKms.UseVisualStyleBackColor = true;
             this.btnKms.Click += new System.EventHandler(this.btnKms_Click);
-            // 
-            // iconButton2
-            // 
-            this.iconButton2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.iconButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
-            this.iconButton2.IconChar = FontAwesome.Sharp.IconChar.FolderOpen;
-            this.iconButton2.IconColor = System.Drawing.Color.Orange;
-            this.iconButton2.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton2.IconSize = 40;
-            this.iconButton2.Location = new System.Drawing.Point(812, 58);
-            this.iconButton2.Name = "iconButton2";
-            this.iconButton2.Size = new System.Drawing.Size(50, 38);
-            this.iconButton2.TabIndex = 135;
-            this.iconButton2.UseVisualStyleBackColor = true;
-            this.iconButton2.Click += new System.EventHandler(this.iconButton2_Click);
-            // 
-            // label23
-            // 
-            this.label23.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label23.AutoSize = true;
-            this.label23.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label23.ForeColor = System.Drawing.Color.Red;
-            this.label23.Location = new System.Drawing.Point(776, 18);
-            this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(127, 34);
-            this.label23.TabIndex = 134;
-            this.label23.Text = "Open Download \r\n       Folder";
             // 
             // FormTools
             // 

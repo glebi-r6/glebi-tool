@@ -11,7 +11,7 @@ using System.Net;
 using System.IO;
 using System.Runtime.InteropServices;
 
-namespace glebi_tool_2_0.InfoCards
+namespace glebi_tool.InfoCards
 {
     public partial class FormKMS : Form
     {

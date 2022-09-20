@@ -1,5 +1,5 @@
 ﻿
-namespace glebi_tool_2_0.InfoCards
+namespace glebi_tool.InfoCards
 {
     partial class FormIDM
     {

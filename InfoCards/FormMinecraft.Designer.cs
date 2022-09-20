@@ -1,5 +1,5 @@
 ﻿
-namespace glebi_tool_2te_design_test.InfoCards
+namespace glebi_tool.InfoCards
 {
     partial class FormMinecraft
     {
