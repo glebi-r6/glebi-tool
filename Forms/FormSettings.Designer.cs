@@ -52,6 +52,8 @@ namespace glebi_tool.Forms
             this.linkLabel3 = new System.Windows.Forms.LinkLabel();
             this.btnRuby = new System.Windows.Forms.Button();
             this.btnAzurite = new System.Windows.Forms.Button();
+            this.iconButton2 = new FontAwesome.Sharp.IconButton();
+            this.label7 = new System.Windows.Forms.Label();
             this.AutoStart = new glebi_tool.Controls.Toggle_switch();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -188,7 +190,7 @@ namespace glebi_tool.Forms
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Red;
-            this.label2.Location = new System.Drawing.Point(356, 9);
+            this.label2.Location = new System.Drawing.Point(22, 328);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(82, 22);
             this.label2.TabIndex = 11;
@@ -254,7 +256,7 @@ namespace glebi_tool.Forms
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Tai Le", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.Crimson;
-            this.label5.Location = new System.Drawing.Point(446, 51);
+            this.label5.Location = new System.Drawing.Point(112, 370);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(206, 36);
             this.label5.TabIndex = 19;
@@ -281,7 +283,7 @@ namespace glebi_tool.Forms
             this.label6.Cursor = System.Windows.Forms.Cursors.Default;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.Red;
-            this.label6.Location = new System.Drawing.Point(12, 215);
+            this.label6.Location = new System.Drawing.Point(407, 9);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(75, 22);
             this.label6.TabIndex = 21;
@@ -297,7 +299,7 @@ namespace glebi_tool.Forms
             this.btnJade.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnJade.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnJade.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.btnJade.Location = new System.Drawing.Point(16, 299);
+            this.btnJade.Location = new System.Drawing.Point(411, 98);
             this.btnJade.Name = "btnJade";
             this.btnJade.Size = new System.Drawing.Size(216, 41);
             this.btnJade.TabIndex = 22;
@@ -329,7 +331,7 @@ namespace glebi_tool.Forms
             this.btnRuby.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRuby.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRuby.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.btnRuby.Location = new System.Drawing.Point(16, 252);
+            this.btnRuby.Location = new System.Drawing.Point(411, 51);
             this.btnRuby.Name = "btnRuby";
             this.btnRuby.Size = new System.Drawing.Size(216, 41);
             this.btnRuby.TabIndex = 25;
@@ -346,7 +348,7 @@ namespace glebi_tool.Forms
             this.btnAzurite.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAzurite.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAzurite.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.btnAzurite.Location = new System.Drawing.Point(16, 346);
+            this.btnAzurite.Location = new System.Drawing.Point(411, 145);
             this.btnAzurite.Name = "btnAzurite";
             this.btnAzurite.Size = new System.Drawing.Size(216, 41);
             this.btnAzurite.TabIndex = 24;
@@ -354,10 +356,36 @@ namespace glebi_tool.Forms
             this.btnAzurite.UseVisualStyleBackColor = false;
             this.btnAzurite.Visible = false;
             // 
+            // iconButton2
+            // 
+            this.iconButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconButton2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
+            this.iconButton2.IconChar = FontAwesome.Sharp.IconChar.FolderOpen;
+            this.iconButton2.IconColor = System.Drawing.Color.Orange;
+            this.iconButton2.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconButton2.IconSize = 40;
+            this.iconButton2.Location = new System.Drawing.Point(56, 272);
+            this.iconButton2.Name = "iconButton2";
+            this.iconButton2.Size = new System.Drawing.Size(50, 38);
+            this.iconButton2.TabIndex = 137;
+            this.iconButton2.UseVisualStyleBackColor = true;
+            this.iconButton2.Click += new System.EventHandler(this.iconButton2_Click);
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.Color.Red;
+            this.label7.Location = new System.Drawing.Point(12, 225);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(145, 44);
+            this.label7.TabIndex = 138;
+            this.label7.Text = "Open application\r\n        Folder";
+            // 
             // AutoStart
             // 
             this.AutoStart.AutoSize = true;
-            this.AutoStart.Location = new System.Drawing.Point(360, 57);
+            this.AutoStart.Location = new System.Drawing.Point(26, 376);
             this.AutoStart.MinimumSize = new System.Drawing.Size(59, 30);
             this.AutoStart.Name = "AutoStart";
             this.AutoStart.OffBackColor = System.Drawing.Color.Gray;
@@ -376,6 +404,8 @@ namespace glebi_tool.Forms
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
             this.ClientSize = new System.Drawing.Size(839, 458);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.iconButton2);
             this.Controls.Add(this.btnRuby);
             this.Controls.Add(this.btnAzurite);
             this.Controls.Add(this.linkLabel3);
@@ -435,5 +465,7 @@ namespace glebi_tool.Forms
         private System.Windows.Forms.LinkLabel linkLabel3;
         private System.Windows.Forms.Button btnRuby;
         private System.Windows.Forms.Button btnAzurite;
+        private FontAwesome.Sharp.IconButton iconButton2;
+        private System.Windows.Forms.Label label7;
     }
 }

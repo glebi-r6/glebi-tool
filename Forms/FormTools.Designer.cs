@@ -36,9 +36,33 @@ namespace glebi_tool.Forms
             this.iconButton2 = new FontAwesome.Sharp.IconButton();
             this.label23 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.label25 = new System.Windows.Forms.Label();
+            this.iconPictureBox10 = new FontAwesome.Sharp.IconPictureBox();
+            this.lblSpeed = new System.Windows.Forms.Label();
+            this.lblSize = new System.Windows.Forms.Label();
+            this.lblPercent = new System.Windows.Forms.Label();
+            this.progressBar1 = new System.Windows.Forms.ProgressBar();
             this.label3 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.iconPictureBox6 = new FontAwesome.Sharp.IconPictureBox();
+            this.iconPictureBox5 = new FontAwesome.Sharp.IconPictureBox();
+            this.label22 = new System.Windows.Forms.Label();
+            this.label24 = new System.Windows.Forms.Label();
+            this.label20 = new System.Windows.Forms.Label();
+            this.label21 = new System.Windows.Forms.Label();
+            this.label17 = new System.Windows.Forms.Label();
+            this.label18 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label47 = new System.Windows.Forms.Label();
+            this.label35 = new System.Windows.Forms.Label();
             this.iconPictureBox4 = new FontAwesome.Sharp.IconPictureBox();
             this.iconButton1 = new FontAwesome.Sharp.IconButton();
             this.label2 = new System.Windows.Forms.Label();
@@ -67,10 +91,18 @@ namespace glebi_tool.Forms
             this.label4 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.btnKms = new FontAwesome.Sharp.IconButton();
+            this.Wallpaper_Engine = new System.ComponentModel.BackgroundWorker();
+            this.IDM = new System.ComponentModel.BackgroundWorker();
+            this.Photoshop = new System.ComponentModel.BackgroundWorker();
+            this.Premiere_Pro = new System.ComponentModel.BackgroundWorker();
+            this.Office = new System.ComponentModel.BackgroundWorker();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox10)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox3)).BeginInit();
@@ -150,6 +182,12 @@ namespace glebi_tool.Forms
             // 
             // panel2
             // 
+            this.panel2.Controls.Add(this.label25);
+            this.panel2.Controls.Add(this.iconPictureBox10);
+            this.panel2.Controls.Add(this.lblSpeed);
+            this.panel2.Controls.Add(this.lblSize);
+            this.panel2.Controls.Add(this.lblPercent);
+            this.panel2.Controls.Add(this.progressBar1);
             this.panel2.Controls.Add(this.label3);
             this.panel2.Controls.Add(this.llblDiscordsupport);
             this.panel2.Controls.Add(this.pictureBox1);
@@ -158,6 +196,79 @@ namespace glebi_tool.Forms
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(914, 100);
             this.panel2.TabIndex = 68;
+            // 
+            // label25
+            // 
+            this.label25.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.label25.AutoSize = true;
+            this.label25.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label25.ForeColor = System.Drawing.Color.Crimson;
+            this.label25.Location = new System.Drawing.Point(725, 33);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(154, 22);
+            this.label25.TabIndex = 166;
+            this.label25.Text = "Big Downloads?";
+            this.label25.Visible = false;
+            // 
+            // iconPictureBox10
+            // 
+            this.iconPictureBox10.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.iconPictureBox10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
+            this.iconPictureBox10.ForeColor = System.Drawing.Color.Red;
+            this.iconPictureBox10.IconChar = FontAwesome.Sharp.IconChar.InfoCircle;
+            this.iconPictureBox10.IconColor = System.Drawing.Color.Red;
+            this.iconPictureBox10.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconPictureBox10.Location = new System.Drawing.Point(878, 31);
+            this.iconPictureBox10.Name = "iconPictureBox10";
+            this.iconPictureBox10.Size = new System.Drawing.Size(32, 32);
+            this.iconPictureBox10.TabIndex = 165;
+            this.iconPictureBox10.TabStop = false;
+            this.iconPictureBox10.Visible = false;
+            this.iconPictureBox10.Click += new System.EventHandler(this.iconPictureBox10_Click);
+            // 
+            // lblSpeed
+            // 
+            this.lblSpeed.AutoSize = true;
+            this.lblSpeed.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSpeed.ForeColor = System.Drawing.Color.Red;
+            this.lblSpeed.Location = new System.Drawing.Point(396, 17);
+            this.lblSpeed.Name = "lblSpeed";
+            this.lblSpeed.Size = new System.Drawing.Size(44, 20);
+            this.lblSpeed.TabIndex = 164;
+            this.lblSpeed.Text = "Size:";
+            this.lblSpeed.Visible = false;
+            // 
+            // lblSize
+            // 
+            this.lblSize.AutoSize = true;
+            this.lblSize.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSize.ForeColor = System.Drawing.Color.Red;
+            this.lblSize.Location = new System.Drawing.Point(437, 17);
+            this.lblSize.Name = "lblSize";
+            this.lblSize.Size = new System.Drawing.Size(33, 20);
+            this.lblSize.TabIndex = 163;
+            this.lblSize.Text = "MB";
+            this.lblSize.Visible = false;
+            // 
+            // lblPercent
+            // 
+            this.lblPercent.AutoSize = true;
+            this.lblPercent.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPercent.ForeColor = System.Drawing.Color.Red;
+            this.lblPercent.Location = new System.Drawing.Point(330, 17);
+            this.lblPercent.Name = "lblPercent";
+            this.lblPercent.Size = new System.Drawing.Size(40, 20);
+            this.lblPercent.TabIndex = 162;
+            this.lblPercent.Text = "0.00";
+            this.lblPercent.Visible = false;
+            // 
+            // progressBar1
+            // 
+            this.progressBar1.Location = new System.Drawing.Point(16, 17);
+            this.progressBar1.Name = "progressBar1";
+            this.progressBar1.Size = new System.Drawing.Size(308, 23);
+            this.progressBar1.TabIndex = 161;
+            this.progressBar1.Visible = false;
             // 
             // label3
             // 
@@ -185,6 +296,24 @@ namespace glebi_tool.Forms
             // panel3
             // 
             this.panel3.AutoScroll = true;
+            this.panel3.Controls.Add(this.iconPictureBox6);
+            this.panel3.Controls.Add(this.iconPictureBox5);
+            this.panel3.Controls.Add(this.label22);
+            this.panel3.Controls.Add(this.label24);
+            this.panel3.Controls.Add(this.label20);
+            this.panel3.Controls.Add(this.label21);
+            this.panel3.Controls.Add(this.label17);
+            this.panel3.Controls.Add(this.label18);
+            this.panel3.Controls.Add(this.label14);
+            this.panel3.Controls.Add(this.label16);
+            this.panel3.Controls.Add(this.label12);
+            this.panel3.Controls.Add(this.label13);
+            this.panel3.Controls.Add(this.label8);
+            this.panel3.Controls.Add(this.label9);
+            this.panel3.Controls.Add(this.label6);
+            this.panel3.Controls.Add(this.label7);
+            this.panel3.Controls.Add(this.label47);
+            this.panel3.Controls.Add(this.label35);
             this.panel3.Controls.Add(this.iconPictureBox4);
             this.panel3.Controls.Add(this.iconButton1);
             this.panel3.Controls.Add(this.label2);
@@ -219,6 +348,194 @@ namespace glebi_tool.Forms
             this.panel3.Size = new System.Drawing.Size(914, 322);
             this.panel3.TabIndex = 69;
             // 
+            // iconPictureBox6
+            // 
+            this.iconPictureBox6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
+            this.iconPictureBox6.ForeColor = System.Drawing.Color.Red;
+            this.iconPictureBox6.IconChar = FontAwesome.Sharp.IconChar.InfoCircle;
+            this.iconPictureBox6.IconColor = System.Drawing.Color.Red;
+            this.iconPictureBox6.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconPictureBox6.Location = new System.Drawing.Point(263, 237);
+            this.iconPictureBox6.Name = "iconPictureBox6";
+            this.iconPictureBox6.Size = new System.Drawing.Size(32, 32);
+            this.iconPictureBox6.TabIndex = 190;
+            this.iconPictureBox6.TabStop = false;
+            this.iconPictureBox6.Click += new System.EventHandler(this.iconPictureBox6_Click);
+            // 
+            // iconPictureBox5
+            // 
+            this.iconPictureBox5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
+            this.iconPictureBox5.ForeColor = System.Drawing.Color.Red;
+            this.iconPictureBox5.IconChar = FontAwesome.Sharp.IconChar.InfoCircle;
+            this.iconPictureBox5.IconColor = System.Drawing.Color.Red;
+            this.iconPictureBox5.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconPictureBox5.Location = new System.Drawing.Point(59, 237);
+            this.iconPictureBox5.Name = "iconPictureBox5";
+            this.iconPictureBox5.Size = new System.Drawing.Size(32, 32);
+            this.iconPictureBox5.TabIndex = 189;
+            this.iconPictureBox5.TabStop = false;
+            this.iconPictureBox5.Click += new System.EventHandler(this.iconPictureBox5_Click);
+            // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.ForeColor = System.Drawing.Color.ForestGreen;
+            this.label22.Location = new System.Drawing.Point(537, 62);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(60, 13);
+            this.label22.TabIndex = 188;
+            this.label22.Text = "(327 Bytes)";
+            // 
+            // label24
+            // 
+            this.label24.AutoSize = true;
+            this.label24.ForeColor = System.Drawing.Color.ForestGreen;
+            this.label24.Location = new System.Drawing.Point(505, 62);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(31, 13);
+            this.label24.TabIndex = 187;
+            this.label24.Text = "(.bat)";
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.ForeColor = System.Drawing.Color.Gold;
+            this.label20.Location = new System.Drawing.Point(340, 193);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(52, 13);
+            this.label20.TabIndex = 186;
+            this.label20.Text = "(2.53 GB)";
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.ForeColor = System.Drawing.Color.Gold;
+            this.label21.Location = new System.Drawing.Point(301, 193);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(29, 13);
+            this.label21.TabIndex = 185;
+            this.label21.Text = "(.zip)";
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.ForeColor = System.Drawing.Color.Gold;
+            this.label17.Location = new System.Drawing.Point(145, 193);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(52, 13);
+            this.label17.TabIndex = 184;
+            this.label17.Text = "(1.62 GB)";
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.ForeColor = System.Drawing.Color.Gold;
+            this.label18.Location = new System.Drawing.Point(97, 193);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(28, 13);
+            this.label18.TabIndex = 183;
+            this.label18.Text = "(.rar)";
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.ForeColor = System.Drawing.Color.RoyalBlue;
+            this.label14.Location = new System.Drawing.Point(547, 201);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(53, 13);
+            this.label14.TabIndex = 182;
+            this.label14.Text = "(42,7 MB)";
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.ForeColor = System.Drawing.Color.RoyalBlue;
+            this.label16.Location = new System.Drawing.Point(505, 201);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(29, 13);
+            this.label16.TabIndex = 181;
+            this.label16.Text = "(.zip)";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.ForeColor = System.Drawing.Color.RoyalBlue;
+            this.label12.Location = new System.Drawing.Point(795, 201);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(53, 13);
+            this.label12.TabIndex = 180;
+            this.label12.Text = "(11,8 MB)";
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.ForeColor = System.Drawing.Color.RoyalBlue;
+            this.label13.Location = new System.Drawing.Point(709, 201);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(29, 13);
+            this.label13.TabIndex = 179;
+            this.label13.Text = "(.zip)";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.ForeColor = System.Drawing.Color.RoyalBlue;
+            this.label8.Location = new System.Drawing.Point(750, 62);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(50, 13);
+            this.label8.TabIndex = 178;
+            this.label8.Text = "(275 MB)";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.ForeColor = System.Drawing.Color.RoyalBlue;
+            this.label9.Location = new System.Drawing.Point(709, 62);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(29, 13);
+            this.label9.TabIndex = 177;
+            this.label9.Text = "(.zip)";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.ForeColor = System.Drawing.Color.Gold;
+            this.label6.Location = new System.Drawing.Point(366, 62);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(52, 13);
+            this.label6.TabIndex = 176;
+            this.label6.Text = "(4,19 GB)";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.ForeColor = System.Drawing.Color.Gold;
+            this.label7.Location = new System.Drawing.Point(301, 62);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(32, 13);
+            this.label7.TabIndex = 175;
+            this.label7.Text = "(.img)";
+            // 
+            // label47
+            // 
+            this.label47.AutoSize = true;
+            this.label47.ForeColor = System.Drawing.Color.RoyalBlue;
+            this.label47.Location = new System.Drawing.Point(144, 62);
+            this.label47.Name = "label47";
+            this.label47.Size = new System.Drawing.Size(53, 13);
+            this.label47.TabIndex = 174;
+            this.label47.Text = "(4,40 MB)";
+            // 
+            // label35
+            // 
+            this.label35.AutoSize = true;
+            this.label35.ForeColor = System.Drawing.Color.RoyalBlue;
+            this.label35.Location = new System.Drawing.Point(97, 62);
+            this.label35.Name = "label35";
+            this.label35.Size = new System.Drawing.Size(29, 13);
+            this.label35.TabIndex = 173;
+            this.label35.Text = "(.zip)";
+            // 
             // iconPictureBox4
             // 
             this.iconPictureBox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
@@ -252,7 +569,7 @@ namespace glebi_tool.Forms
             // 
             this.label2.AutoSize = true;
             this.label2.ForeColor = System.Drawing.Color.Red;
-            this.label2.Location = new System.Drawing.Point(709, 182);
+            this.label2.Location = new System.Drawing.Point(709, 175);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(139, 26);
             this.label2.TabIndex = 131;
@@ -314,7 +631,7 @@ namespace glebi_tool.Forms
             // 
             this.label1.AutoSize = true;
             this.label1.ForeColor = System.Drawing.Color.Red;
-            this.label1.Location = new System.Drawing.Point(505, 182);
+            this.label1.Location = new System.Drawing.Point(505, 175);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(97, 26);
             this.label1.TabIndex = 126;
@@ -392,7 +709,7 @@ namespace glebi_tool.Forms
             // 
             this.label19.AutoSize = true;
             this.label19.ForeColor = System.Drawing.Color.Red;
-            this.label19.Location = new System.Drawing.Point(709, 56);
+            this.label19.Location = new System.Drawing.Point(709, 49);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(91, 13);
             this.label19.TabIndex = 107;
@@ -426,7 +743,7 @@ namespace glebi_tool.Forms
             // 
             this.label15.AutoSize = true;
             this.label15.ForeColor = System.Drawing.Color.Red;
-            this.label15.Location = new System.Drawing.Point(505, 56);
+            this.label15.Location = new System.Drawing.Point(505, 49);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(92, 13);
             this.label15.TabIndex = 95;
@@ -445,7 +762,7 @@ namespace glebi_tool.Forms
             // 
             this.label10.AutoSize = true;
             this.label10.ForeColor = System.Drawing.Color.Red;
-            this.label10.Location = new System.Drawing.Point(301, 187);
+            this.label10.Location = new System.Drawing.Point(301, 180);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(91, 13);
             this.label10.TabIndex = 86;
@@ -464,11 +781,11 @@ namespace glebi_tool.Forms
             // 
             this.label11.AutoSize = true;
             this.label11.ForeColor = System.Drawing.Color.Red;
-            this.label11.Location = new System.Drawing.Point(301, 56);
+            this.label11.Location = new System.Drawing.Point(301, 49);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(120, 26);
             this.label11.TabIndex = 83;
-            this.label11.Text = "Office professional Plus \r\n(2021)";
+            this.label11.Text = "Office professional Plus \r\n          (2021)";
             // 
             // pictureBox9
             // 
@@ -498,7 +815,7 @@ namespace glebi_tool.Forms
             // 
             this.label5.AutoSize = true;
             this.label5.ForeColor = System.Drawing.Color.Red;
-            this.label5.Location = new System.Drawing.Point(97, 187);
+            this.label5.Location = new System.Drawing.Point(97, 180);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(100, 13);
             this.label5.TabIndex = 74;
@@ -517,7 +834,7 @@ namespace glebi_tool.Forms
             // 
             this.label4.AutoSize = true;
             this.label4.ForeColor = System.Drawing.Color.Red;
-            this.label4.Location = new System.Drawing.Point(97, 56);
+            this.label4.Location = new System.Drawing.Point(97, 49);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(100, 13);
             this.label4.TabIndex = 71;
@@ -547,6 +864,26 @@ namespace glebi_tool.Forms
             this.btnKms.UseVisualStyleBackColor = true;
             this.btnKms.Click += new System.EventHandler(this.btnKms_Click);
             // 
+            // Wallpaper_Engine
+            // 
+            this.Wallpaper_Engine.DoWork += new System.ComponentModel.DoWorkEventHandler(this.Wallpaper_Engine_DoWork);
+            // 
+            // IDM
+            // 
+            this.IDM.DoWork += new System.ComponentModel.DoWorkEventHandler(this.IDM_DoWork);
+            // 
+            // Photoshop
+            // 
+            this.Photoshop.DoWork += new System.ComponentModel.DoWorkEventHandler(this.Photoshop_DoWork);
+            // 
+            // Premiere_Pro
+            // 
+            this.Premiere_Pro.DoWork += new System.ComponentModel.DoWorkEventHandler(this.Premiere_Pro_DoWork);
+            // 
+            // Office
+            // 
+            this.Office.DoWork += new System.ComponentModel.DoWorkEventHandler(this.Office_DoWork);
+            // 
             // FormTools
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -562,9 +899,12 @@ namespace glebi_tool.Forms
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox10)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox3)).EndInit();
@@ -619,5 +959,34 @@ namespace glebi_tool.Forms
         private System.Windows.Forms.Label label3;
         private FontAwesome.Sharp.IconButton iconButton2;
         private System.Windows.Forms.Label label23;
+        private System.Windows.Forms.Label lblSpeed;
+        private System.Windows.Forms.Label lblSize;
+        private System.Windows.Forms.Label lblPercent;
+        private System.Windows.Forms.ProgressBar progressBar1;
+        private System.Windows.Forms.Label label22;
+        private System.Windows.Forms.Label label24;
+        private System.Windows.Forms.Label label20;
+        private System.Windows.Forms.Label label21;
+        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label47;
+        private System.Windows.Forms.Label label35;
+        private System.ComponentModel.BackgroundWorker Wallpaper_Engine;
+        private System.ComponentModel.BackgroundWorker IDM;
+        private System.ComponentModel.BackgroundWorker Photoshop;
+        private System.ComponentModel.BackgroundWorker Premiere_Pro;
+        private System.ComponentModel.BackgroundWorker Office;
+        private System.Windows.Forms.Label label25;
+        private FontAwesome.Sharp.IconPictureBox iconPictureBox10;
+        private FontAwesome.Sharp.IconPictureBox iconPictureBox6;
+        private FontAwesome.Sharp.IconPictureBox iconPictureBox5;
     }
 }

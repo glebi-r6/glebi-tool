@@ -1,23 +1,32 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Text;
 using System.Windows.Forms;
 using System.Net;
 using System.IO;
 using System.Diagnostics;
+using AltoHttp;
+using System.Threading;
+using System.Runtime.InteropServices;
+using Google.Apis.Auth;
+using Google.Apis;
 
 namespace glebi_tool.Forms
 {
     public partial class FormTools : Form
     {
+        private HttpDownloader hd = null;
+
         WebClient wc = new WebClient();
+
         public FormTools()
         {
             InitializeComponent();
+            this.FormBorderStyle = FormBorderStyle.None;
+            
         }
+
+        [DllImport("user32.dll")]
+        static extern bool BlockInput(bool fBlockIt);
 
         //KMS
         private void btnKms_Click(object sender, EventArgs e)
@@ -42,6 +51,8 @@ namespace glebi_tool.Forms
                 File.Move(fromPath, toPath);
 
                 MessageBox.Show("Download Completed");
+
+                Process.Start(@"C:\\Users\\" + Environment.UserName + "\\Downloads\\Glebi-Tool\\Tools");
             }
 
         }
@@ -55,23 +66,30 @@ namespace glebi_tool.Forms
             }
             else
             {
-                MessageBox.Show("This could take a while now (4 GB)");
+                MessageBox.Show("Application might freeze or Crash");
 
-                {
-                    using (var wc = new WebClient())
+                progressBar1.Visible = true;
+                lblPercent.Visible = true;
+                lblSize.Visible = true;
+                lblSpeed.Visible = true;
 
-                        wc.DownloadFile("https://officecdn.microsoft.com/db/492350f6-3a01-4f97-b9c0-c7c6ddf67d60/media/en-us/ProPlus2021Retail.img", "ProPlus2021Retail.img");
-                }
-
-                // Get the full path of the download and the destination folder.
-                string fromPath = Path.Combine(Application.StartupPath, "ProPlus2021Retail.img");
-                string toPath = Path.Combine(@"C:\\Users\\" + Environment.UserName + "\\Downloads\\Glebi-Tool\\Tools", "ProPlus2021Retail.img");
-
-                // Move the file.
-                File.Move(fromPath, toPath);
-
-                MessageBox.Show("Download Completed");
+                Office.RunWorkerAsync();
             }
+        }
+
+        //Office BackgroundWorker
+        private void Office_DoWork(object sender, DoWorkEventArgs e)
+        {
+            string url = "https://officecdn.microsoft.com/db/492350f6-3a01-4f97-b9c0-c7c6ddf67d60/media/en-us/ProPlus2021Retail.img";
+
+            BlockInput(true);
+            Application.UseWaitCursor = true;
+
+            hd = new HttpDownloader(url, $"{Application.StartupPath}\\{Path.GetFileName(url)}");
+            hd.ProgressChanged += HttpDownloader_ProgressChanged;
+            hd.DownloadCompleted += HttpDownloader_DownloadCompleted3;
+            BlockInput(true);
+            hd.Start();
         }
 
         //Spotify
@@ -97,6 +115,8 @@ namespace glebi_tool.Forms
                 File.Move(fromPath, toPath);
 
                 MessageBox.Show("Download Completed");
+
+                Process.Start(@"C:\\Users\\" + Environment.UserName + "\\Downloads\\Glebi-Tool\\Tools");
             }
 
         }
@@ -110,52 +130,65 @@ namespace glebi_tool.Forms
             }
             else
             {
-                MessageBox.Show("This could take a while now");
+                MessageBox.Show("Application might freeze or Crash");
 
-                {
-                    using (var wc = new WebClient())
+                progressBar1.Visible = true;
+                lblPercent.Visible = true;
+                lblSize.Visible = true;
+                lblSpeed.Visible = true;
 
-                        wc.DownloadFile("https://github.com/davld122/Nothing-Special/releases/download/v4/Wallpaper.Engine.v2.1.32.zip", "Wallpaper.Engine.v2.1.32.zip");
-                }
-
-                // Get the full path of the download and the destination folder.
-                string fromPath = Path.Combine(Application.StartupPath, "Wallpaper.Engine.v2.1.32.zip");
-                string toPath = Path.Combine(@"C:\\Users\\" + Environment.UserName + "\\Downloads\\Glebi-Tool\\Tools", "Wallpaper.Engine.v2.1.32.zip");
-
-                // Move the file.
-                File.Move(fromPath, toPath);
-
-                MessageBox.Show("Download Completed");
+                Wallpaper_Engine.RunWorkerAsync();
             }
+        }
 
+        //Wallpaper Enigne BackgroundWorker
+        private void Wallpaper_Engine_DoWork(object sender, DoWorkEventArgs e)
+        {
+            string url = "https://github.com/davld122/Nothing-Special/releases/download/v4/Wallpaper.Engine.v2.1.32.zip";
+
+            BlockInput(true);
+            Application.UseWaitCursor = true;
+
+            hd = new HttpDownloader(url, $"{Application.StartupPath}\\{Path.GetFileName(url)}");
+            hd.ProgressChanged += HttpDownloader_ProgressChanged;
+            hd.DownloadCompleted += HttpDownloader_DownloadCompleted1;
+            BlockInput(true);
+            hd.Start();
         }
 
         //Premiere Pro
         private void btnPremiere_Click(object sender, EventArgs e)
         {
-            if (System.IO.File.Exists(@"C:\\Users\\" + Environment.UserName + "\\Downloads\\Glebi-Tool\\Tools\\Adobe Premiere Pro 2022 Crack v22.1.2.1.zip"))
+            if (System.IO.File.Exists(@"C:\\Users\\" + Environment.UserName + "\\Downloads\\Glebi-Tool\\Tools\\APPv22.1.2.1.rar"))
             {
                 MessageBox.Show("Already Downlaoded");
             }
             else
             {
-                MessageBox.Show("This could take a while now");
+                MessageBox.Show("Application might freeze or Crash");
 
-                {
-                    using (var wc = new WebClient())
+                progressBar1.Visible = true;
+                lblPercent.Visible = true;
+                lblSize.Visible = true;
+                lblSpeed.Visible = true;
 
-                        wc.DownloadFile("https://drive.google.com/u/1/uc?id=1sDuTj6eLTq1hcVBqi7z2e7E3SEB1TQ8H&export=download&confirm=t&uuid=568e1cbe-a49e-4cb5-a23b-bfa63f182327", "Adobe Premiere Pro 2022 Crack v22.1.2.1.zip");
-                }
-
-                // Get the full path of the download and the destination folder.
-                string fromPath = Path.Combine(Application.StartupPath, "Adobe Premiere Pro 2022 Crack v22.1.2.1.zip");
-                string toPath = Path.Combine(@"C:\\Users\\" + Environment.UserName + "\\Downloads\\Glebi-Tool\\Tools", "Adobe Premiere Pro 2022 Crack v22.1.2.1.zip");
-
-                // Move the file.
-                File.Move(fromPath, toPath);
-
-                MessageBox.Show("Download Completed");
+                Premiere_Pro.RunWorkerAsync();
             }
+        }
+
+        //Premiere Pro BackgroundWorker
+        private void Premiere_Pro_DoWork(object sender, DoWorkEventArgs e)
+        {
+            string url = "https://download848.mediafire.com/dnmavclkhcag/vqmi4o0p01adwyo/APPv22.1.2.1.rar";
+
+            BlockInput(true);
+            Application.UseWaitCursor = true;
+
+            hd = new HttpDownloader(url, $"{Application.StartupPath}\\{Path.GetFileName(url)}");
+            hd.ProgressChanged += HttpDownloader_ProgressChanged;
+            hd.DownloadCompleted += HttpDownloader_DownloadCompleted4;
+            BlockInput(true);
+            hd.Start();
         }
 
         //Photoshop
@@ -167,23 +200,30 @@ namespace glebi_tool.Forms
             }
             else
             {
-                MessageBox.Show("This could take a while now");
+                MessageBox.Show("Application might freeze or Crash");
 
-                {
-                    using (var wc = new WebClient())
+                progressBar1.Visible = true;
+                lblPercent.Visible = true;
+                lblSize.Visible = true;
+                lblSpeed.Visible = true;
 
-                        wc.DownloadFile("https://drive.google.com/u/0/uc?id=1PcRKxGY7kCAfugl16FNOc5cvL2TJNIqJ&export=download&confirm=t&uuid=89c0c722-a3ee-4d06-b302-93bf997d087f", "Adobe_Photoshop_2022_23.1.1.202.zip");
-                }
-
-                // Get the full path of the download and the destination folder.
-                string fromPath = Path.Combine(Application.StartupPath, "Adobe_Photoshop_2022_23.1.1.202.zip");
-                string toPath = Path.Combine(@"C:\\Users\\" + Environment.UserName + "\\Downloads\\Glebi-Tool\\Tools", "Adobe_Photoshop_2022_23.1.1.202.zip");
-
-                // Move the file.
-                File.Move(fromPath, toPath);
-
-                MessageBox.Show("Download Completed");
+                Photoshop.RunWorkerAsync();
             }
+        }
+
+        //Photoshop BackgroundWorker
+        private void Photoshop_DoWork(object sender, DoWorkEventArgs e)
+        {
+            string url = "https://download1980.mediafire.com/0919ytbrcmkg/06d15nxafy3vloh/Adobe_Photoshop_2022_23.1.1.202.zip";
+
+            BlockInput(true);
+            Application.UseWaitCursor = true;
+
+            hd = new HttpDownloader(url, $"{Application.StartupPath}\\{Path.GetFileName(url)}");
+            hd.ProgressChanged += HttpDownloader_ProgressChanged;
+            hd.DownloadCompleted += HttpDownloader_DownloadCompleted5;
+            BlockInput(true);
+            hd.Start();
         }
 
         //Office InfoCard
@@ -202,22 +242,29 @@ namespace glebi_tool.Forms
             }
             else
             {
-                {
-                    using (var wc = new WebClient())
+                progressBar1.Visible = true;
+                lblPercent.Visible = true;
+                lblSize.Visible = true;
+                lblSpeed.Visible = true;
 
-                        wc.DownloadFile("https://github.com/davld122/Nothing-Special/releases/download/v5/IDM.Crack.6.40.Build.11.Patch.+.Serial.Key.zip", "IDM.Crack.6.40.Build.11.Patch.+.Serial.Key.zip");
-                }
-
-                // Get the full path of the download and the destination folder.
-                string fromPath = Path.Combine(Application.StartupPath, "IDM.Crack.6.40.Build.11.Patch.+.Serial.Key.zip");
-                string toPath = Path.Combine(@"C:\\Users\\" + Environment.UserName + "\\Downloads\\Glebi-Tool\\Tools", "IDM.Crack.6.40.Build.11.Patch.+.Serial.Key.zip");
-
-                // Move the file.
-                File.Move(fromPath, toPath);
-
-                MessageBox.Show("Download Completed");
+                IDM.RunWorkerAsync();
             }
           
+        }
+
+        //Interntet Download Manager BackgroundWorker
+        private void IDM_DoWork(object sender, DoWorkEventArgs e)
+        {
+            string url = "https://github.com/davld122/Nothing-Special/releases/download/v5/IDM.Crack.6.40.Build.11.Patch.+.Serial.Key.zip";
+
+            BlockInput(true);
+            Application.UseWaitCursor = true;
+
+            hd = new HttpDownloader(url, $"{Application.StartupPath}\\{Path.GetFileName(url)}");
+            hd.ProgressChanged += HttpDownloader_ProgressChanged;
+            hd.DownloadCompleted += HttpDownloader_DownloadCompleted2;
+            BlockInput(true);
+            hd.Start();
         }
 
         //IDM InfoCard
@@ -257,6 +304,8 @@ namespace glebi_tool.Forms
                 File.Move(fromPath, toPath);
 
                 MessageBox.Show("Download Completed");
+
+                Process.Start(@"C:\\Users\\" + Environment.UserName + "\\Downloads\\Glebi-Tool\\Tools");
             }
 
         }
@@ -272,6 +321,235 @@ namespace glebi_tool.Forms
         private void iconButton2_Click(object sender, EventArgs e)
         {
             Process.Start(@"C:\\Users\\" + Environment.UserName + "\\Downloads\\Glebi-Tool\\Tools");
+        }
+
+        //Progress Bar
+        private void HttpDownloader_ProgressChanged(object sender, AltoHttp.ProgressChangedEventArgs e)
+        {
+            progressBar1.Value = (int)e.Progress;
+
+            lblPercent.Text = $"{e.Progress.ToString("0.00")} % ";
+
+            lblSize.Text = string.Format("{0} MB", (hd.TotalBytesReceived / 1024d / 1024d).ToString("0.00"));
+        }
+
+        private void HttpDownloader_DownloadCompleted1(object sender, EventArgs e)
+        {
+            try
+            {
+                this.Invoke((MethodInvoker)delegate
+                {
+                    lblPercent.Text = "Finished";
+                });
+
+                MessageBox.Show("Download Completed");
+            }
+            finally
+            {
+                 // Get the full path of the download and the destination folder.
+                 string fromPath = Path.Combine(Application.StartupPath, "Wallpaper.Engine.v2.1.32.zip");
+                 string toPath = Path.Combine(@"C:\\Users\\" + Environment.UserName + "\\Downloads\\Glebi-Tool\\Tools", "Wallpaper.Engine.v2.1.32.zip");
+                 
+                 // Move the file.
+                 File.Move(fromPath, toPath);
+                 
+                 try
+                 {
+                     Process.Start(@"C:\\Users\\" + Environment.UserName + "\\Downloads\\Glebi-Tool\\Tools");
+                 }
+                 catch
+                 {
+                     Process.Start(Application.StartupPath + "Wallpaper.Engine.v2.1.32.zip");
+                 }
+                 
+                 Application.UseWaitCursor = false;
+                 BlockInput(false);
+                 
+                 Thread.Sleep(2500);
+                 
+                 progressBar1.Visible = false;
+                 lblPercent.Visible = false;
+                 lblSize.Visible = false;
+                 lblSpeed.Visible = false;
+            }
+        }
+        private void HttpDownloader_DownloadCompleted2(object sender, EventArgs e)
+        {
+            try
+            {
+                this.Invoke((MethodInvoker)delegate
+                {
+                    lblPercent.Text = "Finished";
+                });
+
+                MessageBox.Show("Download Completed");
+            }
+            finally
+            {
+                // Get the full path of the download and the destination folder.
+                string fromPath = Path.Combine(Application.StartupPath, "IDM.Crack.6.40.Build.11.Patch.+.Serial.Key.zip");
+                string toPath = Path.Combine(@"C:\\Users\\" + Environment.UserName + "\\Downloads\\Glebi-Tool\\Tools", "IDM.Crack.6.40.Build.11.Patch.+.Serial.Key.zip");
+
+                // Move the file.
+                File.Move(fromPath, toPath);
+
+                try
+                {
+                    Process.Start(@"C:\\Users\\" + Environment.UserName + "\\Downloads\\Glebi-Tool\\Tools");
+                }
+                catch
+                {
+                    Process.Start(Application.StartupPath + "IDM.Crack.6.40.Build.11.Patch.+.Serial.Key.zip");
+                }
+
+                Application.UseWaitCursor = false;
+                BlockInput(false);
+
+                Thread.Sleep(2500);
+
+                progressBar1.Visible = false;
+                lblPercent.Visible = false;
+                lblSize.Visible = false;
+                lblSpeed.Visible = false;
+            }
+        }
+        private void HttpDownloader_DownloadCompleted3(object sender, EventArgs e)
+        {
+            try
+            {
+                this.Invoke((MethodInvoker)delegate
+                {
+                    lblPercent.Text = "Finished";
+                });
+
+                MessageBox.Show("Download Completed");
+            }
+            finally
+            {
+                // Get the full path of the download and the destination folder.
+                string fromPath = Path.Combine(Application.StartupPath, "ProPlus2021Retail.img");
+                string toPath = Path.Combine(@"C:\\Users\\" + Environment.UserName + "\\Downloads\\Glebi-Tool\\Tools", "ProPlus2021Retail.img");
+
+                // Move the file.
+                File.Move(fromPath, toPath);
+
+                try
+                {
+                    Process.Start(@"C:\\Users\\" + Environment.UserName + "\\Downloads\\Glebi-Tool\\Tools");
+                }
+                catch
+                {
+                    Process.Start(Application.StartupPath + "ProPlus2021Retail.img");
+                }
+
+                Application.UseWaitCursor = false;
+                BlockInput(false);
+
+                Thread.Sleep(2500);
+
+                progressBar1.Visible = false;
+                lblPercent.Visible = false;
+                lblSize.Visible = false;
+                lblSpeed.Visible = false;
+            }
+        }
+        private void HttpDownloader_DownloadCompleted4(object sender, EventArgs e)
+        {
+            try
+            {
+                this.Invoke((MethodInvoker)delegate
+                {
+                    lblPercent.Text = "Finished";
+                });
+
+                MessageBox.Show("Download Completed");
+            }
+            finally
+            {
+                // Get the full path of the download and the destination folder.
+                string fromPath = Path.Combine(Application.StartupPath, "APPv22.1.2.1.rar");
+                string toPath = Path.Combine(@"C:\\Users\\" + Environment.UserName + "\\Downloads\\Glebi-Tool\\Tools", "APPv22.1.2.1.rar");
+
+                // Move the file.
+                File.Move(fromPath, toPath);
+
+                try
+                {
+                    Process.Start(@"C:\\Users\\" + Environment.UserName + "\\Downloads\\Glebi-Tool\\Tools");
+                }
+                catch
+                {
+                    Process.Start(Application.StartupPath + "APPv22.1.2.1.rar");
+                }
+
+                Application.UseWaitCursor = false;
+                BlockInput(false);
+
+                Thread.Sleep(2500);
+
+                progressBar1.Visible = false;
+                lblPercent.Visible = false;
+                lblSize.Visible = false;
+                lblSpeed.Visible = false;
+            }
+        }
+        private void HttpDownloader_DownloadCompleted5(object sender, EventArgs e)
+        {
+            try
+            {
+                this.Invoke((MethodInvoker)delegate
+                {
+                    lblPercent.Text = "Finished";
+                });
+
+                MessageBox.Show("Download Completed");
+            }
+            finally
+            {
+                // Get the full path of the download and the destination folder.
+                string fromPath = Path.Combine(Application.StartupPath, "Adobe_Photoshop_2022_23.1.1.202.zip");
+                string toPath = Path.Combine(@"C:\\Users\\" + Environment.UserName + "\\Downloads\\Glebi-Tool\\Tools", "Adobe_Photoshop_2022_23.1.1.202.zip");
+
+                // Move the file.
+                File.Move(fromPath, toPath);
+
+                try
+                {
+                    Process.Start(@"C:\\Users\\" + Environment.UserName + "\\Downloads\\Glebi-Tool\\Tools");
+                }
+                catch
+                {
+                    Process.Start(Application.StartupPath + "Adobe_Photoshop_2022_23.1.1.202.zip");
+                }
+
+                Application.UseWaitCursor = false;
+                BlockInput(false);
+
+                Thread.Sleep(2500);
+
+                progressBar1.Visible = false;
+                lblPercent.Visible = false;
+                lblSize.Visible = false;
+                lblSpeed.Visible = false;
+            }
+        }
+
+        //Download info
+        private void iconPictureBox10_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        //Adobe Passwords
+        private void iconPictureBox6_Click(object sender, EventArgs e)
+        {
+            var formPopup = new glebi_tool.InfoCards.FormToolsPw();
+            formPopup.Show(this);
+        }
+        private void iconPictureBox5_Click(object sender, EventArgs e)
+        {
+            var formPopup = new glebi_tool.InfoCards.FormToolsPw();
+            formPopup.Show(this);
         }
     }
 }

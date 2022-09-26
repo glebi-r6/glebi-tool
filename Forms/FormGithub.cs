@@ -15,6 +15,18 @@ namespace glebi_tool.Forms
 {
     public partial class FormGithub : Form
     {
+        [DllImport("Gdi32.dll", EntryPoint = "CreateRoundRectRgn")]
+
+        private static extern IntPtr CreateRoundRectRgn(
+
+        int nLeftRect, // x-cordinate of upper-left corner
+        int nTopRect, // y-cordinate of upper-left corner
+        int nRightRect, // x-cordinate of Lower-right corner
+        int nBottomRect, // y-cordinate of Lower-right corner
+        int nWidthEllipse, // Width of Ellipse
+        int nHeightEllipse // Height of Ellipse
+        );
+
         public FormGithub()
         {
             InitializeComponent();
@@ -22,6 +34,7 @@ namespace glebi_tool.Forms
             this.ControlBox = false;
             this.DoubleBuffered = true;
             this.MaximizedBounds = Screen.FromHandle(this.Handle).WorkingArea;
+            this.Region = System.Drawing.Region.FromHrgn(CreateRoundRectRgn(-1, -1, Width, Height, 30, 30));
         }
 
         [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
@@ -41,7 +54,25 @@ namespace glebi_tool.Forms
 
         private void btnGtihub_Click(object sender, EventArgs e)
         {
-            this.Close();
+            timer2.Start();
+        }
+
+        private void timer2_Tick(object sender, EventArgs e)
+        {
+            if (Opacity <= 0)
+            {
+                this.Close();
+            }
+            Opacity -= .2;
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            if (Opacity == 1)
+            {
+                timer1.Stop();
+            }
+            Opacity += .2;
         }
     }
 }

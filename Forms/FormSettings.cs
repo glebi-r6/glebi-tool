@@ -154,6 +154,10 @@ namespace glebi_tool.Forms
             ChangeTextColor(Smaragd[ThemeColor.Text]);
         }
 
-        
+        //App files
+        private void iconButton2_Click(object sender, EventArgs e)
+        {
+            Process.Start(Application.StartupPath);
+        }
     }
 }

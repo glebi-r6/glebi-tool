@@ -44,10 +44,36 @@ namespace glebi_tool.Forms
             this.iconButton18 = new FontAwesome.Sharp.IconButton();
             this.iconButton17 = new FontAwesome.Sharp.IconButton();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.lblSpeed = new System.Windows.Forms.Label();
+            this.lblSize = new System.Windows.Forms.Label();
+            this.lblPercent = new System.Windows.Forms.Label();
             this.label22 = new System.Windows.Forms.Label();
+            this.progressBar1 = new System.Windows.Forms.ProgressBar();
             this.iconPictureBox10 = new FontAwesome.Sharp.IconPictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.label49 = new System.Windows.Forms.Label();
+            this.label48 = new System.Windows.Forms.Label();
+            this.label47 = new System.Windows.Forms.Label();
+            this.label46 = new System.Windows.Forms.Label();
+            this.label45 = new System.Windows.Forms.Label();
+            this.label44 = new System.Windows.Forms.Label();
+            this.label43 = new System.Windows.Forms.Label();
+            this.label40 = new System.Windows.Forms.Label();
+            this.label41 = new System.Windows.Forms.Label();
+            this.label42 = new System.Windows.Forms.Label();
+            this.label37 = new System.Windows.Forms.Label();
+            this.label38 = new System.Windows.Forms.Label();
+            this.label39 = new System.Windows.Forms.Label();
+            this.label34 = new System.Windows.Forms.Label();
+            this.label35 = new System.Windows.Forms.Label();
+            this.label36 = new System.Windows.Forms.Label();
+            this.label31 = new System.Windows.Forms.Label();
+            this.label32 = new System.Windows.Forms.Label();
+            this.label33 = new System.Windows.Forms.Label();
+            this.label30 = new System.Windows.Forms.Label();
+            this.label29 = new System.Windows.Forms.Label();
+            this.label28 = new System.Windows.Forms.Label();
             this.iconButton8 = new FontAwesome.Sharp.IconButton();
             this.iconButton9 = new FontAwesome.Sharp.IconButton();
             this.label25 = new System.Windows.Forms.Label();
@@ -117,6 +143,9 @@ namespace glebi_tool.Forms
             this.label4 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.btnDBH = new FontAwesome.Sharp.IconButton();
+            this.Geometry_Dash = new System.ComponentModel.BackgroundWorker();
+            this.Secondes_60 = new System.ComponentModel.BackgroundWorker();
+            this.Getting_Over_It = new System.ComponentModel.BackgroundWorker();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox10)).BeginInit();
@@ -324,7 +353,11 @@ namespace glebi_tool.Forms
             // 
             // panel2
             // 
+            this.panel2.Controls.Add(this.lblSpeed);
+            this.panel2.Controls.Add(this.lblSize);
+            this.panel2.Controls.Add(this.lblPercent);
             this.panel2.Controls.Add(this.label22);
+            this.panel2.Controls.Add(this.progressBar1);
             this.panel2.Controls.Add(this.iconPictureBox10);
             this.panel2.Controls.Add(this.label3);
             this.panel2.Controls.Add(this.pictureBox1);
@@ -335,17 +368,61 @@ namespace glebi_tool.Forms
             this.panel2.Size = new System.Drawing.Size(914, 100);
             this.panel2.TabIndex = 16;
             // 
+            // lblSpeed
+            // 
+            this.lblSpeed.AutoSize = true;
+            this.lblSpeed.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSpeed.ForeColor = System.Drawing.Color.Red;
+            this.lblSpeed.Location = new System.Drawing.Point(396, 17);
+            this.lblSpeed.Name = "lblSpeed";
+            this.lblSpeed.Size = new System.Drawing.Size(44, 20);
+            this.lblSpeed.TabIndex = 160;
+            this.lblSpeed.Text = "Size:";
+            this.lblSpeed.Visible = false;
+            // 
+            // lblSize
+            // 
+            this.lblSize.AutoSize = true;
+            this.lblSize.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSize.ForeColor = System.Drawing.Color.Red;
+            this.lblSize.Location = new System.Drawing.Point(437, 17);
+            this.lblSize.Name = "lblSize";
+            this.lblSize.Size = new System.Drawing.Size(33, 20);
+            this.lblSize.TabIndex = 159;
+            this.lblSize.Text = "MB";
+            this.lblSize.Visible = false;
+            // 
+            // lblPercent
+            // 
+            this.lblPercent.AutoSize = true;
+            this.lblPercent.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPercent.ForeColor = System.Drawing.Color.Red;
+            this.lblPercent.Location = new System.Drawing.Point(330, 17);
+            this.lblPercent.Name = "lblPercent";
+            this.lblPercent.Size = new System.Drawing.Size(40, 20);
+            this.lblPercent.TabIndex = 158;
+            this.lblPercent.Text = "0.00";
+            this.lblPercent.Visible = false;
+            // 
             // label22
             // 
             this.label22.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.label22.AutoSize = true;
             this.label22.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label22.ForeColor = System.Drawing.Color.Red;
+            this.label22.ForeColor = System.Drawing.Color.Crimson;
             this.label22.Location = new System.Drawing.Point(738, 33);
             this.label22.Name = "label22";
             this.label22.Size = new System.Drawing.Size(140, 22);
             this.label22.TabIndex = 131;
             this.label22.Text = "OFME torrents";
+            // 
+            // progressBar1
+            // 
+            this.progressBar1.Location = new System.Drawing.Point(16, 17);
+            this.progressBar1.Name = "progressBar1";
+            this.progressBar1.Size = new System.Drawing.Size(308, 23);
+            this.progressBar1.TabIndex = 153;
+            this.progressBar1.Visible = false;
             // 
             // iconPictureBox10
             // 
@@ -375,6 +452,28 @@ namespace glebi_tool.Forms
             // panel3
             // 
             this.panel3.AutoScroll = true;
+            this.panel3.Controls.Add(this.label49);
+            this.panel3.Controls.Add(this.label48);
+            this.panel3.Controls.Add(this.label47);
+            this.panel3.Controls.Add(this.label46);
+            this.panel3.Controls.Add(this.label45);
+            this.panel3.Controls.Add(this.label44);
+            this.panel3.Controls.Add(this.label43);
+            this.panel3.Controls.Add(this.label40);
+            this.panel3.Controls.Add(this.label41);
+            this.panel3.Controls.Add(this.label42);
+            this.panel3.Controls.Add(this.label37);
+            this.panel3.Controls.Add(this.label38);
+            this.panel3.Controls.Add(this.label39);
+            this.panel3.Controls.Add(this.label34);
+            this.panel3.Controls.Add(this.label35);
+            this.panel3.Controls.Add(this.label36);
+            this.panel3.Controls.Add(this.label31);
+            this.panel3.Controls.Add(this.label32);
+            this.panel3.Controls.Add(this.label33);
+            this.panel3.Controls.Add(this.label30);
+            this.panel3.Controls.Add(this.label29);
+            this.panel3.Controls.Add(this.label28);
             this.panel3.Controls.Add(this.iconButton8);
             this.panel3.Controls.Add(this.iconButton9);
             this.panel3.Controls.Add(this.label25);
@@ -450,6 +549,226 @@ namespace glebi_tool.Forms
             this.panel3.Size = new System.Drawing.Size(914, 322);
             this.panel3.TabIndex = 17;
             // 
+            // label49
+            // 
+            this.label49.AutoSize = true;
+            this.label49.ForeColor = System.Drawing.Color.RoyalBlue;
+            this.label49.Location = new System.Drawing.Point(756, 311);
+            this.label49.Name = "label49";
+            this.label49.Size = new System.Drawing.Size(53, 13);
+            this.label49.TabIndex = 174;
+            this.label49.Text = "(3,26 MB)";
+            // 
+            // label48
+            // 
+            this.label48.AutoSize = true;
+            this.label48.ForeColor = System.Drawing.Color.RoyalBlue;
+            this.label48.Location = new System.Drawing.Point(531, 311);
+            this.label48.Name = "label48";
+            this.label48.Size = new System.Drawing.Size(50, 13);
+            this.label48.TabIndex = 173;
+            this.label48.Text = "(728 MB)";
+            // 
+            // label47
+            // 
+            this.label47.AutoSize = true;
+            this.label47.ForeColor = System.Drawing.Color.RoyalBlue;
+            this.label47.Location = new System.Drawing.Point(373, 311);
+            this.label47.Name = "label47";
+            this.label47.Size = new System.Drawing.Size(50, 13);
+            this.label47.TabIndex = 172;
+            this.label47.Text = "(649 MB)";
+            // 
+            // label46
+            // 
+            this.label46.AutoSize = true;
+            this.label46.ForeColor = System.Drawing.Color.RoyalBlue;
+            this.label46.Location = new System.Drawing.Point(535, 55);
+            this.label46.Name = "label46";
+            this.label46.Size = new System.Drawing.Size(50, 13);
+            this.label46.TabIndex = 171;
+            this.label46.Text = "(187 MB)";
+            // 
+            // label45
+            // 
+            this.label45.AutoSize = true;
+            this.label45.ForeColor = System.Drawing.Color.RoyalBlue;
+            this.label45.Location = new System.Drawing.Point(505, 55);
+            this.label45.Name = "label45";
+            this.label45.Size = new System.Drawing.Size(28, 13);
+            this.label45.TabIndex = 170;
+            this.label45.Text = "(.rar)";
+            // 
+            // label44
+            // 
+            this.label44.AutoSize = true;
+            this.label44.ForeColor = System.Drawing.Color.Magenta;
+            this.label44.Location = new System.Drawing.Point(505, 186);
+            this.label44.Name = "label44";
+            this.label44.Size = new System.Drawing.Size(46, 13);
+            this.label44.TabIndex = 169;
+            this.label44.Text = "(.torrent)";
+            // 
+            // label43
+            // 
+            this.label43.AutoSize = true;
+            this.label43.ForeColor = System.Drawing.Color.RoyalBlue;
+            this.label43.Location = new System.Drawing.Point(505, 311);
+            this.label43.Name = "label43";
+            this.label43.Size = new System.Drawing.Size(29, 13);
+            this.label43.TabIndex = 168;
+            this.label43.Text = "(.zip)";
+            // 
+            // label40
+            // 
+            this.label40.AutoSize = true;
+            this.label40.ForeColor = System.Drawing.Color.Magenta;
+            this.label40.Location = new System.Drawing.Point(505, 430);
+            this.label40.Name = "label40";
+            this.label40.Size = new System.Drawing.Size(46, 13);
+            this.label40.TabIndex = 167;
+            this.label40.Text = "(.torrent)";
+            // 
+            // label41
+            // 
+            this.label41.AutoSize = true;
+            this.label41.ForeColor = System.Drawing.Color.Magenta;
+            this.label41.Location = new System.Drawing.Point(301, 562);
+            this.label41.Name = "label41";
+            this.label41.Size = new System.Drawing.Size(46, 13);
+            this.label41.TabIndex = 166;
+            this.label41.Text = "(.torrent)";
+            // 
+            // label42
+            // 
+            this.label42.AutoSize = true;
+            this.label42.ForeColor = System.Drawing.Color.Magenta;
+            this.label42.Location = new System.Drawing.Point(97, 562);
+            this.label42.Name = "label42";
+            this.label42.Size = new System.Drawing.Size(46, 13);
+            this.label42.TabIndex = 165;
+            this.label42.Text = "(.torrent)";
+            // 
+            // label37
+            // 
+            this.label37.AutoSize = true;
+            this.label37.ForeColor = System.Drawing.Color.Magenta;
+            this.label37.Location = new System.Drawing.Point(707, 443);
+            this.label37.Name = "label37";
+            this.label37.Size = new System.Drawing.Size(46, 13);
+            this.label37.TabIndex = 164;
+            this.label37.Text = "(.torrent)";
+            // 
+            // label38
+            // 
+            this.label38.AutoSize = true;
+            this.label38.ForeColor = System.Drawing.Color.Magenta;
+            this.label38.Location = new System.Drawing.Point(301, 430);
+            this.label38.Name = "label38";
+            this.label38.Size = new System.Drawing.Size(46, 13);
+            this.label38.TabIndex = 163;
+            this.label38.Text = "(.torrent)";
+            // 
+            // label39
+            // 
+            this.label39.AutoSize = true;
+            this.label39.ForeColor = System.Drawing.Color.Magenta;
+            this.label39.Location = new System.Drawing.Point(97, 430);
+            this.label39.Name = "label39";
+            this.label39.Size = new System.Drawing.Size(46, 13);
+            this.label39.TabIndex = 162;
+            this.label39.Text = "(.torrent)";
+            // 
+            // label34
+            // 
+            this.label34.AutoSize = true;
+            this.label34.ForeColor = System.Drawing.Color.RoyalBlue;
+            this.label34.Location = new System.Drawing.Point(710, 311);
+            this.label34.Name = "label34";
+            this.label34.Size = new System.Drawing.Size(28, 13);
+            this.label34.TabIndex = 161;
+            this.label34.Text = "(.rar)";
+            // 
+            // label35
+            // 
+            this.label35.AutoSize = true;
+            this.label35.ForeColor = System.Drawing.Color.RoyalBlue;
+            this.label35.Location = new System.Drawing.Point(301, 311);
+            this.label35.Name = "label35";
+            this.label35.Size = new System.Drawing.Size(29, 13);
+            this.label35.TabIndex = 160;
+            this.label35.Text = "(.zip)";
+            // 
+            // label36
+            // 
+            this.label36.AutoSize = true;
+            this.label36.ForeColor = System.Drawing.Color.Magenta;
+            this.label36.Location = new System.Drawing.Point(97, 311);
+            this.label36.Name = "label36";
+            this.label36.Size = new System.Drawing.Size(46, 13);
+            this.label36.TabIndex = 159;
+            this.label36.Text = "(.torrent)";
+            // 
+            // label31
+            // 
+            this.label31.AutoSize = true;
+            this.label31.ForeColor = System.Drawing.Color.Magenta;
+            this.label31.Location = new System.Drawing.Point(709, 186);
+            this.label31.Name = "label31";
+            this.label31.Size = new System.Drawing.Size(46, 13);
+            this.label31.TabIndex = 158;
+            this.label31.Text = "(.torrent)";
+            // 
+            // label32
+            // 
+            this.label32.AutoSize = true;
+            this.label32.ForeColor = System.Drawing.Color.Magenta;
+            this.label32.Location = new System.Drawing.Point(301, 186);
+            this.label32.Name = "label32";
+            this.label32.Size = new System.Drawing.Size(46, 13);
+            this.label32.TabIndex = 157;
+            this.label32.Text = "(.torrent)";
+            // 
+            // label33
+            // 
+            this.label33.AutoSize = true;
+            this.label33.ForeColor = System.Drawing.Color.Magenta;
+            this.label33.Location = new System.Drawing.Point(97, 186);
+            this.label33.Name = "label33";
+            this.label33.Size = new System.Drawing.Size(46, 13);
+            this.label33.TabIndex = 156;
+            this.label33.Text = "(.torrent)";
+            // 
+            // label30
+            // 
+            this.label30.AutoSize = true;
+            this.label30.ForeColor = System.Drawing.Color.Magenta;
+            this.label30.Location = new System.Drawing.Point(709, 58);
+            this.label30.Name = "label30";
+            this.label30.Size = new System.Drawing.Size(46, 13);
+            this.label30.TabIndex = 155;
+            this.label30.Text = "(.torrent)";
+            // 
+            // label29
+            // 
+            this.label29.AutoSize = true;
+            this.label29.ForeColor = System.Drawing.Color.Magenta;
+            this.label29.Location = new System.Drawing.Point(301, 55);
+            this.label29.Name = "label29";
+            this.label29.Size = new System.Drawing.Size(46, 13);
+            this.label29.TabIndex = 154;
+            this.label29.Text = "(.torrent)";
+            // 
+            // label28
+            // 
+            this.label28.AutoSize = true;
+            this.label28.ForeColor = System.Drawing.Color.Magenta;
+            this.label28.Location = new System.Drawing.Point(97, 55);
+            this.label28.Name = "label28";
+            this.label28.Size = new System.Drawing.Size(46, 13);
+            this.label28.TabIndex = 153;
+            this.label28.Text = "(.torrent)";
+            // 
             // iconButton8
             // 
             this.iconButton8.FlatAppearance.BorderSize = 0;
@@ -484,7 +803,7 @@ namespace glebi_tool.Forms
             // 
             this.label25.AutoSize = true;
             this.label25.ForeColor = System.Drawing.Color.Red;
-            this.label25.Location = new System.Drawing.Point(505, 556);
+            this.label25.Location = new System.Drawing.Point(505, 549);
             this.label25.Name = "label25";
             this.label25.Size = new System.Drawing.Size(127, 13);
             this.label25.TabIndex = 150;
@@ -505,7 +824,7 @@ namespace glebi_tool.Forms
             // 
             this.label26.AutoSize = true;
             this.label26.ForeColor = System.Drawing.Color.Red;
-            this.label26.Location = new System.Drawing.Point(301, 556);
+            this.label26.Location = new System.Drawing.Point(301, 549);
             this.label26.Name = "label26";
             this.label26.Size = new System.Drawing.Size(125, 13);
             this.label26.TabIndex = 148;
@@ -539,7 +858,7 @@ namespace glebi_tool.Forms
             // 
             this.label27.AutoSize = true;
             this.label27.ForeColor = System.Drawing.Color.Red;
-            this.label27.Location = new System.Drawing.Point(97, 556);
+            this.label27.Location = new System.Drawing.Point(97, 549);
             this.label27.Name = "label27";
             this.label27.Size = new System.Drawing.Size(101, 13);
             this.label27.TabIndex = 145;
@@ -573,7 +892,7 @@ namespace glebi_tool.Forms
             // 
             this.label24.AutoSize = true;
             this.label24.ForeColor = System.Drawing.Color.Red;
-            this.label24.Location = new System.Drawing.Point(709, 424);
+            this.label24.Location = new System.Drawing.Point(709, 417);
             this.label24.Name = "label24";
             this.label24.Size = new System.Drawing.Size(102, 26);
             this.label24.TabIndex = 142;
@@ -703,7 +1022,7 @@ namespace glebi_tool.Forms
             // 
             this.label12.AutoSize = true;
             this.label12.ForeColor = System.Drawing.Color.Red;
-            this.label12.Location = new System.Drawing.Point(505, 430);
+            this.label12.Location = new System.Drawing.Point(505, 417);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(31, 13);
             this.label12.TabIndex = 132;
@@ -926,7 +1245,7 @@ namespace glebi_tool.Forms
             // 
             this.label17.AutoSize = true;
             this.label17.ForeColor = System.Drawing.Color.Red;
-            this.label17.Location = new System.Drawing.Point(709, 305);
+            this.label17.Location = new System.Drawing.Point(709, 298);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(100, 13);
             this.label17.TabIndex = 113;
@@ -945,7 +1264,7 @@ namespace glebi_tool.Forms
             // 
             this.label18.AutoSize = true;
             this.label18.ForeColor = System.Drawing.Color.Red;
-            this.label18.Location = new System.Drawing.Point(709, 180);
+            this.label18.Location = new System.Drawing.Point(709, 173);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(110, 13);
             this.label18.TabIndex = 110;
@@ -964,7 +1283,7 @@ namespace glebi_tool.Forms
             // 
             this.label19.AutoSize = true;
             this.label19.ForeColor = System.Drawing.Color.Red;
-            this.label19.Location = new System.Drawing.Point(709, 39);
+            this.label19.Location = new System.Drawing.Point(709, 32);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(106, 26);
             this.label19.TabIndex = 107;
@@ -983,7 +1302,7 @@ namespace glebi_tool.Forms
             // 
             this.label13.AutoSize = true;
             this.label13.ForeColor = System.Drawing.Color.Red;
-            this.label13.Location = new System.Drawing.Point(505, 305);
+            this.label13.Location = new System.Drawing.Point(505, 298);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(76, 13);
             this.label13.TabIndex = 101;
@@ -1017,7 +1336,7 @@ namespace glebi_tool.Forms
             // 
             this.label14.AutoSize = true;
             this.label14.ForeColor = System.Drawing.Color.Red;
-            this.label14.Location = new System.Drawing.Point(505, 180);
+            this.label14.Location = new System.Drawing.Point(505, 173);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(41, 13);
             this.label14.TabIndex = 98;
@@ -1036,7 +1355,7 @@ namespace glebi_tool.Forms
             // 
             this.label15.AutoSize = true;
             this.label15.ForeColor = System.Drawing.Color.Red;
-            this.label15.Location = new System.Drawing.Point(505, 49);
+            this.label15.Location = new System.Drawing.Point(505, 42);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(80, 13);
             this.label15.TabIndex = 95;
@@ -1055,7 +1374,7 @@ namespace glebi_tool.Forms
             // 
             this.label8.AutoSize = true;
             this.label8.ForeColor = System.Drawing.Color.Red;
-            this.label8.Location = new System.Drawing.Point(301, 430);
+            this.label8.Location = new System.Drawing.Point(301, 417);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(120, 13);
             this.label8.TabIndex = 92;
@@ -1089,7 +1408,7 @@ namespace glebi_tool.Forms
             // 
             this.label9.AutoSize = true;
             this.label9.ForeColor = System.Drawing.Color.Red;
-            this.label9.Location = new System.Drawing.Point(301, 305);
+            this.label9.Location = new System.Drawing.Point(301, 298);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(123, 13);
             this.label9.TabIndex = 89;
@@ -1123,7 +1442,7 @@ namespace glebi_tool.Forms
             // 
             this.label10.AutoSize = true;
             this.label10.ForeColor = System.Drawing.Color.Red;
-            this.label10.Location = new System.Drawing.Point(301, 180);
+            this.label10.Location = new System.Drawing.Point(301, 173);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(58, 13);
             this.label10.TabIndex = 86;
@@ -1142,7 +1461,7 @@ namespace glebi_tool.Forms
             // 
             this.label11.AutoSize = true;
             this.label11.ForeColor = System.Drawing.Color.Red;
-            this.label11.Location = new System.Drawing.Point(301, 49);
+            this.label11.Location = new System.Drawing.Point(301, 42);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(62, 13);
             this.label11.TabIndex = 83;
@@ -1176,7 +1495,7 @@ namespace glebi_tool.Forms
             // 
             this.label7.AutoSize = true;
             this.label7.ForeColor = System.Drawing.Color.Red;
-            this.label7.Location = new System.Drawing.Point(97, 430);
+            this.label7.Location = new System.Drawing.Point(97, 417);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(55, 13);
             this.label7.TabIndex = 80;
@@ -1195,7 +1514,7 @@ namespace glebi_tool.Forms
             // 
             this.label6.AutoSize = true;
             this.label6.ForeColor = System.Drawing.Color.Red;
-            this.label6.Location = new System.Drawing.Point(97, 305);
+            this.label6.Location = new System.Drawing.Point(97, 298);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(59, 13);
             this.label6.TabIndex = 77;
@@ -1214,7 +1533,7 @@ namespace glebi_tool.Forms
             // 
             this.label5.AutoSize = true;
             this.label5.ForeColor = System.Drawing.Color.Red;
-            this.label5.Location = new System.Drawing.Point(97, 180);
+            this.label5.Location = new System.Drawing.Point(97, 173);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(70, 13);
             this.label5.TabIndex = 74;
@@ -1233,7 +1552,7 @@ namespace glebi_tool.Forms
             // 
             this.label4.AutoSize = true;
             this.label4.ForeColor = System.Drawing.Color.Red;
-            this.label4.Location = new System.Drawing.Point(97, 49);
+            this.label4.Location = new System.Drawing.Point(97, 42);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(117, 13);
             this.label4.TabIndex = 71;
@@ -1262,6 +1581,18 @@ namespace glebi_tool.Forms
             this.btnDBH.TabIndex = 67;
             this.btnDBH.UseVisualStyleBackColor = true;
             this.btnDBH.Click += new System.EventHandler(this.btnDBH_Click);
+            // 
+            // Geometry_Dash
+            // 
+            this.Geometry_Dash.DoWork += new System.ComponentModel.DoWorkEventHandler(this.Geometry_Dash_DoWork);
+            // 
+            // Secondes_60
+            // 
+            this.Secondes_60.DoWork += new System.ComponentModel.DoWorkEventHandler(this.Secondes_60_DoWork);
+            // 
+            // Getting_Over_It
+            // 
+            this.Getting_Over_It.DoWork += new System.ComponentModel.DoWorkEventHandler(this.Getting_Over_It_DoWork);
             // 
             // FormCrackedGames
             // 
@@ -1404,5 +1735,34 @@ namespace glebi_tool.Forms
         private FontAwesome.Sharp.IconButton iconButton14;
         private System.Windows.Forms.Label label27;
         private System.Windows.Forms.PictureBox pictureBox21;
+        private System.Windows.Forms.ProgressBar progressBar1;
+        private System.Windows.Forms.Label lblSpeed;
+        private System.Windows.Forms.Label lblSize;
+        private System.Windows.Forms.Label lblPercent;
+        private System.ComponentModel.BackgroundWorker Geometry_Dash;
+        private System.Windows.Forms.Label label45;
+        private System.Windows.Forms.Label label44;
+        private System.Windows.Forms.Label label43;
+        private System.Windows.Forms.Label label40;
+        private System.Windows.Forms.Label label41;
+        private System.Windows.Forms.Label label42;
+        private System.Windows.Forms.Label label37;
+        private System.Windows.Forms.Label label38;
+        private System.Windows.Forms.Label label39;
+        private System.Windows.Forms.Label label34;
+        private System.Windows.Forms.Label label35;
+        private System.Windows.Forms.Label label36;
+        private System.Windows.Forms.Label label31;
+        private System.Windows.Forms.Label label32;
+        private System.Windows.Forms.Label label33;
+        private System.Windows.Forms.Label label30;
+        private System.Windows.Forms.Label label29;
+        private System.Windows.Forms.Label label28;
+        private System.ComponentModel.BackgroundWorker Secondes_60;
+        private System.ComponentModel.BackgroundWorker Getting_Over_It;
+        private System.Windows.Forms.Label label49;
+        private System.Windows.Forms.Label label48;
+        private System.Windows.Forms.Label label47;
+        private System.Windows.Forms.Label label46;
     }
 }

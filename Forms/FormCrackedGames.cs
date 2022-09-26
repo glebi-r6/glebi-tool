@@ -8,12 +8,16 @@ using System.Windows.Forms;
 using System.Net;
 using System.IO;
 using System.Diagnostics;
+using AltoHttp;
+using System.Threading;
+using System.Runtime.InteropServices;
 
 namespace glebi_tool.Forms
 {
     public partial class FormCrackedGames : Form
     {
-        
+        private HttpDownloader hd = null;
+
         SaveFileDialog sfd = new SaveFileDialog();
 
         public FormCrackedGames()
@@ -25,7 +29,10 @@ namespace glebi_tool.Forms
             }
         }
 
-    private void llblBittorrent_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        [DllImport("user32.dll")]
+        static extern bool BlockInput(bool fBlockIt);
+
+        private void llblBittorrent_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             System.Diagnostics.Process.Start("https://www.bittorrent.com/de/products/win/bittorrent-classic-free/");
         }
@@ -111,6 +118,8 @@ namespace glebi_tool.Forms
                 File.Move(fromPath, toPath);
 
                 MessageBox.Show("Download Completed");
+
+                Process.Start(@"C:\\Users\\" + Environment.UserName + "\\Downloads\\Glebi-Tool\\Games");
             }
         }
 
@@ -123,23 +132,30 @@ namespace glebi_tool.Forms
             }
             else
             {
-                MessageBox.Show("This could take a while now");
+                MessageBox.Show("Application might freeze or Crash");
 
-                {
-                    using (var wc = new WebClient())
+                progressBar1.Visible = true;
+                lblPercent.Visible = true;
+                lblSize.Visible = true;
+                lblSpeed.Visible = true;
 
-                        wc.DownloadFile("https://github.com/davld122/Nothing-Special/releases/download/v1/Geometry.Dash.rar", "Geometry.Dash.rar");
-                }
-
-                // Get the full path of the download and the destination folder.
-                string fromPath = Path.Combine(Application.StartupPath, "Geometry.Dash.rar");
-                string toPath = Path.Combine(@"C:\\Users\\" + Environment.UserName + "\\Downloads\\Glebi-Tool\\Games", "Geometry.Dash.rar");
-
-                // Move the file.
-                File.Move(fromPath, toPath);
-
-                MessageBox.Show("Download Completed");
+                Geometry_Dash.RunWorkerAsync();
             }
+        }
+
+        //Geometry Dash BackgroundWorker
+        private void Geometry_Dash_DoWork(object sender, DoWorkEventArgs e)
+        {
+            string url = "https://github.com/davld122/Nothing-Special/releases/download/v1/Geometry.Dash.rar";
+
+            BlockInput(true);
+            Application.UseWaitCursor = true;
+
+            hd = new HttpDownloader(url, $"{Application.StartupPath}\\{Path.GetFileName(url)}");
+            hd.ProgressChanged += HttpDownloader_ProgressChanged;
+            hd.DownloadCompleted += HttpDownloader_DownloadCompleted1;
+            BlockInput(true);
+            hd.Start();
         }
 
         //God of War
@@ -165,6 +181,8 @@ namespace glebi_tool.Forms
                 File.Move(fromPath, toPath);
 
                 MessageBox.Show("Download Completed");
+
+                Process.Start(@"C:\\Users\\" + Environment.UserName + "\\Downloads\\Glebi-Tool\\Games");
             }
         }
 
@@ -191,6 +209,8 @@ namespace glebi_tool.Forms
                 File.Move(fromPath, toPath);
 
                 MessageBox.Show("Download Completed");
+
+                Process.Start(@"C:\\Users\\" + Environment.UserName + "\\Downloads\\Glebi-Tool\\Games");
             }
         }
 
@@ -217,6 +237,8 @@ namespace glebi_tool.Forms
                 File.Move(fromPath, toPath);
 
                 MessageBox.Show("Download Completed");
+
+                Process.Start(@"C:\\Users\\" + Environment.UserName + "\\Downloads\\Glebi-Tool\\Games");
             }
         }
 
@@ -243,6 +265,8 @@ namespace glebi_tool.Forms
                 File.Move(fromPath, toPath);
 
                 MessageBox.Show("Download Completed");
+
+                Process.Start(@"C:\\Users\\" + Environment.UserName + "\\Downloads\\Glebi-Tool\\Games");
             }
         }
 
@@ -269,6 +293,8 @@ namespace glebi_tool.Forms
                 File.Move(fromPath, toPath);
 
                 MessageBox.Show("Download Completed");
+
+                Process.Start(@"C:\\Users\\" + Environment.UserName + "\\Downloads\\Glebi-Tool\\Games");
             }
         }
 
@@ -288,23 +314,30 @@ namespace glebi_tool.Forms
             }
             else
             {
-                MessageBox.Show("This could take a while now");
+                MessageBox.Show("Application might freeze or Crash");
 
-                {
-                    using (var wc = new WebClient())
+                progressBar1.Visible = true;
+                lblPercent.Visible = true;
+                lblSize.Visible = true;
+                lblSpeed.Visible = true;
 
-                        wc.DownloadFile("https://github.com/davld122/Nothing-Special/releases/download/v2/60.Seconds.Reatomized.Build.8466895.zip", "60.Seconds.Reatomized.Build.8466895.zip");
-                }
-
-                // Get the full path of the download and the destination folder.
-                string fromPath = Path.Combine(Application.StartupPath, "60.Seconds.Reatomized.Build.8466895.zip");
-                string toPath = Path.Combine(@"C:\\Users\\" + Environment.UserName + "\\Downloads\\Glebi-Tool\\Games", "60.Seconds.Reatomized.Build.8466895.zip");
-
-                // Move the file.
-                File.Move(fromPath, toPath);
-
-                MessageBox.Show("Download Completed");
+                Secondes_60.RunWorkerAsync();
             }
+        }
+
+        //60 Secondes BackgroundWorker
+        private void Secondes_60_DoWork(object sender, DoWorkEventArgs e)
+        {
+            string url = "https://github.com/davld122/Nothing-Special/releases/download/v2/60.Seconds.Reatomized.Build.8466895.zip";
+
+            BlockInput(true);
+            Application.UseWaitCursor = true;
+
+            hd = new HttpDownloader(url, $"{Application.StartupPath}\\{Path.GetFileName(url)}");
+            hd.ProgressChanged += HttpDownloader_ProgressChanged;
+            hd.DownloadCompleted += HttpDownloader_DownloadCompleted2;
+            BlockInput(true);
+            hd.Start();
         }
 
         //Volcanoids
@@ -330,6 +363,8 @@ namespace glebi_tool.Forms
                 File.Move(fromPath, toPath);
 
                 MessageBox.Show("Download Completed");
+
+                Process.Start(@"C:\\Users\\" + Environment.UserName + "\\Downloads\\Glebi-Tool\\Games");
             }
         }
 
@@ -359,7 +394,8 @@ namespace glebi_tool.Forms
 
                 MessageBox.Show("Download Completed");
 
-                iconPictureBox2.Visible = true;
+                var formPopup = new glebi_tool.InfoCards.FormForest();
+                formPopup.Show(this);
             }
         }
 
@@ -386,6 +422,8 @@ namespace glebi_tool.Forms
                 File.Move(fromPath, toPath);
 
                 MessageBox.Show("Download Completed");
+
+                Process.Start(@"C:\\Users\\" + Environment.UserName + "\\Downloads\\Glebi-Tool\\Games");
             }
         }
 
@@ -412,6 +450,8 @@ namespace glebi_tool.Forms
                 File.Move(fromPath, toPath);
 
                 MessageBox.Show("Download Completed");
+
+                Process.Start(@"C:\\Users\\" + Environment.UserName + "\\Downloads\\Glebi-Tool\\Games");
             }
         }
 
@@ -438,6 +478,8 @@ namespace glebi_tool.Forms
                 File.Move(fromPath, toPath);
 
                 MessageBox.Show("Download Completed");
+
+                Process.Start(@"C:\\Users\\" + Environment.UserName + "\\Downloads\\Glebi-Tool\\Games");
             }
         }
 
@@ -450,23 +492,30 @@ namespace glebi_tool.Forms
             }
             else
             {
-                MessageBox.Show("This could take a while now");
+                MessageBox.Show("Application might freeze or Crash");
 
-                {
-                    using (var wc = new WebClient())
+                progressBar1.Visible = true;
+                lblPercent.Visible = true;
+                lblSize.Visible = true;
+                lblSpeed.Visible = true;
 
-                        wc.DownloadFile("https://github.com/davld122/Nothing-Special/releases/download/v3/Getting.Over.It.with.Bennett.Foddy.Build.7976204.zip", "Getting.Over.It.with.Bennett.Foddy.Build.7976204.zip");
-                }
-
-                // Get the full path of the download and the destination folder.
-                string fromPath = Path.Combine(Application.StartupPath, "Getting.Over.It.with.Bennett.Foddy.Build.7976204.zip");
-                string toPath = Path.Combine(@"C:\\Users\\" + Environment.UserName + "\\Downloads\\Glebi-Tool\\Games", "Getting.Over.It.with.Bennett.Foddy.Build.7976204.zip");
-
-                // Move the file.
-                File.Move(fromPath, toPath);
-
-                MessageBox.Show("Download Completed");
+                Getting_Over_It.RunWorkerAsync();
             }
+        }
+
+        //Getting over it BackgroundWorker
+        private void Getting_Over_It_DoWork(object sender, DoWorkEventArgs e)
+        {
+            string url = "https://github.com/davld122/Nothing-Special/releases/download/v3/Getting.Over.It.with.Bennett.Foddy.Build.7976204.zip";
+
+            BlockInput(true);
+            Application.UseWaitCursor = true;
+
+            hd = new HttpDownloader(url, $"{Application.StartupPath}\\{Path.GetFileName(url)}");
+            hd.ProgressChanged += HttpDownloader_ProgressChanged;
+            hd.DownloadCompleted += HttpDownloader_DownloadCompleted3;
+            BlockInput(true);
+            hd.Start();
         }
 
         //Stray
@@ -492,6 +541,8 @@ namespace glebi_tool.Forms
                 File.Move(fromPath, toPath);
 
                 MessageBox.Show("Download Completed");
+
+                Process.Start(@"C:\\Users\\" + Environment.UserName + "\\Downloads\\Glebi-Tool\\Games");
             }
 
         }
@@ -525,6 +576,8 @@ namespace glebi_tool.Forms
                 File.Move(fromPath, toPath);
 
                 MessageBox.Show("Download Completed");
+
+                Process.Start(@"C:\\Users\\" + Environment.UserName + "\\Downloads\\Glebi-Tool\\Games");
             }
         }
 
@@ -551,6 +604,8 @@ namespace glebi_tool.Forms
                 File.Move(fromPath, toPath);
 
                 MessageBox.Show("Download Completed");
+
+                Process.Start(@"C:\\Users\\" + Environment.UserName + "\\Downloads\\Glebi-Tool\\Games");
             }
         }
 
@@ -577,6 +632,132 @@ namespace glebi_tool.Forms
                 File.Move(fromPath, toPath);
 
                 MessageBox.Show("Download Completed");
+
+                Process.Start(@"C:\\Users\\" + Environment.UserName + "\\Downloads\\Glebi-Tool\\Games");
+            }
+        }
+
+        //Progress Bar
+        private void HttpDownloader_ProgressChanged(object sender, AltoHttp.ProgressChangedEventArgs e)
+        {
+            progressBar1.Value = (int)e.Progress;
+
+            lblPercent.Text = $"{e.Progress.ToString("0.00")} % ";
+
+            lblSize.Text = string.Format("{0} MB", (hd.TotalBytesReceived / 1024d / 1024d).ToString("0.00"));
+        }
+
+        private void HttpDownloader_DownloadCompleted1(object sender, EventArgs e)
+        {
+            try
+            {
+                this.Invoke((MethodInvoker)delegate
+                {
+                    lblPercent.Text = "Finished";
+                });
+
+                MessageBox.Show("Download Completed");
+            }
+            finally
+            {
+                // Get the full path of the download and the destination folder.
+                string fromPath = Path.Combine(Application.StartupPath, "Geometry.Dash.rar");
+                string toPath = Path.Combine(@"C:\\Users\\" + Environment.UserName + "\\Downloads\\Glebi-Tool\\Games", "Geometry.Dash.rar");
+
+                // Move the file.
+                File.Move(fromPath, toPath);
+
+                try
+                {
+                    Process.Start(@"C:\\Users\\" + Environment.UserName + "\\Downloads\\Glebi-Tool\\Games");
+                }
+                catch
+                {
+                    Process.Start(Application.StartupPath + "Geometry.Dash.rar");
+                }
+
+                Application.UseWaitCursor = false;
+                BlockInput(false);
+
+                Thread.Sleep(2500);
+
+                progressBar1.Visible = false;
+                lblPercent.Visible = false;
+                lblSize.Visible = false;
+                lblSpeed.Visible = false;
+            }
+        }
+        private void HttpDownloader_DownloadCompleted2(object sender, EventArgs e)
+        {
+            try
+            {
+                MessageBox.Show("Download Completed");
+            }
+            finally
+            {
+                // Get the full path of the download and the destination folder.
+                string fromPath = Path.Combine(Application.StartupPath, "60.Seconds.Reatomized.Build.8466895.zip");
+                string toPath = Path.Combine(@"C:\\Users\\" + Environment.UserName + "\\Downloads\\Glebi-Tool\\Games", "60.Seconds.Reatomized.Build.8466895.zip");
+                
+                // Move the file.
+                File.Move(fromPath, toPath);
+                try
+                {
+                    Process.Start(@"C:\\Users\\" + Environment.UserName + "\\Downloads\\Glebi-Tool\\Games");
+                }
+                catch
+                {
+                    Process.Start(Application.StartupPath + "60.Seconds.Reatomized.Build.8466895.zip");
+                }
+
+                Application.UseWaitCursor = false;
+                BlockInput(false);
+
+                Thread.Sleep(2500);
+                
+                progressBar1.Visible = false;
+                lblPercent.Visible = false;
+                lblSize.Visible = false;
+                lblSpeed.Visible = false;
+            }
+        }
+        private void HttpDownloader_DownloadCompleted3(object sender, EventArgs e)
+        {
+            try
+            {
+                this.Invoke((MethodInvoker)delegate
+                {
+                    lblPercent.Text = "Finished";
+                });
+
+                MessageBox.Show("Download Completed");
+            }
+            finally
+            {
+                // Get the full path of the download and the destination folder.
+                string fromPath = Path.Combine(Application.StartupPath, "Getting.Over.It.with.Bennett.Foddy.Build.7976204.zip");
+                string toPath = Path.Combine(@"C:\\Users\\" + Environment.UserName + "\\Downloads\\Glebi-Tool\\Games", "Getting.Over.It.with.Bennett.Foddy.Build.7976204.zip");
+
+                // Move the file.
+                File.Move(fromPath, toPath);
+                try
+                {
+                    Process.Start(@"C:\\Users\\" + Environment.UserName + "\\Downloads\\Glebi-Tool\\Games");
+                }
+                catch
+                {
+                    Process.Start(Application.StartupPath + "Getting.Over.It.with.Bennett.Foddy.Build.7976204.zip");
+                }
+
+                Application.UseWaitCursor = false;
+                BlockInput(false);
+
+                Thread.Sleep(2500);
+
+                progressBar1.Visible = false;
+                lblPercent.Visible = false;
+                lblSize.Visible = false;
+                lblSpeed.Visible = false;
             }
         }
     }
