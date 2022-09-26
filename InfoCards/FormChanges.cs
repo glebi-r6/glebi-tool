@@ -13,6 +13,18 @@ namespace glebi_tool.InfoCards
 {
     public partial class FormChanges : Form
     {
+        [DllImport("Gdi32.dll", EntryPoint = "CreateRoundRectRgn")]
+
+        private static extern IntPtr CreateRoundRectRgn(
+
+        int nLeftRect, // x-cordinate of upper-left corner
+        int nTopRect, // y-cordinate of upper-left corner
+        int nRightRect, // x-cordinate of Lower-right corner
+        int nBottomRect, // y-cordinate of Lower-right corner
+        int nWidthEllipse, // Width of Ellipse
+        int nHeightEllipse // Height of Ellipse
+        );
+
         public FormChanges()
         {
             InitializeComponent();
@@ -20,6 +32,7 @@ namespace glebi_tool.InfoCards
             this.ControlBox = false;
             this.DoubleBuffered = true;
             this.MaximizedBounds = Screen.FromHandle(this.Handle).WorkingArea;
+            this.Region = System.Drawing.Region.FromHrgn(CreateRoundRectRgn(-1, -1, Width, Height, 30, 30));
         }
 
         [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
@@ -29,13 +42,32 @@ namespace glebi_tool.InfoCards
 
         private void btnOK_Click(object sender, EventArgs e)
         {
-            this.Close();
+            timer2.Start();
         }
 
+        //Fade in/out Animation
         private void panelTitleBar_MouseDown(object sender, MouseEventArgs e)
         {
             ReleaseCapture();
             SendMessage(this.Handle, 0x112, 0xf012, 0);
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            if (Opacity == 1)
+            {
+                timer1.Stop();
+            }
+            Opacity += .2;
+        }
+
+        private void timer2_Tick(object sender, EventArgs e)
+        {
+            if (Opacity <= 0)
+            {
+                this.Close();
+            }
+            Opacity -= .2;
         }
     }
 }

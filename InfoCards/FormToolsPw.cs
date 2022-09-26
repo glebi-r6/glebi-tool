@@ -11,7 +11,7 @@ using System.Windows.Forms;
 
 namespace glebi_tool.InfoCards
 {
-    public partial class FormOFME : Form
+    public partial class FormToolsPw : Form
     {
         [DllImport("Gdi32.dll", EntryPoint = "CreateRoundRectRgn")]
 
@@ -25,7 +25,7 @@ namespace glebi_tool.InfoCards
         int nHeightEllipse // Height of Ellipse
         );
 
-        public FormOFME()
+        public FormToolsPw()
         {
             InitializeComponent();
             this.Text = string.Empty;
@@ -51,9 +51,13 @@ namespace glebi_tool.InfoCards
             timer2.Start();
         }
 
-        private void panelTitleBar_Paint(object sender, PaintEventArgs e)
+        private void timer1_Tick(object sender, EventArgs e)
         {
-
+            if (Opacity == 1)
+            {
+                timer1.Stop();
+            }
+            Opacity += .2;
         }
 
         private void timer2_Tick(object sender, EventArgs e)
@@ -63,15 +67,6 @@ namespace glebi_tool.InfoCards
                 this.Close();
             }
             Opacity -= .2;
-        }
-
-        private void timer1_Tick(object sender, EventArgs e)
-        {
-            if (Opacity == 1)
-            {
-                timer1.Stop();
-            }
-            Opacity += .2;
         }
     }
 }

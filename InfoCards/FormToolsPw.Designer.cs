@@ -1,7 +1,7 @@
 ﻿
 namespace glebi_tool.InfoCards
 {
-    partial class FormOFME
+    partial class FormToolsPw
     {
         /// <summary>
         /// Required designer variable.
@@ -30,7 +30,7 @@ namespace glebi_tool.InfoCards
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormOFME));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormToolsPw));
             this.panelTitleBar = new System.Windows.Forms.Panel();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -51,11 +51,10 @@ namespace glebi_tool.InfoCards
             this.panelTitleBar.Controls.Add(this.label1);
             this.panelTitleBar.Controls.Add(this.btnOK);
             this.panelTitleBar.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelTitleBar.Location = new System.Drawing.Point(0, 0);
+            this.panelTitleBar.Location = new System.Drawing.Point(10, 9);
             this.panelTitleBar.Name = "panelTitleBar";
-            this.panelTitleBar.Size = new System.Drawing.Size(290, 208);
-            this.panelTitleBar.TabIndex = 2;
-            this.panelTitleBar.Paint += new System.Windows.Forms.PaintEventHandler(this.panelTitleBar_Paint);
+            this.panelTitleBar.Size = new System.Drawing.Size(270, 190);
+            this.panelTitleBar.TabIndex = 112;
             this.panelTitleBar.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panelTitleBar_MouseDown);
             // 
             // textBox1
@@ -65,12 +64,12 @@ namespace glebi_tool.InfoCards
             this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.5F);
             this.textBox1.ForeColor = System.Drawing.Color.Orange;
-            this.textBox1.Location = new System.Drawing.Point(100, 73);
+            this.textBox1.Location = new System.Drawing.Point(95, 64);
             this.textBox1.Name = "textBox1";
             this.textBox1.ReadOnly = true;
-            this.textBox1.Size = new System.Drawing.Size(97, 16);
+            this.textBox1.Size = new System.Drawing.Size(83, 16);
             this.textBox1.TabIndex = 106;
-            this.textBox1.Text = "\"online-fix.me\"";
+            this.textBox1.Text = "\"glebi#1773\"\r\n\r\n";
             // 
             // label1
             // 
@@ -78,11 +77,11 @@ namespace glebi_tool.InfoCards
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Red;
-            this.label1.Location = new System.Drawing.Point(11, 47);
+            this.label1.Location = new System.Drawing.Point(30, 38);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(271, 17);
+            this.label1.Size = new System.Drawing.Size(208, 17);
             this.label1.TabIndex = 104;
-            this.label1.Text = "Password for torrents ending with \"OFME\"";
+            this.label1.Text = "Password for Adobe zip/rar files";
             // 
             // btnOK
             // 
@@ -94,7 +93,7 @@ namespace glebi_tool.InfoCards
             this.btnOK.FlatAppearance.MouseOverBackColor = System.Drawing.Color.RoyalBlue;
             this.btnOK.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnOK.ForeColor = System.Drawing.Color.White;
-            this.btnOK.Location = new System.Drawing.Point(96, 163);
+            this.btnOK.Location = new System.Drawing.Point(86, 154);
             this.btnOK.Margin = new System.Windows.Forms.Padding(2);
             this.btnOK.Name = "btnOK";
             this.btnOK.Size = new System.Drawing.Size(103, 31);
@@ -122,7 +121,7 @@ namespace glebi_tool.InfoCards
             this.panel3.Location = new System.Drawing.Point(280, 9);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(10, 190);
-            this.panel3.TabIndex = 111;
+            this.panel3.TabIndex = 116;
             // 
             // panel2
             // 
@@ -131,7 +130,7 @@ namespace glebi_tool.InfoCards
             this.panel2.Location = new System.Drawing.Point(0, 9);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(10, 190);
-            this.panel2.TabIndex = 110;
+            this.panel2.TabIndex = 115;
             // 
             // panel1
             // 
@@ -140,7 +139,7 @@ namespace glebi_tool.InfoCards
             this.panel1.Location = new System.Drawing.Point(0, 199);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(290, 9);
-            this.panel1.TabIndex = 109;
+            this.panel1.TabIndex = 114;
             // 
             // panelShadow
             // 
@@ -149,25 +148,25 @@ namespace glebi_tool.InfoCards
             this.panelShadow.Location = new System.Drawing.Point(0, 0);
             this.panelShadow.Name = "panelShadow";
             this.panelShadow.Size = new System.Drawing.Size(290, 9);
-            this.panelShadow.TabIndex = 108;
+            this.panelShadow.TabIndex = 113;
             // 
-            // FormOFME
+            // FormToolsPw
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(20)))), ((int)(((byte)(70)))));
             this.ClientSize = new System.Drawing.Size(290, 208);
+            this.Controls.Add(this.panelTitleBar);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panelShadow);
-            this.Controls.Add(this.panelTitleBar);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MinimumSize = new System.Drawing.Size(290, 208);
-            this.Name = "FormOFME";
+            this.Name = "FormToolsPw";
             this.Opacity = 0D;
-            this.Text = "FormOFME";
+            this.Text = "FormToolsPw";
             this.panelTitleBar.ResumeLayout(false);
             this.panelTitleBar.PerformLayout();
             this.ResumeLayout(false);
@@ -177,9 +176,9 @@ namespace glebi_tool.InfoCards
         #endregion
 
         private System.Windows.Forms.Panel panelTitleBar;
-        private System.Windows.Forms.Button btnOK;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button btnOK;
         private System.Windows.Forms.Timer timer2;
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.Panel panel3;
