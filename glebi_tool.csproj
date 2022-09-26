@@ -7,7 +7,7 @@
     <ProjectGuid>{C5A57AE1-5343-4345-A58D-019829284448}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <RootNamespace>glebi_tool</RootNamespace>
-    <AssemblyName>glebi-tool 2.1.1</AssemblyName>
+    <AssemblyName>glebi-tool 2.1.2</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -81,8 +81,10 @@
   <PropertyGroup>
     <ApplicationIcon>glebi tool icon.ico</ApplicationIcon>
   </PropertyGroup>
+  <PropertyGroup />
+  <PropertyGroup />
   <PropertyGroup>
-    <ApplicationManifest>Properties\app.manifest</ApplicationManifest>
+    <NoWin32Manifest>true</NoWin32Manifest>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="AltoHttp, Version=1.0.7945.3063, Culture=neutral, processorArchitecture=MSIL">
@@ -93,6 +95,21 @@
     </Reference>
     <Reference Include="FontAwesome.Sharp, Version=5.15.4.0, Culture=neutral, PublicKeyToken=d16d1e4e568ec10f, processorArchitecture=MSIL">
       <HintPath>packages\FontAwesome.Sharp.5.15.4\lib\net472\FontAwesome.Sharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.Apis, Version=1.57.0.0, Culture=neutral, PublicKeyToken=4b01fa6e34db77ab, processorArchitecture=MSIL">
+      <HintPath>packages\Google.Apis.1.57.0\lib\net45\Google.Apis.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.Apis.Auth, Version=1.57.0.0, Culture=neutral, PublicKeyToken=4b01fa6e34db77ab, processorArchitecture=MSIL">
+      <HintPath>packages\Google.Apis.Auth.1.57.0\lib\net461\Google.Apis.Auth.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.Apis.Auth.PlatformServices, Version=1.57.0.0, Culture=neutral, PublicKeyToken=4b01fa6e34db77ab, processorArchitecture=MSIL">
+      <HintPath>packages\Google.Apis.Auth.1.57.0\lib\net461\Google.Apis.Auth.PlatformServices.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.Apis.Core, Version=1.57.0.0, Culture=neutral, PublicKeyToken=4b01fa6e34db77ab, processorArchitecture=MSIL">
+      <HintPath>packages\Google.Apis.Core.1.57.0\lib\net45\Google.Apis.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.Apis.PlatformServices, Version=1.57.0.0, Culture=neutral, PublicKeyToken=4b01fa6e34db77ab, processorArchitecture=MSIL">
+      <HintPath>packages\Google.Apis.1.57.0\lib\net45\Google.Apis.PlatformServices.dll</HintPath>
     </Reference>
     <Reference Include="JetBrains.Annotations, Version=4242.42.42.42, Culture=neutral, PublicKeyToken=1010a0d8d6380325, processorArchitecture=MSIL">
       <HintPath>packages\JetBrains.Annotations.2022.1.0\lib\net20\JetBrains.Annotations.dll</HintPath>
@@ -273,11 +290,18 @@
     <Compile Include="Forms\FormYouTube.Designer.cs">
       <DependentUpon>FormYouTube.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\ProgressReport.cs" />
     <Compile Include="InfoCards\FormChanges.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="InfoCards\FormChanges.Designer.cs">
       <DependentUpon>FormChanges.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InfoCards\FormDownloadinfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InfoCards\FormDownloadinfo.Designer.cs">
+      <DependentUpon>FormDownloadinfo.cs</DependentUpon>
     </Compile>
     <Compile Include="InfoCards\FormFences.cs">
       <SubType>Form</SubType>
@@ -345,6 +369,12 @@
     <Compile Include="InfoCards\FormTannenBerg.Designer.cs">
       <DependentUpon>FormTannenBerg.cs</DependentUpon>
     </Compile>
+    <Compile Include="InfoCards\FormToolsPw.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InfoCards\FormToolsPw.Designer.cs">
+      <DependentUpon>FormToolsPw.cs</DependentUpon>
+    </Compile>
     <Compile Include="InfoCards\FormVerdun.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -400,6 +430,9 @@
     <EmbeddedResource Include="InfoCards\FormChanges.resx">
       <DependentUpon>FormChanges.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="InfoCards\FormDownloadinfo.resx">
+      <DependentUpon>FormDownloadinfo.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="InfoCards\FormFences.resx">
       <DependentUpon>FormFences.cs</DependentUpon>
     </EmbeddedResource>
@@ -432,6 +465,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="InfoCards\FormTannenBerg.resx">
       <DependentUpon>FormTannenBerg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InfoCards\FormToolsPw.resx">
+      <DependentUpon>FormToolsPw.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="InfoCards\FormVerdun.resx">
       <DependentUpon>FormVerdun.cs</DependentUpon>

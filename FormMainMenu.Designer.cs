@@ -56,6 +56,8 @@ namespace glebi_tool
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.lblWelcome = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.timer2 = new System.Windows.Forms.Timer(this.components);
+            this.timer3 = new System.Windows.Forms.Timer(this.components);
             this.panelMenu.SuspendLayout();
             this.panelLogo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnHome)).BeginInit();
@@ -80,7 +82,7 @@ namespace glebi_tool
             this.panelMenu.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelMenu.Location = new System.Drawing.Point(0, 0);
             this.panelMenu.Name = "panelMenu";
-            this.panelMenu.Size = new System.Drawing.Size(220, 581);
+            this.panelMenu.Size = new System.Drawing.Size(220, 620);
             this.panelMenu.TabIndex = 0;
             // 
             // btnExit
@@ -259,7 +261,7 @@ namespace glebi_tool
             this.panelTitleBar.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelTitleBar.Location = new System.Drawing.Point(220, 0);
             this.panelTitleBar.Name = "panelTitleBar";
-            this.panelTitleBar.Size = new System.Drawing.Size(855, 75);
+            this.panelTitleBar.Size = new System.Drawing.Size(871, 75);
             this.panelTitleBar.TabIndex = 1;
             this.panelTitleBar.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panelTitleBar_MouseDown);
             // 
@@ -267,7 +269,7 @@ namespace glebi_tool
             // 
             this.btnMinimize.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnMinimize.Image = ((System.Drawing.Image)(resources.GetObject("btnMinimize.Image")));
-            this.btnMinimize.Location = new System.Drawing.Point(801, 3);
+            this.btnMinimize.Location = new System.Drawing.Point(844, 0);
             this.btnMinimize.Name = "btnMinimize";
             this.btnMinimize.Size = new System.Drawing.Size(21, 23);
             this.btnMinimize.TabIndex = 3;
@@ -278,11 +280,12 @@ namespace glebi_tool
             // 
             this.btnMaximize.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnMaximize.Image = ((System.Drawing.Image)(resources.GetObject("btnMaximize.Image")));
-            this.btnMaximize.Location = new System.Drawing.Point(828, 0);
+            this.btnMaximize.Location = new System.Drawing.Point(817, 3);
             this.btnMaximize.Name = "btnMaximize";
             this.btnMaximize.Size = new System.Drawing.Size(24, 33);
             this.btnMaximize.TabIndex = 2;
             this.btnMaximize.TabStop = false;
+            this.btnMaximize.Visible = false;
             this.btnMaximize.Click += new System.EventHandler(this.btnMaximize_Click);
             // 
             // lblTitleChildForm
@@ -316,7 +319,7 @@ namespace glebi_tool
             this.panelShadow.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelShadow.Location = new System.Drawing.Point(220, 75);
             this.panelShadow.Name = "panelShadow";
-            this.panelShadow.Size = new System.Drawing.Size(855, 9);
+            this.panelShadow.Size = new System.Drawing.Size(871, 9);
             this.panelShadow.TabIndex = 2;
             // 
             // panelDesktop
@@ -333,7 +336,7 @@ namespace glebi_tool
             this.panelDesktop.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelDesktop.Location = new System.Drawing.Point(220, 84);
             this.panelDesktop.Name = "panelDesktop";
-            this.panelDesktop.Size = new System.Drawing.Size(855, 497);
+            this.panelDesktop.Size = new System.Drawing.Size(871, 536);
             this.panelDesktop.TabIndex = 3;
             this.panelDesktop.Paint += new System.Windows.Forms.PaintEventHandler(this.panelDesktop_Paint);
             // 
@@ -360,7 +363,7 @@ namespace glebi_tool
             this.btnTroll.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(90)))));
             this.btnTroll.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnTroll.IconSize = 20;
-            this.btnTroll.Location = new System.Drawing.Point(793, 463);
+            this.btnTroll.Location = new System.Drawing.Point(809, 502);
             this.btnTroll.Name = "btnTroll";
             this.btnTroll.Size = new System.Drawing.Size(62, 34);
             this.btnTroll.TabIndex = 5;
@@ -434,21 +437,35 @@ namespace glebi_tool
             // 
             // timer1
             // 
-            this.timer1.Interval = 1000;
+            this.timer1.Enabled = true;
+            this.timer1.Interval = 1;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
+            // timer2
+            // 
+            this.timer2.Enabled = true;
+            this.timer2.Interval = 40;
+            this.timer2.Tick += new System.EventHandler(this.timer2_Tick);
+            // 
+            // timer3
+            // 
+            this.timer3.Interval = 40;
+            this.timer3.Tick += new System.EventHandler(this.timer3_Tick);
             // 
             // FormMainMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1075, 581);
+            this.ClientSize = new System.Drawing.Size(1091, 620);
             this.Controls.Add(this.panelDesktop);
             this.Controls.Add(this.panelShadow);
             this.Controls.Add(this.panelTitleBar);
             this.Controls.Add(this.panelMenu);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MinimumSize = new System.Drawing.Size(1091, 620);
             this.Name = "FormMainMenu";
+            this.Opacity = 0D;
             this.Text = "Main Menu";
             this.panelMenu.ResumeLayout(false);
             this.panelLogo.ResumeLayout(false);
@@ -491,5 +508,7 @@ namespace glebi_tool
         private System.Windows.Forms.Timer timer1;
         private FontAwesome.Sharp.IconButton btnTroll;
         private System.Windows.Forms.Label lblDate;
+        private System.Windows.Forms.Timer timer2;
+        private System.Windows.Forms.Timer timer3;
     }
 }
