@@ -1,0 +1,16 @@
+E:\Programiern\vs projekte\Glebi tool\Updater\bin\Release\net5.0\Updater.exe
+E:\Programiern\vs projekte\Glebi tool\Updater\bin\Release\net5.0\Updater.deps.json
+E:\Programiern\vs projekte\Glebi tool\Updater\bin\Release\net5.0\Updater.runtimeconfig.json
+E:\Programiern\vs projekte\Glebi tool\Updater\bin\Release\net5.0\Updater.runtimeconfig.dev.json
+E:\Programiern\vs projekte\Glebi tool\Updater\bin\Release\net5.0\Updater.dll
+E:\Programiern\vs projekte\Glebi tool\Updater\bin\Release\net5.0\ref\Updater.dll
+E:\Programiern\vs projekte\Glebi tool\Updater\bin\Release\net5.0\Updater.pdb
+E:\Programiern\vs projekte\Glebi tool\Updater\obj\Release\net5.0\Updater.csproj.AssemblyReference.cache
+E:\Programiern\vs projekte\Glebi tool\Updater\obj\Release\net5.0\Updater.GeneratedMSBuildEditorConfig.editorconfig
+E:\Programiern\vs projekte\Glebi tool\Updater\obj\Release\net5.0\Updater.AssemblyInfoInputs.cache
+E:\Programiern\vs projekte\Glebi tool\Updater\obj\Release\net5.0\Updater.AssemblyInfo.cs
+E:\Programiern\vs projekte\Glebi tool\Updater\obj\Release\net5.0\Updater.csproj.CoreCompileInputs.cache
+E:\Programiern\vs projekte\Glebi tool\Updater\obj\Release\net5.0\Updater.dll
+E:\Programiern\vs projekte\Glebi tool\Updater\obj\Release\net5.0\ref\Updater.dll
+E:\Programiern\vs projekte\Glebi tool\Updater\obj\Release\net5.0\Updater.pdb
+E:\Programiern\vs projekte\Glebi tool\Updater\obj\Release\net5.0\Updater.genruntimeconfig.cache

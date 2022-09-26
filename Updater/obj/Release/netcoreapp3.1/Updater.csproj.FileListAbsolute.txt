@@ -36,13 +36,11 @@ E:\Programiern\vs projekte\Glebi tool\Updater\bin\Release\netcoreapp3.1\Updater.
 E:\Programiern\vs projekte\Glebi tool\Updater\bin\Release\netcoreapp3.1\Updater.runtimeconfig.dev.json
 E:\Programiern\vs projekte\Glebi tool\Updater\bin\Release\netcoreapp3.1\Updater.dll
 E:\Programiern\vs projekte\Glebi tool\Updater\bin\Release\netcoreapp3.1\Updater.pdb
-E:\Programiern\vs projekte\Glebi tool\Updater\bin\Release\netcoreapp3.1\FontAwesome.Sharp.dll
 E:\Programiern\vs projekte\Glebi tool\Updater\obj\Release\netcoreapp3.1\Updater.csproj.AssemblyReference.cache
 E:\Programiern\vs projekte\Glebi tool\Updater\obj\Release\netcoreapp3.1\Updater.GeneratedMSBuildEditorConfig.editorconfig
 E:\Programiern\vs projekte\Glebi tool\Updater\obj\Release\netcoreapp3.1\Updater.AssemblyInfoInputs.cache
 E:\Programiern\vs projekte\Glebi tool\Updater\obj\Release\netcoreapp3.1\Updater.AssemblyInfo.cs
 E:\Programiern\vs projekte\Glebi tool\Updater\obj\Release\netcoreapp3.1\Updater.csproj.CoreCompileInputs.cache
-E:\Programiern\vs projekte\Glebi tool\Updater\obj\Release\netcoreapp3.1\Updater.csproj.CopyComplete
 E:\Programiern\vs projekte\Glebi tool\Updater\obj\Release\netcoreapp3.1\Updater.dll
 E:\Programiern\vs projekte\Glebi tool\Updater\obj\Release\netcoreapp3.1\Updater.pdb
 E:\Programiern\vs projekte\Glebi tool\Updater\obj\Release\netcoreapp3.1\Updater.genruntimeconfig.cache

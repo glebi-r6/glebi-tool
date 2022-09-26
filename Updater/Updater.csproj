@@ -6,8 +6,4 @@
     <ApplicationIcon>glebi tool icon.ico</ApplicationIcon>
   </PropertyGroup>
 
-  <ItemGroup>
-    <PackageReference Include="FontAwesome.Sharp" Version="5.15.4" />
-  </ItemGroup>
-
 </Project>

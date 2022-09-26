@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Diagnostics;
 using System.IO;
 using System.Net;
@@ -14,7 +10,7 @@ namespace Updater
     {
         static void Main(string[] args)
         {
-            string fileDownload = "https://github.com/davld122/glebi-Update-exe/releases/download/2.1.2/2.1.2-Setup.exe";
+            string fileDownload = "https://github.com/davld122/glebi-Update-exe/releases/download/2.1.3/2.1.3-Setup.exe";
 
             string updatePath, updateFileName, processID;
 
@@ -51,7 +47,7 @@ namespace Updater
             try
                 {
                     {
-                        wc.DownloadFile(fileDownload, updatePath + "\\2.1.2-Setup.exe");
+                        wc.DownloadFile(fileDownload, updatePath + "\\2.1.3-Setup.exe");
                         Console.WriteLine("");
                         Console.WriteLine("");
                         Console.WriteLine("Updating...");
@@ -78,26 +74,26 @@ namespace Updater
                     Console.WriteLine("Installer Will Be Started");
                     Thread.Sleep(2000);
 
-                    Process.Start(@"C:\Program Files\Glebi-tool\2.1.2-Setup.exe");
+                    Process.Start("2.1.3-Setup.exe");
 
                 }
             catch
                 {
 
-                Console.WriteLine("");
-                Console.WriteLine("");
-                Console.WriteLine("");
-                Console.WriteLine("No Update Found");
-                Console.WriteLine("");
-                Console.WriteLine("");
-                Console.WriteLine("You are on the latest version (2.1.1)");
-                Console.WriteLine("");
-                Console.WriteLine("");
-                Console.WriteLine("Press Any Key To Close..");
+                   Console.WriteLine("");
+                   Console.WriteLine("");
+                   Console.WriteLine("");
+                   Console.WriteLine("No Update Found");
+                   Console.WriteLine("");
+                   Console.WriteLine("");
+                   Console.WriteLine("You are on the latest version (2.1.2)");
+                   Console.WriteLine("");
+                   Console.WriteLine("");
+                   Console.WriteLine("Press Any Key To Close..");
 
-                Console.ReadKey();
+                   Console.ReadKey();
 
-                Process.Start(@"C:\Program Files\Glebi-tool\glebi-tool 2.1.1.exe");
+                   Process.Start("glebi-tool 2.1.2.exe");
             }
         }
     }
