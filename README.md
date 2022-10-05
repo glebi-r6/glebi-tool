@@ -45,16 +45,16 @@ Code ✅
 #### Installer Version
 ```console
 https://github.com/glebi-r6/glebi-tool/releases
-Download the latest release (2.1.1-Setup.exe).
-And run "2.1.1-Setup.exe"
+Download the latest release (2.1.2-Setup.exe).
+And run "2.1.2-Setup.exe"
 ```
 
 #### exe Version
 ```sh-session
 https://github.com/glebi-r6/glebi-tool/releases
-Download the latest release (Glebi-tool.2.1.1.zip).
+Download the latest release (Glebi-tool.2.1.2.zip).
 Put "Glebi-tool" folder in "C:\Program Files"
-And run "glebi tool 2.1.exe" as administrator
+And run "glebi tool 2.1.2.exe" as administrator
 ```
 
 #### Source Code Version
@@ -62,7 +62,7 @@ And run "glebi tool 2.1.exe" as administrator
 Click the green "Code" button.
 Click "Download ZIP"
 
-Extract the ZIP and Realese glebi tool 2.1
+Extract the ZIP and Realese glebi tool 2.1.2
 ```
 
 ---
