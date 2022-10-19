@@ -34,7 +34,7 @@ Code ✅
 
 ---
 
-### ❗ Important
+## ❗ Important
 * Found a bug? Join the [Discord](https://discord.gg/xqpRDHtznw) and contact me (glebi) or create an issue about it directly in [here!](https://github.com/glebi-r6/glebi-tool/issues)
 * **WARNING** If People will selling or put distributing malicious versions of glebi-tool. 
 * ONLY install glebi-tool from the official repository (this one) to prevent your data being stolen
