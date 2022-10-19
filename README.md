@@ -9,7 +9,7 @@
 <p align="center">
 <a href="https://github.com/glebi-r6/glebi-tool#installation">Installation</a> |
 <a href="https://github.com/glebi-r6/glebi-tool#-important">Important</a> |
-<a href="https://discord.gg/xqpRDHtznw" target="blank">Discord</a>
+<a href="https://discord.gg/xqpRDHtznw" target="_blank">Discord</a>
 </p>
 
 ---
