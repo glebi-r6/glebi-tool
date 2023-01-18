@@ -109,7 +109,7 @@ namespace glebi_tool.InfoCards
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.Red;
-            this.label5.Location = new System.Drawing.Point(20, 210);
+            this.label5.Location = new System.Drawing.Point(20, 229);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(142, 34);
             this.label5.TabIndex = 108;
@@ -121,7 +121,7 @@ namespace glebi_tool.InfoCards
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.Red;
-            this.label4.Location = new System.Drawing.Point(20, 194);
+            this.label4.Location = new System.Drawing.Point(20, 213);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(68, 16);
             this.label4.TabIndex = 107;
@@ -147,11 +147,11 @@ namespace glebi_tool.InfoCards
             this.label2.ForeColor = System.Drawing.Color.Lime;
             this.label2.Location = new System.Drawing.Point(20, 55);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(183, 136);
+            this.label2.Size = new System.Drawing.Size(183, 153);
             this.label2.TabIndex = 105;
             this.label2.Text = "+New Auto Updater\r\n+Updateded Ready \r\n  Or Not (Games)\r\n+Assassins Creed III\r\n  R" +
     "emastered (Games)\r\n+Goat Simulator 3 (Games)\r\n+better performence\r\n+Damage mulip" +
-    "lier (Cheats)";
+    "lier (Cheats)\r\n+High On Life (Games)";
             // 
             // label1
             // 
