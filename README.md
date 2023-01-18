@@ -3,7 +3,7 @@
 <img src="https://img.shields.io/github/languages/top/glebi-r6/glebi-tool?style=flat-square" </a>
 <img src="https://img.shields.io/github/last-commit/glebi-r6/glebi-tool?style=flat-square" </a>
 <img src="https://img.shields.io/github/license/glebi-r6/glebi-tool?style=flat-square" </a>
-<img src="https://img.shields.io/github/downloads/glebi-r6/glebi-tool/total?color=%23daff00&label=2.1.2 Downloads&style=flat-square" </a>
+<img src="https://img.shields.io/github/downloads/glebi-r6/glebi-tool/total?color=%23daff00&label=2.1.3 Downloads&style=flat-square" </a>
   
 </p>
 <p align="center">
@@ -35,6 +35,9 @@ Code ✅
 ---
 
 ## ❗ Important
+* Supported System?
+  Windows 10 ✅
+  Windows 11 ❌ (except some bugs)
 * Found a bug? Join the [Discord](https://discord.gg/xqpRDHtznw) and contact me (glebi) or create an issue about it directly in [here!](https://github.com/glebi-r6/glebi-tool/issues)
 * **WARNING** If People will selling or put distributing malicious versions of glebi-tool. 
 * ONLY install glebi-tool from the official repository (this one) to prevent your data being stolen
@@ -45,16 +48,16 @@ Code ✅
 #### Installer Version
 ```console
 https://github.com/glebi-r6/glebi-tool/releases
-Download the latest release (2.1.2-Setup.exe).
-And run "2.1.2-Setup.exe"
+Download the latest release (2.1.3-Setup.exe).
+And run "2.1.3-Setup.exe"
 ```
 
 #### exe Version
 ```sh-session
 https://github.com/glebi-r6/glebi-tool/releases
-Download the latest release (Glebi-tool.2.1.2.zip).
+Download the latest release (Glebi-tool.2.1.3.zip).
 Put "Glebi-tool" folder in "C:\Program Files"
-And run "glebi tool 2.1.2.exe" as administrator
+And run "glebi tool 2.1.3.exe" as administrator
 ```
 
 #### Source Code Version
