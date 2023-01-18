@@ -26,7 +26,6 @@ Code ✅
  <img alt="theme4" src="https://github.com/glebi-r6/Ignore-nothing-special/raw/main/Pngs/tools.png" width="20%">
 </p>
 
-* ` better and Auto Update System`
 * ` More cracked games and tools`
 * ` better Cheats`
 * ` themes changer`
