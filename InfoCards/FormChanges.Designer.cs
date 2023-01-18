@@ -32,6 +32,10 @@ namespace glebi_tool.InfoCards
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormChanges));
             this.panelTitleBar = new System.Windows.Forms.Panel();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.panelShadow = new System.Windows.Forms.Panel();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -40,10 +44,6 @@ namespace glebi_tool.InfoCards
             this.btnOK = new System.Windows.Forms.Button();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.timer2 = new System.Windows.Forms.Timer(this.components);
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.panelShadow = new System.Windows.Forms.Panel();
             this.panelTitleBar.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -67,17 +67,53 @@ namespace glebi_tool.InfoCards
             this.panelTitleBar.TabIndex = 3;
             this.panelTitleBar.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panelTitleBar_MouseDown);
             // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.Crimson;
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel3.Location = new System.Drawing.Point(220, 9);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(10, 342);
+            this.panel3.TabIndex = 112;
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.Crimson;
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel2.Location = new System.Drawing.Point(0, 9);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(10, 342);
+            this.panel2.TabIndex = 111;
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.Crimson;
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel1.Location = new System.Drawing.Point(0, 351);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(230, 9);
+            this.panel1.TabIndex = 110;
+            // 
+            // panelShadow
+            // 
+            this.panelShadow.BackColor = System.Drawing.Color.Crimson;
+            this.panelShadow.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelShadow.Location = new System.Drawing.Point(0, 0);
+            this.panelShadow.Name = "panelShadow";
+            this.panelShadow.Size = new System.Drawing.Size(230, 9);
+            this.panelShadow.TabIndex = 109;
+            // 
             // label5
             // 
             this.label5.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.Red;
-            this.label5.Location = new System.Drawing.Point(20, 183);
+            this.label5.Location = new System.Drawing.Point(20, 210);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(74, 17);
+            this.label5.Size = new System.Drawing.Size(142, 34);
             this.label5.TabIndex = 108;
-            this.label5.Text = "-Auto start";
+            this.label5.Text = "-Premiere Pro (2022)\r\n-Photoshop (2022)";
             // 
             // label4
             // 
@@ -85,7 +121,7 @@ namespace glebi_tool.InfoCards
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.Red;
-            this.label4.Location = new System.Drawing.Point(20, 166);
+            this.label4.Location = new System.Drawing.Point(20, 194);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(68, 16);
             this.label4.TabIndex = 107;
@@ -111,10 +147,11 @@ namespace glebi_tool.InfoCards
             this.label2.ForeColor = System.Drawing.Color.Lime;
             this.label2.Location = new System.Drawing.Point(20, 55);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(162, 102);
+            this.label2.Size = new System.Drawing.Size(183, 136);
             this.label2.TabIndex = 105;
-            this.label2.Text = "+Installer\r\n+Update System\r\n+Stray (Games)\r\n+Fences (Tools)\r\n+Download buttons fi" +
-    "xed\r\n+better performence";
+            this.label2.Text = "+New Auto Updater\r\n+Updateded Ready \r\n  Or Not (Games)\r\n+Assassins Creed III\r\n  R" +
+    "emastered (Games)\r\n+Goat Simulator 3 (Games)\r\n+better performence\r\n+Damage mulip" +
+    "lier (Cheats)";
             // 
             // label1
             // 
@@ -158,42 +195,6 @@ namespace glebi_tool.InfoCards
             // 
             this.timer2.Interval = 40;
             this.timer2.Tick += new System.EventHandler(this.timer2_Tick);
-            // 
-            // panel3
-            // 
-            this.panel3.BackColor = System.Drawing.Color.Crimson;
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel3.Location = new System.Drawing.Point(220, 9);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(10, 342);
-            this.panel3.TabIndex = 112;
-            // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.Crimson;
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel2.Location = new System.Drawing.Point(0, 9);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(10, 342);
-            this.panel2.TabIndex = 111;
-            // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.Crimson;
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel1.Location = new System.Drawing.Point(0, 351);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(230, 9);
-            this.panel1.TabIndex = 110;
-            // 
-            // panelShadow
-            // 
-            this.panelShadow.BackColor = System.Drawing.Color.Crimson;
-            this.panelShadow.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelShadow.Location = new System.Drawing.Point(0, 0);
-            this.panelShadow.Name = "panelShadow";
-            this.panelShadow.Size = new System.Drawing.Size(230, 9);
-            this.panelShadow.TabIndex = 109;
             // 
             // FormChanges
             // 

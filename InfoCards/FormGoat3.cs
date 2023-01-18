@@ -4,33 +4,33 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
-using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Diagnostics;
+using System.Runtime.InteropServices;
 using System.Net;
 using System.IO;
-using System.Diagnostics;
 
 namespace glebi_tool.InfoCards
 {
-    public partial class FormRON : Form
+    public partial class FormGoat3 : Form
     {
-        WebClient wc = new WebClient();
-
         [DllImport("Gdi32.dll", EntryPoint = "CreateRoundRectRgn")]
 
         private static extern IntPtr CreateRoundRectRgn(
 
-        int nLeftRect, // x-cordinate of upper-left corner
-        int nTopRect, // y-cordinate of upper-left corner
-        int nRightRect, // x-cordinate of Lower-right corner
-        int nBottomRect, // y-cordinate of Lower-right corner
-        int nWidthEllipse, // Width of Ellipse
-        int nHeightEllipse // Height of Ellipse
-        );
+       int nLeftRect, // x-cordinate of upper-left corner
+       int nTopRect, // y-cordinate of upper-left corner
+       int nRightRect, // x-cordinate of Lower-right corner
+       int nBottomRect, // y-cordinate of Lower-right corner
+       int nWidthEllipse, // Width of Ellipse
+       int nHeightEllipse // Height of Ellipse
+       );
 
-        public FormRON()
+        WebClient wc = new WebClient();
+
+        public FormGoat3()
         {
             InitializeComponent();
             this.Text = string.Empty;
@@ -44,6 +44,7 @@ namespace glebi_tool.InfoCards
         private extern static void ReleaseCapture();
         [DllImport("user32.DLL", EntryPoint = "SendMessage")]
         private extern static void SendMessage(System.IntPtr hWnd, int wMsg, int wParam, int lParam);
+
         private void panelTitleBar_MouseDown(object sender, MouseEventArgs e)
         {
             ReleaseCapture();
@@ -57,24 +58,21 @@ namespace glebi_tool.InfoCards
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            if (System.IO.File.Exists(@"C:\\Users\\" + Environment.UserName + "\\Downloads\\Glebi-Tool\\Games\\Ready.Or.Not.Build.08122022-OFME.torrent"))
+            if (System.IO.File.Exists(@"C:\\Users\\" + Environment.UserName + "\\Downloads\\Glebi-Tool\\Games\\Goat.Simulator.3.v208081-OFME.torrent"))
             {
                 MessageBox.Show("Already Downlaoded");
             }
             else
             {
-                using (var wc = new WebClient())
-                    wc.DownloadFileCompleted += new AsyncCompletedEventHandler(FileDownloadComplete);
-
                 {
                     using (var wc = new WebClient())
 
-                        wc.DownloadFile("https://cdn.discordapp.com/attachments/1016411808887746570/1051539109031714827/Ready.Or.Not.Build.08122022-OFME.torrent", "Ready.Or.Not.Build.08122022-OFME.torrent");
+                        wc.DownloadFile("https://cdn.discordapp.com/attachments/1016411808887746570/1043713609781497866/Goat.Simulator.3.v208081-OFME.torrent", "Goat.Simulator.3.v208081-OFME.torrent");
                 }
 
                 // Get the full path of the download and the destination folder.
-                string fromPath = Path.Combine(Application.StartupPath, "Ready.Or.Not.Build.08122022-OFME.torrent");
-                string toPath = Path.Combine(@"C:\\Users\\" + Environment.UserName + "\\Downloads\\Glebi-Tool\\Games", "Ready.Or.Not.Build.08122022-OFME.torrent");
+                string fromPath = Path.Combine(Application.StartupPath, "Goat.Simulator.3.v208081-OFME.torrent");
+                string toPath = Path.Combine(@"C:\\Users\\" + Environment.UserName + "\\Downloads\\Glebi-Tool\\Games", "Goat.Simulator.3.v208081-OFME.torrent");
 
                 // Move the file.
                 File.Move(fromPath, toPath);

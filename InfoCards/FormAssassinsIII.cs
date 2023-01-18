@@ -4,20 +4,18 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
-using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Diagnostics;
+using System.Runtime.InteropServices;
 using System.Net;
 using System.IO;
-using System.Diagnostics;
 
 namespace glebi_tool.InfoCards
 {
-    public partial class FormRON : Form
+    public partial class FormAssassinsIII : Form
     {
-        WebClient wc = new WebClient();
-
         [DllImport("Gdi32.dll", EntryPoint = "CreateRoundRectRgn")]
 
         private static extern IntPtr CreateRoundRectRgn(
@@ -30,7 +28,9 @@ namespace glebi_tool.InfoCards
         int nHeightEllipse // Height of Ellipse
         );
 
-        public FormRON()
+        WebClient wc = new WebClient();
+
+        public FormAssassinsIII()
         {
             InitializeComponent();
             this.Text = string.Empty;
@@ -44,6 +44,7 @@ namespace glebi_tool.InfoCards
         private extern static void ReleaseCapture();
         [DllImport("user32.DLL", EntryPoint = "SendMessage")]
         private extern static void SendMessage(System.IntPtr hWnd, int wMsg, int wParam, int lParam);
+
         private void panelTitleBar_MouseDown(object sender, MouseEventArgs e)
         {
             ReleaseCapture();
@@ -57,31 +58,30 @@ namespace glebi_tool.InfoCards
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            if (System.IO.File.Exists(@"C:\\Users\\" + Environment.UserName + "\\Downloads\\Glebi-Tool\\Games\\Ready.Or.Not.Build.08122022-OFME.torrent"))
+            System.IO.Directory.CreateDirectory("C:\\Users\\" + Environment.UserName.ToString() + "\\Downloads\\Glebi-Tool\\Games\\Assassins Creed III Remastered");
+
+            if (System.IO.File.Exists(@"C:\\Users\\" + Environment.UserName + "\\Downloads\\Glebi-Tool\\Games\\Assassins Creed III Remastered\\Assassin039s_Creed_3_-_Remastered_FitGirl_Repack.torrent"))
             {
                 MessageBox.Show("Already Downlaoded");
             }
             else
             {
-                using (var wc = new WebClient())
-                    wc.DownloadFileCompleted += new AsyncCompletedEventHandler(FileDownloadComplete);
-
                 {
                     using (var wc = new WebClient())
 
-                        wc.DownloadFile("https://cdn.discordapp.com/attachments/1016411808887746570/1051539109031714827/Ready.Or.Not.Build.08122022-OFME.torrent", "Ready.Or.Not.Build.08122022-OFME.torrent");
+                        wc.DownloadFile("https://cdn.discordapp.com/attachments/1016411808887746570/1040304839885852805/Assassin039s_Creed_3_-_Remastered_FitGirl_Repack.torrent", "Assassin039s_Creed_3_-_Remastered_FitGirl_Repack.torrent");
                 }
 
                 // Get the full path of the download and the destination folder.
-                string fromPath = Path.Combine(Application.StartupPath, "Ready.Or.Not.Build.08122022-OFME.torrent");
-                string toPath = Path.Combine(@"C:\\Users\\" + Environment.UserName + "\\Downloads\\Glebi-Tool\\Games", "Ready.Or.Not.Build.08122022-OFME.torrent");
+                string fromPath = Path.Combine(Application.StartupPath, "Assassin039s_Creed_3_-_Remastered_FitGirl_Repack.torrent");
+                string toPath = Path.Combine(@"C:\\Users\\" + Environment.UserName + "\\Downloads\\Glebi-Tool\\Games\\Assassins Creed III Remastered", "Assassin039s_Creed_3_-_Remastered_FitGirl_Repack.torrent");
 
                 // Move the file.
                 File.Move(fromPath, toPath);
 
                 MessageBox.Show("Download Completed");
 
-                Process.Start(@"C:\\Users\\" + Environment.UserName + "\\Downloads\\Glebi-Tool\\Games");
+                Process.Start(@"C:\\Users\\" + Environment.UserName + "\\Downloads\\Glebi-Tool\\Games\\Assassins Creed III Remastered");
             }
         }
 
