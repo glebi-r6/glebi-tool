@@ -86,13 +86,19 @@ namespace glebi_tool.Forms
 
         private void iconPictureBox8_Click(object sender, EventArgs e)
         {
-            var formPopup = new glebi_tool.InfoCards.FormTannenBerg();
+            var formPopup = new glebi_tool.InfoCards.FormAssassinsIII();
             formPopup.Show(this);
         }
 
         private void iconPictureBox9_Click(object sender, EventArgs e)
         {
             var formPopup = new glebi_tool.InfoCards.FormGarrysMod();
+            formPopup.Show(this);
+        }
+
+        private void iconPictureBox11_Click(object sender, EventArgs e)
+        {
+            var formPopup = new glebi_tool.InfoCards.FormGoat3();
             formPopup.Show(this);
         }
 
@@ -150,6 +156,8 @@ namespace glebi_tool.Forms
 
             BlockInput(true);
             Application.UseWaitCursor = true;
+
+            MessageBox.Show("Cursor Freeze? Press: strg + L alt + del");
 
             hd = new HttpDownloader(url, $"{Application.StartupPath}\\{Path.GetFileName(url)}");
             hd.ProgressChanged += HttpDownloader_ProgressChanged;
@@ -333,6 +341,8 @@ namespace glebi_tool.Forms
             BlockInput(true);
             Application.UseWaitCursor = true;
 
+            MessageBox.Show("Cursor Freeze? Press: strg + L alt + del");
+
             hd = new HttpDownloader(url, $"{Application.StartupPath}\\{Path.GetFileName(url)}");
             hd.ProgressChanged += HttpDownloader_ProgressChanged;
             hd.DownloadCompleted += HttpDownloader_DownloadCompleted2;
@@ -402,7 +412,7 @@ namespace glebi_tool.Forms
         //Ready or Not
         private void iconButton19_Click(object sender, EventArgs e)
         {
-            if (System.IO.File.Exists(@"C:\\Users\\" + Environment.UserName + "\\Downloads\\Glebi-Tool\\Games\\Ready.or.Not.Build.09082022-OFME.torrent"))
+            if (System.IO.File.Exists(@"C:\\Users\\" + Environment.UserName + "\\Downloads\\Glebi-Tool\\Games\\Ready.Or.Not.Build.08122022-OFME.torrent"))
             {
                 MessageBox.Show("Already Downlaoded");
             }
@@ -411,12 +421,12 @@ namespace glebi_tool.Forms
                 {
                     using (var wc = new WebClient())
 
-                        wc.DownloadFile("https://cdn.discordapp.com/attachments/1016411808887746570/1016417314226307173/Ready.or.Not.Build.09082022-OFME.torrent", "Ready.or.Not.Build.09082022-OFME.torrent");
+                        wc.DownloadFile("https://cdn.discordapp.com/attachments/1016411808887746570/1051539109031714827/Ready.Or.Not.Build.08122022-OFME.torrent", "Ready.Or.Not.Build.08122022-OFME.torrent");
                 }
 
                 // Get the full path of the download and the destination folder.
-                string fromPath = Path.Combine(Application.StartupPath, "Ready.or.Not.Build.09082022-OFME.torrent");
-                string toPath = Path.Combine(@"C:\\Users\\" + Environment.UserName + "\\Downloads\\Glebi-Tool\\Games", "Ready.or.Not.Build.09082022-OFME.torrent");
+                string fromPath = Path.Combine(Application.StartupPath, "Ready.Or.Not.Build.08122022-OFME.torrent");
+                string toPath = Path.Combine(@"C:\\Users\\" + Environment.UserName + "\\Downloads\\Glebi-Tool\\Games", "Ready.Or.Not.Build.08122022-OFME.torrent");
 
                 // Move the file.
                 File.Move(fromPath, toPath);
@@ -510,6 +520,8 @@ namespace glebi_tool.Forms
 
             BlockInput(true);
             Application.UseWaitCursor = true;
+
+            MessageBox.Show("Cursor Freeze? Press: strg + L alt + del");
 
             hd = new HttpDownloader(url, $"{Application.StartupPath}\\{Path.GetFileName(url)}");
             hd.ProgressChanged += HttpDownloader_ProgressChanged;
@@ -627,6 +639,92 @@ namespace glebi_tool.Forms
                 // Get the full path of the download and the destination folder.
                 string fromPath = Path.Combine(Application.StartupPath, "Red.Dead.Redemption.2.Build.1436.28-EMPRESSMr_Goldberg.torrent");
                 string toPath = Path.Combine(@"C:\\Users\\" + Environment.UserName + "\\Downloads\\Glebi-Tool\\Games", "Red.Dead.Redemption.2.Build.1436.28-EMPRESSMr_Goldberg.torrent");
+
+                // Move the file.
+                File.Move(fromPath, toPath);
+
+                MessageBox.Show("Download Completed");
+
+                Process.Start(@"C:\\Users\\" + Environment.UserName + "\\Downloads\\Glebi-Tool\\Games");
+            }
+        }
+
+        //Assassins Creed III Remastered
+        private void iconButton9_Click(object sender, EventArgs e)
+        {
+            System.IO.Directory.CreateDirectory("C:\\Users\\" + Environment.UserName.ToString() + "\\Downloads\\Glebi-Tool\\Games\\Assassins Creed III Remastered");
+
+            if (System.IO.File.Exists(@"C:\\Users\\" + Environment.UserName + "\\Downloads\\Glebi-Tool\\Games\\Assassins Creed III Remastered\\Assassins.Creed.III.Remastered-CODEX.torrent"))
+            {
+                MessageBox.Show("Already Downlaoded");
+            }
+            else
+            {
+                {
+                    using (var wc = new WebClient())
+
+                        wc.DownloadFile("https://cdn.discordapp.com/attachments/1016411808887746570/1040304820768215050/Assassins.Creed.III.Remastered-CODEX.torrent", "Assassins.Creed.III.Remastered-CODEX.torrent");
+                }
+
+                // Get the full path of the download and the destination folder.
+                string fromPath = Path.Combine(Application.StartupPath, "Assassins.Creed.III.Remastered-CODEX.torrent");
+                string toPath = Path.Combine(@"C:\\Users\\" + Environment.UserName + "\\Downloads\\Glebi-Tool\\Games\\Assassins Creed III Remastered", "Assassins.Creed.III.Remastered-CODEX.torrent");
+
+                // Move the file.
+                File.Move(fromPath, toPath);
+
+                MessageBox.Show("Download Completed");
+
+                Process.Start(@"C:\\Users\\" + Environment.UserName + "\\Downloads\\Glebi-Tool\\Games\\Assassins Creed III Remastered");
+            }
+        }
+
+        //Goat Simulator 3
+        private void iconButton15_Click(object sender, EventArgs e)
+        {
+            if (System.IO.File.Exists(@"C:\\Users\\" + Environment.UserName + "\\Downloads\\Glebi-Tool\\Games\\Goat.Simulator.3.v208081-OFME.torrent"))
+            {
+                MessageBox.Show("Already Downlaoded");
+            }
+            else
+            {
+                {
+                    using (var wc = new WebClient())
+
+                        wc.DownloadFile("https://cdn.discordapp.com/attachments/1016411808887746570/1043713609781497866/Goat.Simulator.3.v208081-OFME.torrent", "Goat.Simulator.3.v208081-OFME.torrent");
+                }
+
+                // Get the full path of the download and the destination folder.
+                string fromPath = Path.Combine(Application.StartupPath, "Goat.Simulator.3.v208081-OFME.torrent");
+                string toPath = Path.Combine(@"C:\\Users\\" + Environment.UserName + "\\Downloads\\Glebi-Tool\\Games", "Goat.Simulator.3.v208081-OFME.torrent");
+
+                // Move the file.
+                File.Move(fromPath, toPath);
+
+                MessageBox.Show("Download Completed");
+
+                Process.Start(@"C:\\Users\\" + Environment.UserName + "\\Downloads\\Glebi-Tool\\Games");
+            }
+        }
+
+        //High On Life
+        private void iconButton20_Click(object sender, EventArgs e)
+        {
+            if (System.IO.File.Exists(@"C:\\Users\\" + Environment.UserName + "\\Downloads\\Glebi-Tool\\Games\\High.On.Life-GoldBerg.torrent"))
+            {
+                MessageBox.Show("Already Downlaoded");
+            }
+            else
+            {
+                {
+                    using (var wc = new WebClient())
+
+                        wc.DownloadFile("https://cdn.discordapp.com/attachments/1016411808887746570/1065060259980382298/High.On.Life-GoldBerg.torrent", "High.On.Life-GoldBerg.torrent");
+                }
+
+                // Get the full path of the download and the destination folder.
+                string fromPath = Path.Combine(Application.StartupPath, "High.On.Life-GoldBerg.torrent");
+                string toPath = Path.Combine(@"C:\\Users\\" + Environment.UserName + "\\Downloads\\Glebi-Tool\\Games", "High.On.Life-GoldBerg.torrent");
 
                 // Move the file.
                 File.Move(fromPath, toPath);

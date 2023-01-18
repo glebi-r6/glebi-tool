@@ -44,6 +44,12 @@ namespace glebi_tool.Forms
         {
             System.Diagnostics.Process.Start("https://discord.gg/xqpRDHtznw");
         }
+
+        private void btnSWBF2_Click(object sender, EventArgs e)
+        {
+            var formPopup = new glebi_tool.cheat.Damagehack.FormDamage_GUI();
+            formPopup.Show(this);
+        }
     }
     
 }

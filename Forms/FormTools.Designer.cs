@@ -96,6 +96,10 @@ namespace glebi_tool.Forms
             this.Photoshop = new System.ComponentModel.BackgroundWorker();
             this.Premiere_Pro = new System.ComponentModel.BackgroundWorker();
             this.Office = new System.ComponentModel.BackgroundWorker();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.pictureBox7 = new System.Windows.Forms.PictureBox();
+            this.label26 = new System.Windows.Forms.Label();
+            this.label27 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox10)).BeginInit();
@@ -115,6 +119,8 @@ namespace glebi_tool.Forms
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             this.SuspendLayout();
             // 
             // llblDiscordsupport
@@ -296,6 +302,10 @@ namespace glebi_tool.Forms
             // panel3
             // 
             this.panel3.AutoScroll = true;
+            this.panel3.Controls.Add(this.label27);
+            this.panel3.Controls.Add(this.label26);
+            this.panel3.Controls.Add(this.pictureBox7);
+            this.panel3.Controls.Add(this.pictureBox6);
             this.panel3.Controls.Add(this.iconPictureBox6);
             this.panel3.Controls.Add(this.iconPictureBox5);
             this.panel3.Controls.Add(this.label22);
@@ -342,6 +352,7 @@ namespace glebi_tool.Forms
             this.panel3.Controls.Add(this.label4);
             this.panel3.Controls.Add(this.pictureBox2);
             this.panel3.Controls.Add(this.btnKms);
+            this.panel3.Cursor = System.Windows.Forms.Cursors.Default;
             this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel3.Location = new System.Drawing.Point(0, 102);
             this.panel3.Name = "panel3";
@@ -351,6 +362,7 @@ namespace glebi_tool.Forms
             // iconPictureBox6
             // 
             this.iconPictureBox6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
+            this.iconPictureBox6.Enabled = false;
             this.iconPictureBox6.ForeColor = System.Drawing.Color.Red;
             this.iconPictureBox6.IconChar = FontAwesome.Sharp.IconChar.InfoCircle;
             this.iconPictureBox6.IconColor = System.Drawing.Color.Red;
@@ -365,6 +377,7 @@ namespace glebi_tool.Forms
             // iconPictureBox5
             // 
             this.iconPictureBox5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
+            this.iconPictureBox5.Enabled = false;
             this.iconPictureBox5.ForeColor = System.Drawing.Color.Red;
             this.iconPictureBox5.IconChar = FontAwesome.Sharp.IconChar.InfoCircle;
             this.iconPictureBox5.IconColor = System.Drawing.Color.Red;
@@ -662,6 +675,8 @@ namespace glebi_tool.Forms
             // 
             // btnPremiere
             // 
+            this.btnPremiere.Cursor = System.Windows.Forms.Cursors.No;
+            this.btnPremiere.Enabled = false;
             this.btnPremiere.FlatAppearance.BorderSize = 0;
             this.btnPremiere.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnPremiere.IconChar = FontAwesome.Sharp.IconChar.Download;
@@ -677,6 +692,8 @@ namespace glebi_tool.Forms
             // 
             // btnPhotoshop
             // 
+            this.btnPhotoshop.Cursor = System.Windows.Forms.Cursors.No;
+            this.btnPhotoshop.Enabled = false;
             this.btnPhotoshop.FlatAppearance.BorderSize = 0;
             this.btnPhotoshop.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnPhotoshop.IconChar = FontAwesome.Sharp.IconChar.Download;
@@ -770,6 +787,7 @@ namespace glebi_tool.Forms
             // 
             // pictureBox8
             // 
+            this.pictureBox8.Cursor = System.Windows.Forms.Cursors.No;
             this.pictureBox8.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox8.Image")));
             this.pictureBox8.Location = new System.Drawing.Point(220, 156);
             this.pictureBox8.Name = "pictureBox8";
@@ -823,6 +841,7 @@ namespace glebi_tool.Forms
             // 
             // pictureBox3
             // 
+            this.pictureBox3.Cursor = System.Windows.Forms.Cursors.No;
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
             this.pictureBox3.Location = new System.Drawing.Point(16, 156);
             this.pictureBox3.Name = "pictureBox3";
@@ -884,6 +903,48 @@ namespace glebi_tool.Forms
             // 
             this.Office.DoWork += new System.ComponentModel.DoWorkEventHandler(this.Office_DoWork);
             // 
+            // pictureBox6
+            // 
+            this.pictureBox6.Cursor = System.Windows.Forms.Cursors.No;
+            this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
+            this.pictureBox6.Location = new System.Drawing.Point(59, 237);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(32, 34);
+            this.pictureBox6.TabIndex = 191;
+            this.pictureBox6.TabStop = false;
+            // 
+            // pictureBox7
+            // 
+            this.pictureBox7.Cursor = System.Windows.Forms.Cursors.No;
+            this.pictureBox7.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox7.Image")));
+            this.pictureBox7.Location = new System.Drawing.Point(263, 237);
+            this.pictureBox7.Name = "pictureBox7";
+            this.pictureBox7.Size = new System.Drawing.Size(32, 34);
+            this.pictureBox7.TabIndex = 192;
+            this.pictureBox7.TabStop = false;
+            // 
+            // label26
+            // 
+            this.label26.AutoSize = true;
+            this.label26.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label26.ForeColor = System.Drawing.Color.Red;
+            this.label26.Location = new System.Drawing.Point(3, 274);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(118, 13);
+            this.label26.TabIndex = 193;
+            this.label26.Text = "Temporarily unavailable";
+            // 
+            // label27
+            // 
+            this.label27.AutoSize = true;
+            this.label27.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label27.ForeColor = System.Drawing.Color.Red;
+            this.label27.Location = new System.Drawing.Point(206, 274);
+            this.label27.Name = "label27";
+            this.label27.Size = new System.Drawing.Size(118, 13);
+            this.label27.TabIndex = 194;
+            this.label27.Text = "Temporarily unavailable";
+            // 
             // FormTools
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -917,6 +978,8 @@ namespace glebi_tool.Forms
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -988,5 +1051,9 @@ namespace glebi_tool.Forms
         private FontAwesome.Sharp.IconPictureBox iconPictureBox10;
         private FontAwesome.Sharp.IconPictureBox iconPictureBox6;
         private FontAwesome.Sharp.IconPictureBox iconPictureBox5;
+        private System.Windows.Forms.PictureBox pictureBox7;
+        private System.Windows.Forms.PictureBox pictureBox6;
+        private System.Windows.Forms.Label label27;
+        private System.Windows.Forms.Label label26;
     }
 }
