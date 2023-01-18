@@ -7,7 +7,7 @@
     <ProjectGuid>{C5A57AE1-5343-4345-A58D-019829284448}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <RootNamespace>glebi_tool</RootNamespace>
-    <AssemblyName>glebi-tool 2.1.2</AssemblyName>
+    <AssemblyName>glebi-tool 2.1.3</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -111,6 +111,9 @@
     <Reference Include="Google.Apis.PlatformServices, Version=1.57.0.0, Culture=neutral, PublicKeyToken=4b01fa6e34db77ab, processorArchitecture=MSIL">
       <HintPath>packages\Google.Apis.1.57.0\lib\net45\Google.Apis.PlatformServices.dll</HintPath>
     </Reference>
+    <Reference Include="Ionic.Zip, Version=1.9.1.8, Culture=neutral, PublicKeyToken=edbe51ad942a3f5c, processorArchitecture=MSIL">
+      <HintPath>packages\Ionic.Zip.1.9.1.8\lib\Ionic.Zip.dll</HintPath>
+    </Reference>
     <Reference Include="JetBrains.Annotations, Version=4242.42.42.42, Culture=neutral, PublicKeyToken=1010a0d8d6380325, processorArchitecture=MSIL">
       <HintPath>packages\JetBrains.Annotations.2022.1.0\lib\net20\JetBrains.Annotations.dll</HintPath>
     </Reference>
@@ -140,6 +143,7 @@
     </Reference>
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
+    <Reference Include="System.IO.Compression.FileSystem" />
     <Reference Include="System.Memory, Version=4.0.1.2, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>packages\System.Memory.4.5.5\lib\net461\System.Memory.dll</HintPath>
     </Reference>
@@ -210,6 +214,12 @@
     <Reference Include="WindowsFormsIntegration" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="cheat\Damagehack\FormDamage_GUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cheat\Damagehack\FormDamage_GUI.Designer.cs">
+      <DependentUpon>FormDamage_GUI.cs</DependentUpon>
+    </Compile>
     <Compile Include="cheat\Recoil2\FormMessage.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -291,6 +301,12 @@
       <DependentUpon>FormYouTube.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\ProgressReport.cs" />
+    <Compile Include="InfoCards\FormAssassinsIII.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InfoCards\FormAssassinsIII.Designer.cs">
+      <DependentUpon>FormAssassinsIII.cs</DependentUpon>
+    </Compile>
     <Compile Include="InfoCards\FormChanges.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -320,6 +336,12 @@
     </Compile>
     <Compile Include="InfoCards\FormGarrysMod.Designer.cs">
       <DependentUpon>FormGarrysMod.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InfoCards\FormGoat3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InfoCards\FormGoat3.Designer.cs">
+      <DependentUpon>FormGoat3.cs</DependentUpon>
     </Compile>
     <Compile Include="InfoCards\FormIDM.cs">
       <SubType>Form</SubType>
@@ -394,6 +416,9 @@
       <DependentUpon>FromOffice.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
+    <EmbeddedResource Include="cheat\Damagehack\FormDamage_GUI.resx">
+      <DependentUpon>FormDamage_GUI.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="cheat\Recoil2\FormMessage.resx">
       <DependentUpon>FormMessage.cs</DependentUpon>
     </EmbeddedResource>
@@ -427,6 +452,9 @@
     <EmbeddedResource Include="Forms\FormYouTube.resx">
       <DependentUpon>FormYouTube.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="InfoCards\FormAssassinsIII.resx">
+      <DependentUpon>FormAssassinsIII.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="InfoCards\FormChanges.resx">
       <DependentUpon>FormChanges.cs</DependentUpon>
     </EmbeddedResource>
@@ -441,6 +469,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="InfoCards\FormGarrysMod.resx">
       <DependentUpon>FormGarrysMod.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InfoCards\FormGoat3.resx">
+      <DependentUpon>FormGoat3.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="InfoCards\FormIDM.resx">
       <DependentUpon>FormIDM.cs</DependentUpon>
@@ -583,6 +614,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="glebi tool icon.ico" />
+    <None Include="Resources\UnmanagedDMG.dll" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="packages\Microsoft.Bcl.Build.1.0.21\build\Microsoft.Bcl.Build.targets" Condition="Exists('packages\Microsoft.Bcl.Build.1.0.21\build\Microsoft.Bcl.Build.targets')" />

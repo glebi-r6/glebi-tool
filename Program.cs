@@ -6,6 +6,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Threading;
+using System.IO;
 
 namespace glebi_tool
 {
@@ -36,6 +37,18 @@ namespace glebi_tool
 
             Thread mouse_thread = new Thread(MouseListener.Listen);
             mouse_thread.Start();
+
+            if (!File.Exists(Environment.CurrentDirectory + "\\UnmanagedDMG.dll"))
+            {
+                try
+                {
+                    File.WriteAllBytes(Environment.CurrentDirectory + "\\UnmanagedDMG.dll", Properties.Resources.UnmanagedDMG);
+                }
+                catch
+                {
+                    MessageBox.Show("Error writing resources to disk.");
+                }
+            }
 
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);

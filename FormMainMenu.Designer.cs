@@ -146,6 +146,7 @@ namespace glebi_tool
             this.btnWebsite.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnWebsite.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnWebsite.UseVisualStyleBackColor = true;
+            this.btnWebsite.Visible = false;
             this.btnWebsite.Click += new System.EventHandler(this.btnWebsite_Click);
             // 
             // btnDiscrod
